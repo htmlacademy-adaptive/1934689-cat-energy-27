@@ -1,0 +1,67 @@
+.promo {
+  position: relative;
+  background-image: url("../img/promo/mobile/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: 0 0;
+  text-align: center;
+}
+
+.promo::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(104, 183, 56, 0.85);
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 302px;
+}
+
+.promo__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 36px;
+  max-width: 249px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+
+.promo__description {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0;
+  text-align: center;
+}
+
+.promo__product {
+  margin-top: 100px;
+}
+
+.promo__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 280px;
+  height: 40px;
+  background: #68b738;
+  padding: 7px 44px;
+  margin: 0 20px;
+}

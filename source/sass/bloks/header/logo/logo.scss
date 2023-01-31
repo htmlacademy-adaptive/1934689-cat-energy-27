@@ -1,0 +1,43 @@
+.logo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 33px;
+  height: 38px;
+}
+
+.logo__link-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo__text {
+  display: block;
+}
+//tablet logo
+
+@media (min-width: 768px) {
+  .logo {
+    width: 174px;
+    height: 52px;
+  }
+
+  .llogo__link-text {
+    display: none;
+  }
+
+  .logo__text {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    width: 202px;
+    height: 59px;
+  }
+}

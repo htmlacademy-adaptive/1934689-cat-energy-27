@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Academy: Cat Enargy</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="preload" href="/fonts/lato/lato-regular.woff2" as="font">
+  <link rel="preload" href="/fonts/oswald/Oswald-Regular.woff2" as="font">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
 
-  </body>
+<body class="page__body">
+
+  <h1 class="visually-hidden">магазин функционального питания для котов</h1>
+
+  <!--header -->
+
+  <header class="header">
+
+    <!--header container-->
+
+    <div class="container">
+
+      <!-- header logo block-->
+
+      <div class="logo__wrapper">
+
+        <a class="logo__link" href="index.html">
+
+          <!--image logo adaptive tablet and descktop-->
+
+          <picture>
+
+            <source media="(min-width: 1280px)" srcset="./img/logo/logo-descktop/logo-desktop.svg" width="202"
+              height="59">
+
+            <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet/logo-tablet.svg" width="174" height="52">
+
+            <img class="logo" src="./img/logo/logo-mobile/logo-mobile.svg" alt="логотип магазина Cat Enargy." width="33"
+              height="38">
+
+          </picture>
+        </a>
+
+        <!--image logo mobile -->
+
+        <a class="logo__link-text" href="index.html">
+
+          <img class="logo__text" src="./img/logo/logo-mobile/logo-text.svg" alt="логотип название магазина Cat Enargy."
+            width="101" height="18">
+        </a>
+      </div>
+
+      <!--header navigation block-->
+
+      <nav class="header__nav">
+
+        <!--header button-->
+
+        <button class="header__button header__button--no-js" type="button" aria-controls="menu" aria-expanded="false"
+          aria-label="Открыть меню">
+
+          <!--header button midlle line-->
+
+          <span class="header__button-line"></span>
+
+          <span class="visually-hidden">кнопка меню.</span>
+        </button>
+
+        <!--header menu navigation list-->
+
+        <ul class="menu menu--no-js">
+
+          <li class="menu__list menu__list--curent">
+
+            <a class="menu__list-item" href="index.html">главная</a>
+          </li>
+
+          <li class="menu__list">
+
+            <a class="menu__list-item" href="index.html">каталог продукции</a>
+          </li>
+
+          <li class="menu__list">
+
+            <a class="menu__list-item" href="index.html">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <script src="/js/app.min.js"></script>
+
+</body>
+
+
+
 </html>

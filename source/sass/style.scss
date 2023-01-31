@@ -1,1 +1,35 @@
-// Начните писать стили здесь
+// fonts
+
+@use "../sass/fonts.scss";
+
+// main param
+
+@use "../sass/bloks/project/prodject-base.scss";
+
+// button
+
+@use "../sass/bloks/button/button.scss";
+
+// header
+@use "../sass/bloks/header/header.scss";
+
+// logo
+@use "../sass/bloks/header/logo/logo.scss";
+
+// menu
+@use "../sass/bloks/header/menu/menu.scss";
+
+// promo
+@use "../sass/bloks/promo/promo.scss";
+
+// map section
+
+@use "../sass/bloks/map/map.scss";
+
+// form section page
+
+@use "../sass/bloks/form/form.scss";
+
+// footer section
+
+@use "../sass/bloks/footer/footer.scss";
