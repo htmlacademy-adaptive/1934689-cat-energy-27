@@ -2,58 +2,104 @@
   display: block;
   position: relative;
   background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  //tablet header
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+  }
+}
+
+//header nav drop menu list
+
+.header__nav {
+  height: 0;
+  opacity: 0;
+  transition: height 0.5s, opacity 0.2s;
+
+  @media (min-width: 768px) {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+.header--drop-menu {
+  height: 197px;
+  opacity: 1;
+  transition: height 0.5s, opacity 1s;
+}
+
+//header menu no js
+
+.header--no-js {
+  height: 216px;
+  opacity: 1;
+  transition: height 0.5s, opacity 1s;
 }
 
 //header button menu
 
 .header__button {
-  position: absolute;
-  top: 24px;
+  display: block;
   right: 20px;
-  border: none;
-  background-color: #ffffff;
-  cursor: pointer;
-  vertical-align: middle;
   width: 24px;
   height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
+
+//geader button withaut JS
 
 .header__button--no-js {
   visibility: hidden;
 }
 
+//header buton dinamic decorate line
+
 .header__button-line {
-  content: "";
-  display: block;
   position: relative;
-  background-color: #000000;
+  display: inline-block;
+  vertical-align: middle;
   width: 100%;
   height: 2px;
-  margin: auto 0;
+  font-size: 0;
+  color: transparent;
+  background: #111111;
+  transition: 0.3s;
 }
 
 .header__button-line::before {
   content: "";
-  display: block;
   position: absolute;
-  background-color: #000000;
-  width: 100%;
-  height: 2px;
   left: 0;
   top: 10px;
-  transition: all 0.3s ease 0s;
+  width: 100%;
+  height: 2px;
+  background: #111111;
+  transform-origin: 50% 50%;
+  transition: 0.3s 0.3s, transform 0.3s;
 }
 
 .header__button-line::after {
   content: "";
-  display: block;
   position: absolute;
-  background-color: #000000;
-  width: 100%;
-  height: 2px;
   left: 0;
   bottom: 10px;
-  transition: all 0.3s ease 0s;
+  width: 100%;
+  height: 2px;
+  background: #111111;
+  transform-origin: 50% 50%;
+  transition: 0.3s 0.3s, transform 0.3s;
 }
 
 // header button condition
@@ -63,39 +109,17 @@
 }
 
 .header__button--active .header__button-line {
-  transform: scale(0);
-  transition: all 0.3s ease 0s;
+  background-color: transparent;
 }
 
 .header__button--active .header__button-line::before {
-  transform: rotate(45deg);
-  background-color: #000000;
+  transform: rotate3d(0, 0, 1, (-45deg));
+  transition: 0.3s, transform 0.3s 0.3s;
   top: 0;
 }
 
 .header__button--active .header__button-line::after {
-  transform: rotate(-45deg);
-  background-color: #000000;
-  bottom: 0;
-}
-
-//tablet header
-
-@media (min-width: 768px) {
-  .header {
-    padding: 0 30px;
-  }
-
-  .header__button {
-    display: none;
-  }
-}
-
-//descktop header
-
-@media (min-width: 1280px) {
-  .header {
-    border-color: transparent;
-    padding: 53px 110px 42px;
-  }
+  transform: rotate3d(0, 0, 1, 45deg);
+  transition: 0.3s, transform 0.3s 0.3s;
+  top: 0;
 }

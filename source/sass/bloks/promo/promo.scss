@@ -1,34 +1,115 @@
+// promo image bacground
+
 .promo {
   position: relative;
-  background-image: url("../img/promo/mobile/index-background.jpg");
+  padding-top: 26px;
+  background-image: linear-gradient(
+      to top,
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../img/promo/mobile/index-background-mobile@1x.png");
+  background-size: 100% 305px;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: 320px 302px;
-  background-position: 0 0;
-  text-align: center;
+
+  // promo image bacground resolution 2ddpx
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/promo/mobile/index-background-mobile@2x.png");
+  }
+
+  //promo next resposive
+
+  @media (min-width: 321px) {
+    background-size: contain;
+    max-height: 305px;
+  }
+
+  //promo tablet product image
+
+  @media (min-width: 768px) {
+    background-image: url("../img/promo/tablet/index-can-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 709px 609px;
+    background-position: 52px 257px;
+    padding-top: 52px;
+    padding-bottom: 800px;
+
+    // resolution 2ddpx
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/tablet/index-can-tablet@2x.png");
+    }
+  }
+
+  // promo descktop image bacground
+
+  @media (min-width: 1440px) {
+    padding-top: 144px;
+    padding-bottom: 0;
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/promo/descktop/index-background-desktop@1x.png");
+    background-position: calc(100% + 70px) 0;
+    background-size: 680px 696px;
+
+    // promo descktop image bacground resolution 2ddpx
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/promo/descktop/index-background-desktop@2x.png");
+    }
+  }
 }
 
-.promo::before {
-  position: absolute;
-  content: "";
-  background-color: rgba(104, 183, 56, 0.85);
-  top: 0;
-  left: 0;
-  width: 320px;
-  height: 302px;
+//promo tablet content
+
+@media (min-width: 768px) {
+  .promo__content {
+    margin-left: 118px;
+  }
 }
+
+// promo text content
 
 .promo__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  color: #ffffff;
+  font-size: 36px;
   line-height: 36px;
+  color: #ffffff;
   max-width: 249px;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  padding-top: 25px;
+  margin: 0 auto 25px;
+
+  //promo title tablet
+
+  @media (min-width: 768px) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    max-width: 414px;
+    margin: 0;
+    text-align: start;
+    margin-bottom: 41px;
+  }
 }
 
 .promo__description {
@@ -39,13 +120,48 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 0;
   text-align: center;
+  margin-bottom: 29px;
+
+  //promo description tablet
+
+  @media (min-width: 768px) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    text-align: start;
+    margin-bottom: 49px;
+  }
 }
 
-.promo__product {
-  margin-top: 100px;
+//promo image product
+
+.promo__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  //promo button tablet
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+  }
 }
+
+//promo tablet product
+
+@media (min-width: 768px) {
+  .promo__product {
+    display: none;
+  }
+}
+
+// promo button
 
 .promo__button {
   font-family: "Oswald", "Arial", sans-serif;
@@ -59,9 +175,17 @@
   align-items: center;
   text-transform: uppercase;
   color: #ffffff;
-  width: 280px;
+  max-width: 280px;
   height: 40px;
-  background: #68b738;
+  background-color: #68b738;
   padding: 7px 44px;
-  margin: 0 20px;
+
+  //promo tablet button
+
+  @media (min-width: 768px) {
+    padding: 8px 26px;
+    max-width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

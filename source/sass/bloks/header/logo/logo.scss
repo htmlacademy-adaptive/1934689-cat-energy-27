@@ -3,41 +3,47 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 0 20px;
+
+  //tablet logo wrapper
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-left: 30px;
+  }
 }
 
-.logo {
-  width: 33px;
-  height: 38px;
-}
+// logo text
 
 .logo__link-text {
   margin-left: auto;
   margin-right: auto;
+
+  //tablet logo
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .logo__text {
   display: block;
 }
-//tablet logo
 
-@media (min-width: 768px) {
-  .logo {
-    width: 174px;
-    height: 52px;
-  }
+//condition logo
 
-  .llogo__link-text {
-    display: none;
-  }
-
-  .logo__text {
-    display: none;
-  }
+.logo:hover {
+  opacity: 0.8;
 }
 
-@media (min-width: 1280px) {
-  .logo {
-    width: 202px;
-    height: 59px;
-  }
+.logo:active {
+  opacity: 0.3;
+}
+
+.logo__text:hover {
+  opacity: 0.8;
+}
+
+.logo__text:active {
+  opacity: 0.3;
 }

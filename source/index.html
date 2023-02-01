@@ -17,85 +17,114 @@
 
 <body class="page__body">
 
-  <h1 class="visually-hidden">магазин функционального питания для котов</h1>
+  <h1 class="visually-hidden">питание для котов, кошек</h1>
 
   <!--header -->
 
   <header class="header">
 
-    <!--header container-->
+    <!-- header logo block-->
 
-    <div class="container">
+    <div class="logo__wrapper">
 
-      <!-- header logo block-->
+      <a class="logo__link" href="index.html">
 
-      <div class="logo__wrapper">
+        <!--image logo adaptive tablet and descktop-->
 
-        <a class="logo__link" href="index.html">
+        <picture>
 
-          <!--image logo adaptive tablet and descktop-->
+          <source media="(min-width: 1440px)" srcset="./img/logo/logo-descktop/logo-desktop.svg" width="202"
+            height="59">
+
+          <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet/logo-tablet.svg" width="174" height="52">
+
+          <img class="logo" src="./img/logo/logo-mobile/logo-mobile.svg" alt="логотип магазина Cat Enargy." width="33"
+            height="38">
+
+        </picture>
+      </a>
+
+      <!--image logo mobile -->
+
+      <a class="logo__link-text" href="index.html">
+
+        <img class="logo__text" src="./img/logo/logo-mobile/logo-text.svg" alt="логотип название магазина Cat Enargy."
+          width="101" height="18">
+      </a>
+
+      <!--header button-->
+
+      <button class="header__button header__button--no-js" type="button" aria-controls="menu" aria-expanded="false"
+        aria-label="Открыть меню">
+
+        <!--header button midlle line-->
+
+        <span class="header__button-line"></span>
+
+        <span class="visually-hidden">кнопка меню.</span>
+      </button>
+    </div>
+    <!--header navigation block-->
+
+    <nav class="header__nav header--no-js">
+
+
+      <!--header menu navigation list-->
+
+      <ul class="menu menu--no-js">
+
+        <li class="menu__list menu__list--curent">
+
+          <a class="menu__list-item" href="index.html">главная</a>
+        </li>
+
+        <li class="menu__list">
+
+          <a class="menu__list-item" href="catalog.html">каталог продукции</a>
+        </li>
+
+        <li class="menu__list">
+
+          <a class="menu__list-item" href="form.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--main page-->
+  <main>
+
+    <section class="promo">
+
+      <div class="promo__content">
+
+        <div class="promo__top">
+
+          <h2 class="promo__title">Функциональное
+            питание для котов</h2>
+
+          <p class="promo__description">Занялся собой? Займись котом!</p>
+        </div>
+
+        <div class="promo__bottom">
 
           <picture>
 
-            <source media="(min-width: 1280px)" srcset="./img/logo/logo-descktop/logo-desktop.svg" width="202"
-              height="59">
-
-            <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet/logo-tablet.svg" width="174" height="52">
-
-            <img class="logo" src="./img/logo/logo-mobile/logo-mobile.svg" alt="логотип магазина Cat Enargy." width="33"
-              height="38">
-
+            <source media="(min-width: 1200px)"
+              srcset="./img/promo/desctop/index-can-descktop@1x.png 1x, ./img/promo/desctop/index-can-descktop@2x.png 2x">
+            <img class="promo__product" src="./img/promo/mobile/index-can-mobile@1x.png" x1,
+              srcset="./img/promo/mobile/index-can-mobile@2x.png" x2 , alt="корм Cat Energy с курицей." width="280"
+              height="271">
           </picture>
-        </a>
 
-        <!--image logo mobile -->
-
-        <a class="logo__link-text" href="index.html">
-
-          <img class="logo__text" src="./img/logo/logo-mobile/logo-text.svg" alt="логотип название магазина Cat Enargy."
-            width="101" height="18">
-        </a>
+          <a class="promo__button button" href="form.html">
+            подобрать программу
+          </a>
+        </div>
       </div>
 
-      <!--header navigation block-->
-
-      <nav class="header__nav">
-
-        <!--header button-->
-
-        <button class="header__button header__button--no-js" type="button" aria-controls="menu" aria-expanded="false"
-          aria-label="Открыть меню">
-
-          <!--header button midlle line-->
-
-          <span class="header__button-line"></span>
-
-          <span class="visually-hidden">кнопка меню.</span>
-        </button>
-
-        <!--header menu navigation list-->
-
-        <ul class="menu menu--no-js">
-
-          <li class="menu__list menu__list--curent">
-
-            <a class="menu__list-item" href="index.html">главная</a>
-          </li>
-
-          <li class="menu__list">
-
-            <a class="menu__list-item" href="index.html">каталог продукции</a>
-          </li>
-
-          <li class="menu__list">
-
-            <a class="menu__list-item" href="index.html">подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+    </section>
+  </main>
 
 
   <script src="/js/app.min.js"></script>
