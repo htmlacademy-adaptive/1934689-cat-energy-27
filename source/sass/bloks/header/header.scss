@@ -13,6 +13,16 @@
     align-items: center;
     margin-right: 30px;
   }
+
+  //descktop header
+
+  @media (min-width: 1440px) {
+    z-index: 1;
+    background-color: transparent;
+    padding-top: 53px;
+    margin-right: 110px;
+    margin-left: 110px;
+  }
 }
 
 //header nav drop menu list

@@ -1,0 +1,249 @@
+.program {
+  margin-bottom: 42px;
+}
+
+//program container
+
+.program .container {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  //desctop program container
+
+  @media (min-width: 1440px) {
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 71px;
+  }
+}
+
+// descktop program wrapper blocks
+
+@media (min-width: 1440px) {
+  .program__wrapper-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+//program blocks
+
+.program__block {
+  position: relative;
+  padding: 22px 20px 22px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+
+  //tablet program blocks
+
+  @media (min-width: 768px) {
+    padding: 77px 62px 57px 52px;
+  }
+
+  //descktop program blocks
+
+  @media (min-width: 1440px) {
+    padding: 41px 61px 59px 52px;
+    min-width: 570px;
+    margin-bottom: 0;
+  }
+}
+
+.program__block-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 22px;
+
+  //tablet program block top
+
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+
+  //descktop program block top
+
+  @media (min-width: 1440px) {
+    margin-bottom: 39px;
+  }
+}
+
+//program image
+
+.program__img-slim {
+  margin-right: 19px;
+
+  //tablet program image
+
+  @media (min-width: 768px) {
+    position: absolute;
+    right: 62px;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translateY(-50%);
+    margin-right: 0;
+  }
+
+  // descktop program image
+
+  @media (min-width: 1440px) {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    left: -2px;
+    margin-right: 62px;
+    transform: none;
+  }
+}
+
+//program image
+
+.program__img-pro {
+  margin-right: 11px;
+
+  //tablet program image
+
+  @media (min-width: 768px) {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    width: 268px;
+    height: 200px;
+    transform: translateY(-50%);
+    margin-right: 0;
+  }
+
+  // descktop program image
+
+  @media (min-width: 1440px) {
+    position: relative;
+    width: 134px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    left: -2px;
+    margin-right: 47px;
+    transform: none;
+  }
+}
+
+//program block title
+
+.program__block-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+
+  //tablet program block title
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+//program block description
+
+.program__block-description {
+  position: relative;
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  max-width: 227px;
+  margin-bottom: 19px;
+  padding-bottom: 23px;
+
+  //program block description next resposive
+
+  @media (min-width: 321px) {
+    max-width: 100%;
+  }
+
+  //tablet program block description
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 335px;
+    padding: 0;
+    margin-bottom: 52px;
+  }
+
+  //program block description next resposive
+
+  @media (min-width: 769px) and (max-width: 1439px) {
+    max-width: 70%;
+  }
+
+  //descktop program block description
+
+  @media (min-width: 1440px) {
+    max-width: 457px;
+    margin-bottom: 27px;
+  }
+}
+
+// program link
+
+.program__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  // tablet program link
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+// program link condition
+
+.program__link:active {
+  opacity: 0.5;
+}
+
+// program block arrow
+
+.program__arrow {
+  margin-left: 15px;
+}
+
+//program block description under line
+
+.program__block-description::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 240px;
+  border: 1px solid #d9d9d9;
+
+  //program block description under line next resposive
+
+  @media (min-width: 321px) {
+    width: 100%;
+  }
+
+  //program blocl description under line
+
+  @media (min-width: 768px) {
+    content: none;
+  }
+}

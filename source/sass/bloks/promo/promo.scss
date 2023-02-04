@@ -12,6 +12,7 @@
   background-size: 100% 305px;
   background-position: center top;
   background-repeat: no-repeat;
+  margin-bottom: 20px;
 
   // promo image bacground resolution 2ddpx
 
@@ -29,6 +30,7 @@
   @media (min-width: 321px) {
     background-size: contain;
     max-height: 305px;
+    margin-bottom: 206px;
   }
 
   //promo tablet product image
@@ -40,6 +42,7 @@
     background-position: 52px 257px;
     padding-top: 52px;
     padding-bottom: 800px;
+    margin-bottom: 0;
 
     // resolution 2ddpx
 
@@ -48,11 +51,17 @@
     }
   }
 
+  //promo next resposive
+
+  @media (min-width: 900px) {
+    display: flex;
+    justify-content: center;
+    background-position: center 257px;
+  }
+
   // promo descktop image bacground
 
   @media (min-width: 1440px) {
-    padding-top: 144px;
-    padding-bottom: 0;
     background-image: linear-gradient(
         to top,
         rgba(104, 183, 56, 0.85),
@@ -60,7 +69,12 @@
       ),
       url("../img/promo/descktop/index-background-desktop@1x.png");
     background-position: calc(100% + 70px) 0;
-    background-size: 680px 696px;
+    background-size: 780px 694px;
+    padding: 0;
+    padding-bottom: 700px;
+    margin-top: -128px;
+    justify-content: flex-start;
+    margin-bottom: 82px;
 
     // promo descktop image bacground resolution 2ddpx
 
@@ -80,6 +94,14 @@
 @media (min-width: 768px) {
   .promo__content {
     margin-left: 118px;
+  }
+}
+
+// promo desctop wrapper top
+
+@media (min-width: 1440px) {
+  .promo__top {
+    padding-top: 230px;
   }
 }
 
@@ -158,6 +180,16 @@
 @media (min-width: 768px) {
   .promo__product {
     display: none;
+
+    //descktop logo wrapper
+
+    @media (min-width: 1440px) {
+      display: block;
+      position: absolute;
+      bottom: 47px;
+      left: 50%;
+      transform: translateX(-27%);
+    }
   }
 }
 

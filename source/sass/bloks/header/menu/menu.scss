@@ -32,6 +32,12 @@
     margin: 0;
     border: none;
   }
+
+  //descktop menu list
+
+  @media (min-width: 1440px) {
+    background-color: transparent;
+  }
 }
 
 //menu list current
@@ -45,6 +51,12 @@
     width: 100%;
     height: 2px;
     background-color: #68b738;
+
+    // descktop list current
+
+    @media (min-width: 1440px) {
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -92,6 +104,17 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  //descktop menu list item
+
+  @media (min-width: 1440px) {
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 }
 
