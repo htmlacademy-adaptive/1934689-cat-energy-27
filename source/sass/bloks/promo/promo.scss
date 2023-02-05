@@ -13,6 +13,8 @@
   background-position: center top;
   background-repeat: no-repeat;
   margin-bottom: 20px;
+  background-color: #ffffff;
+  color: #000000;
 
   // promo image bacground resolution 2ddpx
 
@@ -23,6 +25,26 @@
         rgba(104, 183, 56, 0.85)
       ),
       url("../img/promo/mobile/index-background-mobile@2x.png");
+  }
+  // promo image bacground resolution 3ddpx
+
+  @media (min-resolution: 3dppx) {
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/promo/mobile/index-background-mobile@1x.webp");
+  }
+  // promo image bacground resolution 4ddpx
+
+  @media (min-resolution: 4dppx) {
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/promo/mobile/index-background-mobile@2x.webp");
   }
 
   //promo next resposive
@@ -48,6 +70,17 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo/tablet/index-can-tablet@2x.png");
+    }
+
+    // resolution 3ddpx
+
+    @media (min-resolution: 3dppx) {
+      background-image: url("../img/promo/tablet/index-can-tablet@2x.webp");
+    }
+    // resolution 4ddpx
+
+    @media (min-resolution: 4dppx) {
+      background-image: url("../img/promo/tablet/index-can-tablet@2x.webp");
     }
   }
 
@@ -85,6 +118,28 @@
           rgba(104, 183, 56, 0.85)
         ),
         url("../img/promo/descktop/index-background-desktop@2x.png");
+    }
+
+    // promo descktop image bacground resolution 3ddpx
+
+    @media (min-resolution: 3dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/promo/descktop/index-background-desktop@2x.webp");
+    }
+
+    // promo descktop image bacground resolution 4ddpx
+
+    @media (min-resolution: 4dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/promo/descktop/index-background-desktop@2x.webp");
     }
   }
 }

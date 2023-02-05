@@ -1,8 +1,9 @@
-.logo__wrapper {
+.logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
   margin: 0 20px;
 
   //tablet logo wrapper
@@ -22,18 +23,9 @@
 // logo text
 
 .logo__link-text {
-  margin-left: auto;
-  margin-right: auto;
-
-  //tablet logo
-
   @media (min-width: 768px) {
     display: none;
   }
-}
-
-.logo__text {
-  display: block;
 }
 
 //condition logo

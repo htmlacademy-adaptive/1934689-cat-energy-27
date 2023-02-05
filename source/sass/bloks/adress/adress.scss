@@ -73,7 +73,7 @@
 // tablet adress description city
 
 @media (min-width: 768px) {
-  .adress__description--city {
+  .adress__description-city {
     text-align: end;
   }
 }
@@ -82,24 +82,72 @@
 
 .adress__map {
   position: relative;
-  background-image: url("../img/adress/mobile/map.png");
+  background-image: url("../img/adress/mobile/map@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 362px;
   z-index: -2;
 
+  // adress map resolution 2ddpx
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/adress/mobile/map@2x.png");
+  }
+  // adress map resolution 3ddpx
+
+  @media (min-resolution: 3dppx) {
+    background-image: url("../img/adress/mobile/map@1x.webp");
+  }
+  // adress map resolution 4ddpx
+
+  @media (min-resolution: 4dppx) {
+    background-image: url("../img/adress/mobile/map@2x.webp");
+  }
+
   //tablet map offline
 
   @media (min-width: 768px) {
-    background-image: url("../img/adress/tablet/map-tablet.png");
+    background-image: url("../img/adress/tablet/map-tablet@1x.png");
     height: 400px;
+
+    // tablet adress map resolution 2ddpx
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/adress/tablet/map-tablet@2x.png");
+    }
+    // tablet adress map resolution 3ddpx
+
+    @media (min-resolution: 3dppx) {
+      background-image: url("../img/adress/tablet/map-tablet@1x.webp");
+    }
+    // tablet adress map resolution 4ddpx
+
+    @media (min-resolution: 4dppx) {
+      background-image: url("../img/adress/tablet/map-tablet@2x.webp");
+    }
   }
 
   //descktop map offline
 
   @media (min-width: 1440px) {
     background-image: url("../img/adress/descktop/map-descktop.png");
+
+    // descktop adress map resolution 2ddpx
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/adress/descktop/map-descktop@2x.png");
+    }
+    // descktop adress map resolution 3ddpx
+
+    @media (min-resolution: 3dppx) {
+      background-image: url("../img/adress/descktop/map-descktop@1x.webp");
+    }
+    // descktop adress map resolution 4ddpx
+
+    @media (min-resolution: 4dppx) {
+      background-image: url("../img/adress/descktop/map-descktop@2x.webp");
+    }
   }
 }
 

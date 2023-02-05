@@ -23,5 +23,5 @@ const headerBtn = document.querySelector('.header__button'),
               const headerNoJs = document.querySelector('.header__nav')
               menuNoJs.classList.remove('menu--no-js'),
             headerButton.classList.remove('header__button--no-js')
-            headerNoJs.classList.remove('header--no-js')
+            headerNoJs.classList.remove('header__nav--no-js')
             });

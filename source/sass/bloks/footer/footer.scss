@@ -43,6 +43,7 @@
 //footer social list
 
 .footer__social-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -54,6 +55,36 @@
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+  }
+}
+
+// footer lines
+
+.footer__social-list::before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  width: 281px;
+  border: 1px solid #d9d9d9;
+
+  // tqblet lines
+
+  @media (min-width: 768px) {
+    content: none;
+  }
+}
+
+.footer__social-list::after {
+  position: absolute;
+  content: "";
+  bottom: -30px;
+  width: 281px;
+  border: 1px solid #d9d9d9;
+
+  // tqblet lines
+
+  @media (min-width: 768px) {
+    content: none;
   }
 }
 
