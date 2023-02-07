@@ -1,44 +1,54 @@
+//**global**
+// variables
+
+@import "../sass/bloks/variables/variables.scss";
+
 // fonts
 
-@use "../sass/fonts.scss";
+@import "../sass/fonts.scss";
 
-// main param
+// global
 
-@use "../sass/bloks/project/prodject-base.scss";
+@import "../sass/bloks/global/reboot.scss";
 
+// Utils
+@import "../sass/bloks/utils/utils.scss";
+
+//**style of elements
 // button
 
-@use "../sass/bloks/button/button.scss";
+@import "../sass/bloks/button/button.scss";
 
+//**style blocks
 // header
-@use "../sass/bloks/header/header.scss";
+@import "../sass/bloks/header/header.scss";
 
 // logo
-@use "../sass/bloks/header/logo/logo.scss";
+@import "../sass/bloks/header/logo/logo.scss";
 
 // menu
-@use "../sass/bloks/header/menu/menu.scss";
+@import "../sass/bloks/header/menu/menu.scss";
 
 // promo
-@use "../sass/bloks/promo/promo.scss";
+@import "../sass/bloks/promo/promo.scss";
 
 // program
-@use "../sass/bloks/program/program.scss";
+@import "../sass/bloks/program/program.scss";
 
 // explanation
-@use "../sass/bloks/explanation/explanation.scss";
+@import "../sass/bloks/explanation/explanation.scss";
 
 // example
-@use "../sass/bloks/example/example.scss";
+@import "../sass/bloks/example/example.scss";
 
 // adress section
 
-@use "../sass/bloks/adress/adress.scss";
+@import "../sass/bloks/adress/adress.scss";
 
 // form section page
 
-@use "../sass/bloks/form/form.scss";
+@import "../sass/bloks/form/form.scss";
 
 // footer section
 
-@use "../sass/bloks/footer/footer.scss";
+@import "../sass/bloks/footer/footer.scss";

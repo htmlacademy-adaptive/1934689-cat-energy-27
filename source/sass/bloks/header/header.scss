@@ -1,14 +1,65 @@
+.header__container {
+  // promo descktop image bacground
+
+  @media (min-width: $vp-descktop) {
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/promo/descktop/index-background-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 70px) 0;
+    background-size: 780px 694px;
+    margin-bottom: 82px;
+
+    // promo descktop image bacground resolution 2ddpx
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/promo/descktop/index-background-desktop@2x.png");
+    }
+
+    // promo descktop image bacground resolution 3ddpx
+
+    @media (min-resolution: 3dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/promo/descktop/index-background-desktop@2x.webp");
+    }
+
+    // promo descktop image bacground resolution 4ddpx
+
+    @media (min-resolution: 4dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/promo/descktop/index-background-desktop@2x.webp");
+    }
+  }
+}
+
 .header {
   display: block;
   position: relative;
-  background-color: #ffffff;
+  background-color: $color-default-white;
   padding-top: 10px;
   padding-bottom: 10px;
 
   //tablet header
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-right: 30px;
@@ -16,7 +67,7 @@
 
   //descktop header
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     z-index: 1;
     background-color: transparent;
     padding-top: 53px;
@@ -42,9 +93,15 @@
   opacity: 0;
   transition: height 0.5s, opacity 0.2s;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     height: auto;
     opacity: 1;
+  }
+
+  //descktop header nav
+
+  @media (min-width: $vp-tablet) {
+    max-width: 600px;
   }
 }
 
@@ -66,14 +123,13 @@
 
 .header__button {
   display: block;
-  right: 20px;
   width: 24px;
   height: 24px;
   background: transparent;
   border: none;
   cursor: pointer;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     display: none;
   }
 }

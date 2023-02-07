@@ -13,7 +13,7 @@
 
   //descktop explanation section
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-bottom: 69px;
   }
 }
@@ -26,14 +26,14 @@
 
   //tablet explanation container
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     margin-left: 31px;
     margin-right: 31px;
   }
 
   //desctop explanation container
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-left: 110px;
     margin-right: 110px;
   }
@@ -42,13 +42,13 @@
 //explanation title
 
 .explanation__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-second;
+  font-style: $fs-default;
+  font-weight: $fw-default;
   font-size: 36px;
   line-height: 40px;
   text-align: start;
-  color: #000000;
+  color: $color-default-black;
   margin-bottom: 42px;
 
   //explanation title next resposive
@@ -59,7 +59,7 @@
 
   // tablet explanation title
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
@@ -82,7 +82,7 @@
 
   //tablet explanation list
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     display: grid;
     grid-template-columns: repeat(2, 230px);
     column-gap: 153px;
@@ -91,7 +91,7 @@
 
   //desctop explanation list
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -109,13 +109,13 @@
   margin-bottom: 20px;
 
   // tablet explanation list item
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     min-height: 280px;
   }
 
   //descktop explanation list item
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-bottom: 0;
     flex-direction: column;
     align-items: flex-start;
@@ -124,7 +124,7 @@
 
 //explanation list item number
 
-@media (min-width: 768px) {
+@media (min-width: $vp-tablet) {
   .explanation__list-item-one {
     background-image: url("../img/explanation/explanation-1.png");
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@
 
     //descktop list item number
 
-    @media (min-width: 1440px) {
+    @media (min-width: $vp-descktop) {
       background-position: top right 42px;
     }
   }
@@ -146,7 +146,7 @@
 
     //descktop list item number
 
-    @media (min-width: 1440px) {
+    @media (min-width: $vp-descktop) {
       background-position: top right 15px;
     }
   }
@@ -159,7 +159,7 @@
 
     //descktop list item number
 
-    @media (min-width: 1440px) {
+    @media (min-width: $vp-descktop) {
       background-position: top right 15px;
     }
   }
@@ -172,7 +172,7 @@
 
     //descktop list item number
 
-    @media (min-width: 1440px) {
+    @media (min-width: $vp-descktop) {
       background-position: top right -8px;
     }
   }
@@ -184,7 +184,7 @@
 
   //tablet explanation image
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     margin-right: 0;
     width: 80px;
     height: 80px;
@@ -192,33 +192,33 @@
 
   //descktop explanation image
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-bottom: 31px;
   }
 }
 //explanation list text
 
 .explanation__list-text {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-default;
+  font-style: $fs-default;
+  font-weight: $fw-default;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $color-charcoal;
   max-width: 179px;
 
   //tablet explanation list text
 
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 24px;
+  @media (min-width: $vp-tablet) {
+    font-size: $fsize-default;
+    line-height: $flh-default;
     max-width: 245px;
     margin-top: -75px;
   }
 
   //descktop explanation list text
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-top: 0;
   }
 }

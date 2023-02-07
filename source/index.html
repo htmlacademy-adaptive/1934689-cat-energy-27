@@ -24,86 +24,81 @@
 
 <body class="page__body">
 
-  <h1 class="visually-hidden">питание для котов, кошек</h1>
-
   <!--header -->
 
-  <header class="header">
+  <div class="header__container">
 
-    <!-- header logo block-->
-    <div class="logo">
+    <header class="header">
 
+      <!-- header logo block-->
 
+      <div class="logo">
 
-      <a class="logo__link-img" href="index.html">
+        <a class="logo__link-img" href="index.html" aria-label="переход на главную страницу.">
 
-        <!--image logo adaptive tablet and descktop-->
+          <!--image logo adaptive tablet and descktop-->
 
-        <picture>
+          <picture>
 
-          <source media="(min-width: 1440px)" srcset="./img/logo/logo-descktop/logo-desktop.svg" width="202"
-            height="59">
+            <source media="(min-width: 1440px)" srcset="./img/logo/logo-descktop/logo-desktop.svg" width="202"
+              height="59">
 
-          <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet/logo-tablet.svg" width="174" height="52">
+            <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet/logo-tablet.svg" width="174" height="52">
 
-          <img class="logo__cat" src="./img/logo/logo-mobile/logo-mobile.svg" alt="логотип магазина Cat Enargy."
-            width="33" height="38">
+            <img class="logo__cat" src="./img/logo/logo-mobile/logo-mobile.svg" alt="логотип магазина Cat Enargy."
+              width="33" height="38">
 
-        </picture>
-      </a>
+          </picture>
 
-      <!--image logo mobile -->
+          <!--image logo mobile -->
 
-      <a class="logo__link-text" href="index.html">
+          <img class="logo__text" src="./img/logo/logo-mobile/logo-text.svg" alt="логотип название магазина Cat Enargy."
+            width="101" height="18">
+        </a>
 
-        <img class="logo__text" src="./img/logo/logo-mobile/logo-text.svg" alt="логотип название магазина Cat Enargy."
-          width="101" height="18">
-      </a>
+        <!--header button-->
 
-      <!--header button-->
+        <button class="header__button header__button--no-js" type="button" aria-controls="menu" aria-expanded="false"
+          aria-label="Открыть меню">
 
-      <button class="header__button header__button--no-js" type="button" aria-controls="menu" aria-expanded="false"
-        aria-label="Открыть меню">
+          <!--header button midlle line-->
 
-        <!--header button midlle line-->
+          <span class="header__button-line"></span>
 
-        <span class="header__button-line"></span>
+          <span class="visually-hidden">кнопка меню.</span>
+        </button>
 
-        <span class="visually-hidden">кнопка меню.</span>
-      </button>
+      </div>
+      <!--header navigation block-->
 
-    </div>
-    <!--header navigation block-->
-
-    <nav class="header__nav header__nav--no-js">
+      <nav class="header__nav header__nav--no-js">
 
 
-      <!--header menu navigation list-->
+        <!--header menu navigation list-->
 
-      <ul class="menu menu--no-js" id="menu">
+        <ul class="menu menu--no-js" id="menu">
 
-        <li class="menu__list menu__list--curent">
+          <li class="menu__list menu__list--curent">
 
-          <a class="menu__list-item" href="index.html">главная</a>
-        </li>
+            <a class="menu__list-item" href="index.html">главная</a>
+          </li>
 
-        <li class="menu__list">
+          <li class="menu__list">
 
-          <a class="menu__list-item" href="catalog.html">каталог продукции</a>
-        </li>
+            <a class="menu__list-item" href="catalog.html">каталог продукции</a>
+          </li>
 
-        <li class="menu__list">
+          <li class="menu__list">
 
-          <a class="menu__list-item" href="form.html">подбор программы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!--main page-->
-  <main>
+            <a class="menu__list-item" href="form.html">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <section class="promo">
+
+      <h1 class="visually-hidden">питание для котов, кошек</h1>
 
       <div class="promo__content">
 
@@ -140,6 +135,12 @@
         </div>
       </div>
     </section>
+  </div>
+
+  <!--main page-->
+
+  <main>
+
 
     <!--program section-->
 

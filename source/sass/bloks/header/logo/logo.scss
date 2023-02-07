@@ -8,23 +8,15 @@
 
   //tablet logo wrapper
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     margin: 0;
     margin-left: 30px;
   }
 
   //descktop logo wrapper
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-left: 0;
-  }
-}
-
-// logo text
-
-.logo__link-text {
-  @media (min-width: 768px) {
-    display: none;
   }
 }
 
@@ -44,4 +36,19 @@
 
 .logo__text:active {
   opacity: 0.3;
+}
+
+// mobile second logo text
+
+.logo__link-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(50% + 51px);
+}
+
+@media (min-width: $vp-tablet) {
+  .logo__text {
+    display: none;
+  }
 }

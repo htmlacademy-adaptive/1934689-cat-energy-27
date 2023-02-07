@@ -13,17 +13,17 @@
 
   // tablet adress text
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     padding: 56px 70px 63px;
   }
 
   // descktop adress text
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     position: absolute;
     padding: 56px 60px 63px;
     z-index: 3;
-    background-color: #ffffff;
+    background-color: $color-default-white;
     max-width: 585px;
     top: 95px;
     left: 110px;
@@ -31,10 +31,10 @@
 }
 
 .adress__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: $ff-second;
+  font-style: $fs-default;
+  font-weight: $fw-default;
+  font-size: $fsize-default;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
@@ -43,7 +43,7 @@
 
   // tablet adress title
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     font-size: 20px;
     line-height: 26px;
     max-width: 172px;
@@ -51,19 +51,19 @@
 }
 
 .adress__description {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-default;
+  font-style: $fs-default;
+  font-weight: $fw-default;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $color-charcoal;
   max-height: 60px;
   max-width: 139px;
 
   // tablet adress description
 
-  @media (min-width: 768px) {
-    font-size: 16px;
+  @media (min-width: $vp-tablet) {
+    font-size: $fsize-default;
     max-width: 160px;
     text-align: end;
     margin-bottom: 20px;
@@ -72,7 +72,7 @@
 
 // tablet adress description city
 
-@media (min-width: 768px) {
+@media (min-width: $vp-tablet) {
   .adress__description-city {
     text-align: end;
   }
@@ -107,7 +107,7 @@
 
   //tablet map offline
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     background-image: url("../img/adress/tablet/map-tablet@1x.png");
     height: 400px;
 
@@ -130,7 +130,7 @@
 
   //descktop map offline
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     background-image: url("../img/adress/descktop/map-descktop.png");
 
     // descktop adress map resolution 2ddpx
@@ -160,7 +160,7 @@
 
   //tablet adress pointer
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     width: 113px;
     height: 106px;
     transform: translate(-45%, -51%);
@@ -168,7 +168,7 @@
 
   //descktop adress pointer
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     transform: translate(162%, -69%);
   }
 }

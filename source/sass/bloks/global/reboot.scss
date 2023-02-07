@@ -1,0 +1,35 @@
+// main page param
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: $color-default-black;
+  padding: 0;
+  margin: 0;
+}
+
+.page__body {
+  font-family: $ff-default;
+  font-style: $fs-default;
+  font-weight: $fw-default;
+  font-size: $fsize-default;
+  line-height: $flh-default;
+  color: $color-default-black;
+  margin: 0 auto;
+  background-color: $color-default-white;
+  overflow-x: hidden;
+  max-width: $vp-descktop;
+}

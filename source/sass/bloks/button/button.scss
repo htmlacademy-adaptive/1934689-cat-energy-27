@@ -1,7 +1,7 @@
 .button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-second;
+  font-style: $fs-default;
+  font-weight: $fw-default;
   font-size: 14px;
   line-height: 18px;
   display: flex;
@@ -9,15 +9,15 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $color-default-white;
   width: 280px;
   height: 40px;
-  background-color: #68b738;
+  background-color: $color-apple;
   padding: 7px 44px;
 }
 
 .button:hover {
-  background-color: #5eaa2f;
+  background-color: $color-limeade;
 }
 
 .button:active {

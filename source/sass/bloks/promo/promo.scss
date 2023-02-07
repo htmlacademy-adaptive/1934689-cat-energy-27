@@ -13,8 +13,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   margin-bottom: 20px;
-  background-color: #ffffff;
-  color: #000000;
+  color: $color-default-black;
 
   // promo image bacground resolution 2ddpx
 
@@ -57,7 +56,7 @@
 
   //promo tablet product image
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     background-image: url("../img/promo/tablet/index-can-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: 709px 609px;
@@ -92,96 +91,56 @@
     background-position: center 257px;
   }
 
-  // promo descktop image bacground
+  //descktop promo
 
-  @media (min-width: 1440px) {
-    background-image: linear-gradient(
-        to top,
-        rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)
-      ),
-      url("../img/promo/descktop/index-background-desktop@1x.png");
-    background-position: calc(100% + 70px) 0;
-    background-size: 780px 694px;
-    padding: 0;
-    padding-bottom: 700px;
-    margin-top: -128px;
+  @media (min-width: $vp-descktop) {
     justify-content: flex-start;
-    margin-bottom: 82px;
-
-    // promo descktop image bacground resolution 2ddpx
-
-    @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to top,
-          rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)
-        ),
-        url("../img/promo/descktop/index-background-desktop@2x.png");
-    }
-
-    // promo descktop image bacground resolution 3ddpx
-
-    @media (min-resolution: 3dppx) {
-      background-image: linear-gradient(
-          to top,
-          rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)
-        ),
-        url("../img/promo/descktop/index-background-desktop@2x.webp");
-    }
-
-    // promo descktop image bacground resolution 4ddpx
-
-    @media (min-resolution: 4dppx) {
-      background-image: linear-gradient(
-          to top,
-          rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)
-        ),
-        url("../img/promo/descktop/index-background-desktop@2x.webp");
-    }
+    padding-bottom: 470px;
+    padding-top: 111px;
+    padding-left: 190px;
+    background-size: 552px 499px;
+    background-position: 568px 30px;
   }
 }
 
 //promo tablet content
 
-@media (min-width: 768px) {
+@media (min-width: $vp-tablet) {
   .promo__content {
     margin-left: 118px;
+
+    //descktop promo content
+
+    @media (min-width: $vp-descktop) {
+      margin: 0;
+    }
   }
 }
 
 // promo desctop wrapper top
 
-@media (min-width: 1440px) {
-  .promo__top {
-    padding-top: 230px;
-  }
-}
-
 // promo text content
 
 .promo__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-second;
+  font-style: $fs-default;
+  font-weight: $fw-default;
   font-size: 36px;
   line-height: 36px;
-  color: #ffffff;
+  color: $color-default-white;
   max-width: 249px;
   text-align: center;
   margin: 0 auto 25px;
 
   //promo title tablet
 
-  @media (min-width: 768px) {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
+  @media (min-width: $vp-tablet) {
+    font-family: $ff-second;
+    font-style: $fs-default;
+    font-weight: $fw-default;
     font-size: 60px;
     line-height: 60px;
-    color: #000000;
+    color: $color-default-black;
     max-width: 414px;
     margin: 0;
     text-align: start;
@@ -190,26 +149,26 @@
 }
 
 .promo__description {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-second;
+  font-style: $fs-default;
+  font-weight: $fw-default;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $color-default-white;
   text-align: center;
   margin-bottom: 29px;
 
   //promo description tablet
 
-  @media (min-width: 768px) {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
+  @media (min-width: $vp-tablet) {
+    font-family: $ff-second;
+    font-style: $fs-default;
+    font-weight: $fw-default;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #000000;
+    color: $color-default-black;
     margin: 0;
     text-align: start;
     margin-bottom: 49px;
@@ -225,35 +184,27 @@
 
   //promo button tablet
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     align-items: flex-start;
   }
 }
 
 //promo tablet product
 
-@media (min-width: 768px) {
+@media (min-width: $vp-tablet) {
   .promo__product {
     display: none;
 
     //descktop logo wrapper
-
-    @media (min-width: 1440px) {
-      display: block;
-      position: absolute;
-      bottom: 47px;
-      left: 50%;
-      transform: translateX(-27%);
-    }
   }
 }
 
 // promo button
 
 .promo__button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-second;
+  font-style: $fs-default;
+  font-weight: $fw-default;
   font-size: 14px;
   line-height: 18px;
   display: flex;
@@ -261,15 +212,15 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $color-default-white;
   max-width: 280px;
   height: 40px;
-  background-color: #68b738;
+  background-color: $color-apple;
   padding: 7px 44px;
 
   //promo tablet button
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     padding: 8px 26px;
     max-width: 244px;
     font-size: 20px;

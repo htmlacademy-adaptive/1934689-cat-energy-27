@@ -1,16 +1,16 @@
 //example section
 .example {
   position: relative;
-  background-color: #eaeaea;
+  background-color: $color-whisper;
   padding-top: 25px;
 
   // descktop example section
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     background-color: transparent;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -23,14 +23,14 @@
 
   //tablet
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     margin-left: 31px;
     margin-right: 31px;
   }
 
   //descktop
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-left: 110px;
     margin-right: 110px;
     width: 1440px;
@@ -43,11 +43,11 @@
 
 // example text-wrapper
 
-@media (min-width: 768px) {
+@media (min-width: $vp-tablet) {
   .example__text-wrapper {
     max-width: 100%;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $vp-descktop) {
       max-width: 440px;
     }
   }
@@ -56,17 +56,17 @@
 // example title
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $ff-second;
+  font-style: $fs-default;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  color: #000000;
+  color: $color-default-black;
   margin-bottom: 40px;
 
   // tablet example title
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     text-align: start;
     font-size: 60px;
     line-height: 60px;
@@ -75,7 +75,7 @@
 
   // desctop example title
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-bottom: 146px;
   }
 }
@@ -83,26 +83,26 @@
 // example description
 
 .example__description {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $ff-default;
+  font-style: $fs-default;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $color-charcoal;
   min-width: 275px;
   margin-bottom: 20px;
 
   //tablet description
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     text-align: start;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $fsize-default;
+    line-height: $flh-default;
     margin-bottom: 54px;
   }
 
   //descktop description
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-bottom: 69px;
   }
 }
@@ -115,7 +115,7 @@
 
   // tablet atention wrapper
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -137,14 +137,14 @@
 
   //table example table
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     justify-content: flex-start;
     margin-bottom: 0;
   }
 
   //descktop example table
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin-bottom: 60px;
   }
 }
@@ -154,19 +154,19 @@
 .example__weith-wrapper {
   position: relative;
   text-align: center;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-very-light-grey;
   border-radius: 3px;
   padding: 15px 43px 18px;
 
   //table example weith wrapper
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     margin-right: 42px;
   }
 
   // descktop example weith wrapper
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     padding: 15px 53px 18px;
   }
 }
@@ -174,16 +174,16 @@
 //example weith
 
 .example__weith {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $ff-second;
+  font-style: $fs-default;
   font-size: 24px;
-  line-height: 24px;
+  line-height: $flh-default;
   text-align: center;
-  color: #000000;
+  color: $color-default-black;
 
   //tablet example weith
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -196,18 +196,18 @@
   bottom: -17px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $ff-default;
+  font-style: $fs-default;
   font-size: 12px;
   line-height: 100%;
   text-align: center;
-  color: #444444;
+  color: $color-charcoal;
   min-width: 77px;
-  background-color: #eaeaea;
+  background-color: $color-whisper;
 
   //tablet example weith text
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     font-size: 14px;
     line-height: 14px;
     min-width: 110px;
@@ -220,7 +220,7 @@
 .example__day-wrapper {
   position: relative;
   text-align: center;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-very-light-grey;
   border-radius: 3px;
   padding: 14px 21px 18px;
 }
@@ -228,16 +228,16 @@
 //example day
 
 .example__day {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $ff-second;
+  font-style: $fs-default;
   font-size: 24px;
-  line-height: 24px;
+  line-height: $flh-default;
   text-align: center;
-  color: #000000;
+  color: $color-default-black;
 
   //tablet example day
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     font-size: 30px;
     line-height: 37px;
     min-width: 130px;
@@ -252,16 +252,16 @@
   bottom: -17px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $ff-default;
+  font-style: $fs-default;
   font-size: 12px;
   line-height: 100%;
   text-align: center;
-  color: #444444;
+  color: $color-charcoal;
   min-width: 77px;
-  background-color: #eaeaea;
+  background-color: $color-whisper;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     font-size: 14px;
     line-height: 14px;
     min-width: 130px;
@@ -272,18 +272,18 @@
 // example total
 
 .example__total {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
+  font-family: $ff-second;
+  font-weight: $fw-default;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $color-default-black;
   margin: 0 auto 20px;
 
   // tablet example total
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     margin: 0;
     text-align: end;
     font-size: 20px;
@@ -298,13 +298,13 @@
 
   // tablet example total br
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     display: block;
   }
 
   // descktop example total br
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     display: none;
   }
 }
@@ -313,23 +313,23 @@
 
 .example__total-number {
   display: inline-block;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-second;
+  font-style: $fs-default;
+  font-weight: $fw-default;
 }
 
 //descktop example total number
 
-@media (min-width: 1440px) {
+@media (min-width: $vp-descktop) {
   .example__total--number {
     display: inline-block;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: $ff-second;
+    font-style: $fs-default;
+    font-weight: $fw-default;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #000000;
+    color: $color-default-black;
     margin-left: 63px;
   }
 }
@@ -342,11 +342,11 @@
   width: 280px;
   height: 256px;
   margin: 0 auto;
-  background-color: #eaeaea;
+  background-color: $color-whisper;
 
   //tablet example slide
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     width: 560px;
     height: 512px;
     background-color: transparent;
@@ -354,7 +354,7 @@
 
   // descktop example slide
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     margin: 0;
     background-color: transparent;
   }
@@ -362,7 +362,7 @@
 
 //tablet example bacground color
 
-@media (min-width: 768px) {
+@media (min-width: $vp-tablet) {
   .example::before {
     position: absolute;
     content: "";
@@ -380,7 +380,7 @@
 
     //descktop example bacground color
 
-    @media (min-width: 1440px) {
+    @media (min-width: $vp-descktop) {
       height: 430px;
     }
   }
@@ -400,10 +400,14 @@
 
   //tablet example range toggle
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     background-image: url("../img/example/tablet/curtain.svg");
     height: 515px;
   }
+}
+
+.example__range-toggle:hover {
+  fill: $color-apple;
 }
 
 .example__range {

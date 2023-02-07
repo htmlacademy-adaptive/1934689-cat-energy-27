@@ -3,11 +3,11 @@
   display: none;
   flex-direction: column;
   text-align: center;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $color-whisper-light;
 
   //tablet menu
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -21,13 +21,13 @@
 
 .menu__list {
   position: relative;
-  background-color: #ffffffff;
+  background-color: $color-default-white;
   padding: 24px 50px 24px;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $color-whisper-light;
 
   //tablet menu list
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     padding: 0;
     margin: 0;
     border: none;
@@ -35,14 +35,14 @@
 
   //descktop menu list
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     background-color: transparent;
   }
 }
 
 //menu list current
 
-@media (min-width: 768px) {
+@media (min-width: $vp-tablet) {
   .menu__list--curent::after {
     content: "";
     position: absolute;
@@ -50,12 +50,12 @@
     bottom: -10px;
     width: 100%;
     height: 2px;
-    background-color: #68b738;
+    background-color: $color-apple;
 
     // descktop list current
 
-    @media (min-width: 1440px) {
-      background-color: #ffffff;
+    @media (min-width: $vp-descktop) {
+      background-color: $color-default-white;
     }
   }
 }
@@ -63,58 +63,58 @@
 //condition menu list
 
 .menu__list:hover {
-  background-color: #77ac56;
+  background-color: $color-asparagus;
 
   //tablet menu list condition
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     background-color: transparent;
     opacity: 0.8;
   }
 }
 
 .menu__list:active .menu__list-item {
-  background-color: #77ac56;
-  color: #ffffff;
+  background-color: $color-asparagus;
+  color: $color-default-white;
 
   //tablet menu list condition
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-tablet) {
     background-color: transparent;
-    color: #000000;
+    color: $color-default-black;
     opacity: 0.3;
   }
 }
 
 .menu__list-item {
   display: block;
-  font-family: "Oswald-Medium", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $ff-second;
+  font-style: $fs-default;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $color-default-black;
 
   //tablet menu list item
 
-  @media (min-width: 768px) {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
+  @media (min-width: $vp-tablet) {
+    font-family: $ff-second;
+    font-style: $fs-default;
+    font-weight: $fw-default;
     font-size: 18px;
-    line-height: 24px;
+    line-height: $flh-default;
   }
 
   //descktop menu list item
 
-  @media (min-width: 1440px) {
+  @media (min-width: $vp-descktop) {
     background-color: transparent;
-    font-weight: 400;
+    font-weight: $fw-default;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $color-default-white;
   }
 }
 
