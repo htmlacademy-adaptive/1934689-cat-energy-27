@@ -21,6 +21,10 @@ a {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .page__body {
   font-family: $ff-default;
   font-style: $fs-default;

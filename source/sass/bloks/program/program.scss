@@ -30,8 +30,10 @@
 //program blocks
 
 .program__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   position: relative;
-  padding: 22px 20px 22px;
   background-color: $color-white-smoke;
   margin-bottom: 20px;
 
@@ -54,7 +56,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
+  padding: 24px 33px 22px 20px;
 
   //tablet program block top
 
@@ -69,10 +72,59 @@
   }
 }
 
+.program__block-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
+
+  //tablet program block top
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 24px;
+  }
+
+  //descktop program block top
+
+  @media (min-width: $vp-descktop) {
+    margin-bottom: 39px;
+  }
+}
+
+.program__block--revers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+// program image block
+
+.program__block-img-wrapper {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-right: 19px;
+  margin-bottom: 22px;
+}
+
+.program__img-circle {
+  border-radius: 50% 50%;
+  background-color: #68b738;
+  width: 50px;
+  height: 50px;
+  z-index: 0;
+}
+
 //program image
 
 .program__img-slim {
-  margin-right: 19px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -28px;
 
   //tablet program image
 
@@ -103,7 +155,12 @@
 //program image
 
 .program__img-pro {
-  margin-right: 11px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -13px;
 
   //tablet program image
 
@@ -215,6 +272,10 @@
 }
 
 // program link condition
+
+.program__link:hover .program__arrow {
+  width: 26px;
+}
 
 .program__link:active {
   opacity: 0.5;

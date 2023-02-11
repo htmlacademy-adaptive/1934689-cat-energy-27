@@ -60,6 +60,14 @@
   }
 }
 
+//descktop menu catalog current list
+
+@media (min-width: $vp-descktop) {
+  .menu__catalog .menu__list--curent::after {
+    background-color: $color-apple;
+  }
+}
+
 //condition menu list
 
 .menu__list:hover {
@@ -115,6 +123,14 @@
     line-height: 30px;
     text-transform: uppercase;
     color: $color-default-white;
+  }
+}
+
+// catalog desktop menu list item
+
+@media (min-width: $vp-descktop) {
+  .menu__list-item--black {
+    color: $color-nero-black;
   }
 }
 
