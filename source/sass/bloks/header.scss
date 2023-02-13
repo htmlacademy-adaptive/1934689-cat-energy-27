@@ -1,7 +1,7 @@
 .header__container {
   // promo descktop image bacground
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     background-image: linear-gradient(
         to top,
         rgba(104, 183, 56, 0.85),
@@ -57,7 +57,7 @@
 
   //tablet header
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -67,7 +67,7 @@
 
   //descktop header
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     z-index: 1;
     background-color: transparent;
     padding-top: 53px;
@@ -92,6 +92,63 @@
   justify-content: space-between;
 }
 
+// header logo
+
+.header__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 20px;
+
+  //tablet logo wrapper
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    margin-left: 30px;
+  }
+
+  //descktop logo wrapper
+
+  @media (min-width: $vp-1440) {
+    margin-left: 0;
+  }
+}
+
+//condition logo
+
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+.header__logo:active {
+  opacity: 0.3;
+}
+
+.header__logo-text:hover {
+  opacity: 0.8;
+}
+
+.header__logo-text:active {
+  opacity: 0.3;
+}
+
+// mobile second logo text
+
+.header__logo-link-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(50% + 51px);
+}
+
+@media (min-width: $vp-768) {
+  .header__logo-text {
+    display: none;
+  }
+}
+
 //header nav drop menu list
 
 .header__nav {
@@ -99,14 +156,14 @@
   opacity: 0;
   transition: height 0.5s, opacity 0.2s;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     height: auto;
     opacity: 1;
   }
 
   //descktop header nav
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     max-width: 600px;
   }
 }
@@ -135,7 +192,7 @@
   border: none;
   cursor: pointer;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     display: none;
   }
 }

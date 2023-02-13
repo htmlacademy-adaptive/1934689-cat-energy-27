@@ -1,0 +1,183 @@
+// program section
+
+.program {
+  margin-bottom: 20px;
+}
+
+// section container
+
+.program .container {
+  margin: 0 20px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    margin: 0 30px;
+  }
+}
+
+// program section blocks
+
+.program__block {
+  position: relative;
+  padding: 21px 33px 22px 20px;
+  background-color: $color-white-smoke;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    padding: 77px 53px 57px;
+    margin-bottom: 30px;
+  }
+}
+
+// blocks image background block
+
+.program__block-img-background {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $color-apple;
+  margin-right: 19px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    margin-right: 0;
+    position: absolute;
+    right: 80px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+// block slim image
+
+.program__block-img-slim {
+  position: absolute;
+  bottom: 2px;
+  left: 5px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    height: 107%;
+    width: 118%;
+  }
+}
+
+// block pro image
+
+.program__block-img-pro {
+  position: absolute;
+  bottom: -12px;
+  left: -9px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    height: 100%;
+    width: 133%;
+    left: -34px;
+    top: 41px;
+  }
+}
+
+// program blocks title
+
+.program__block-title {
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $color-default-black;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+// program blocks description
+
+.program__block-description {
+  position: relative;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-charcoal;
+  margin-top: 22px;
+  margin-bottom: 23px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
+    line-height: $flh-default-24;
+    max-width: 333px;
+    margin-right: 145px;
+  }
+}
+
+// program blocks description underlines
+
+.program__block-description::before {
+  position: absolute;
+  content: "";
+  width: 240px;
+  height: 0;
+  border: 1px solid $color-gainsboro;
+  left: 0;
+  bottom: -24px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    content: none;
+  }
+}
+
+// program block button
+
+.program__block-link {
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: $fsize-default-16;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-default-black;
+  margin-top: 19px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+// program block condition
+
+.program__block-link:hover .program__block-link-arrow {
+  width: 26px;
+}
+
+.program__block-link:active .program__block-link-arrow {
+  opacity: 0.5;
+}
+
+.program__block-link:active {
+  opacity: 0.5;
+}

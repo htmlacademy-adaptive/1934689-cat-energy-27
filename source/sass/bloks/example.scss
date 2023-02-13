@@ -6,11 +6,11 @@
 
   // descktop example section
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     background-color: transparent;
   }
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -23,14 +23,14 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin-left: 31px;
     margin-right: 31px;
   }
 
   //descktop
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin-left: 110px;
     margin-right: 110px;
     width: 1440px;
@@ -43,11 +43,11 @@
 
 // example text-wrapper
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .example__text-wrapper {
     max-width: 100%;
 
-    @media (min-width: $vp-descktop) {
+    @media (min-width: $vp-1440) {
       max-width: 440px;
     }
   }
@@ -56,8 +56,8 @@
 // example title
 
 .example__title {
-  font-family: $ff-second;
-  font-style: $fs-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
@@ -66,7 +66,7 @@
 
   // tablet example title
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     text-align: start;
     font-size: 60px;
     line-height: 60px;
@@ -75,7 +75,7 @@
 
   // desctop example title
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin-bottom: 146px;
   }
 }
@@ -83,8 +83,8 @@
 // example description
 
 .example__description {
-  font-family: $ff-default;
-  font-style: $fs-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
   font-size: 14px;
   line-height: 18px;
   color: $color-charcoal;
@@ -93,16 +93,16 @@
 
   //tablet description
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     text-align: start;
-    font-size: $fsize-default;
-    line-height: $flh-default;
+    font-size: $fsize-default-16;
+    line-height: $flh-default-24;
     margin-bottom: 54px;
   }
 
   //descktop description
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin-bottom: 69px;
   }
 }
@@ -115,7 +115,7 @@
 
   // tablet atention wrapper
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -137,14 +137,14 @@
 
   //table example table
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     justify-content: flex-start;
     margin-bottom: 0;
   }
 
   //descktop example table
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin-bottom: 60px;
   }
 }
@@ -160,13 +160,13 @@
 
   //table example weith wrapper
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin-right: 42px;
   }
 
   // descktop example weith wrapper
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     padding: 15px 53px 18px;
   }
 }
@@ -174,16 +174,16 @@
 //example weith
 
 .example__weith {
-  font-family: $ff-second;
-  font-style: $fs-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
   font-size: 24px;
-  line-height: $flh-default;
+  line-height: $flh-default-24;
   text-align: center;
   color: $color-default-black;
 
   //tablet example weith
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -196,8 +196,8 @@
   bottom: -17px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: $ff-default;
-  font-style: $fs-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
   font-size: 12px;
   line-height: 100%;
   text-align: center;
@@ -207,7 +207,7 @@
 
   //tablet example weith text
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 14px;
     line-height: 14px;
     min-width: 110px;
@@ -228,16 +228,16 @@
 //example day
 
 .example__day {
-  font-family: $ff-second;
-  font-style: $fs-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
   font-size: 24px;
-  line-height: $flh-default;
+  line-height: $flh-default-24;
   text-align: center;
   color: $color-default-black;
 
   //tablet example day
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 30px;
     line-height: 37px;
     min-width: 130px;
@@ -252,8 +252,8 @@
   bottom: -17px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: $ff-default;
-  font-style: $fs-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
   font-size: 12px;
   line-height: 100%;
   text-align: center;
@@ -261,7 +261,7 @@
   min-width: 77px;
   background-color: $color-whisper;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 14px;
     line-height: 14px;
     min-width: 130px;
@@ -272,8 +272,8 @@
 // example total
 
 .example__total {
-  font-family: $ff-second;
-  font-weight: $fw-default;
+  font-family: $ff-oswald;
+  font-weight: $fw-400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -283,7 +283,7 @@
 
   // tablet example total
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin: 0;
     text-align: end;
     font-size: 20px;
@@ -298,13 +298,13 @@
 
   // tablet example total br
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     display: block;
   }
 
   // descktop example total br
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     display: none;
   }
 }
@@ -313,19 +313,19 @@
 
 .example__total-number {
   display: inline-block;
-  font-family: $ff-second;
-  font-style: $fs-default;
-  font-weight: $fw-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
 }
 
 //descktop example total number
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .example__total--number {
     display: inline-block;
-    font-family: $ff-second;
-    font-style: $fs-default;
-    font-weight: $fw-default;
+    font-family: $ff-oswald;
+    font-style: $fs-normal;
+    font-weight: $fw-400;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
@@ -346,7 +346,7 @@
 
   //tablet example slide
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     width: 560px;
     height: 512px;
     background-color: transparent;
@@ -354,7 +354,7 @@
 
   // descktop example slide
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin: 0;
     background-color: transparent;
   }
@@ -362,7 +362,7 @@
 
 //tablet example bacground color
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .example::before {
     position: absolute;
     content: "";
@@ -380,7 +380,7 @@
 
     //descktop example bacground color
 
-    @media (min-width: $vp-descktop) {
+    @media (min-width: $vp-1440) {
       height: 430px;
     }
   }
@@ -389,8 +389,7 @@
 
 .example__range-toggle {
   position: absolute;
-  background-image: url("../img/example/mobile/curtain.svg");
-  background-repeat: no-repeat;
+  color: $color-dim-gray;
   width: 40px;
   height: 256px;
   top: 0;
@@ -400,14 +399,14 @@
 
   //tablet example range toggle
 
-  @media (min-width: $vp-tablet) {
-    background-image: url("../img/example/tablet/curtain.svg");
+  @media (min-width: $vp-768) {
     height: 515px;
+    width: 80px;
   }
 }
 
 .example__range-toggle:hover {
-  fill: $color-apple;
+  color: $color-apple;
 }
 
 .example__range {

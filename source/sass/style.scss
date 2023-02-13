@@ -1,7 +1,7 @@
 //**global**
 // variables
 
-@import "../sass/bloks/variables/variables.scss";
+@import "../sass/variables.scss";
 
 // fonts
 
@@ -9,58 +9,55 @@
 
 // global
 
-@import "../sass/bloks/global/reboot.scss";
+@import "../sass/reboot.scss";
 
 // Utils
-@import "../sass/bloks/utils/utils.scss";
+@import "../sass/utils.scss";
 
 //**style of elements
 // button
 
-@import "../sass/bloks/button/button.scss";
+@import "../sass/bloks/button.scss";
 
 //**style blocks
 // header
-@import "../sass/bloks/header/header.scss";
-
-// logo
-@import "../sass/bloks/header/logo/logo.scss";
+@import "../sass/bloks/header.scss";
 
 // menu
-@import "../sass/bloks/header/menu/menu.scss";
+@import "../sass/bloks/menu.scss";
 
 // promo
-@import "../sass/bloks/promo/promo.scss";
+@import "../sass/bloks/promo.scss";
 
 // program
-@import "../sass/bloks/program/program.scss";
+@import "../sass/bloks/program.scss";
 
 // explanation
-@import "../sass/bloks/explanation/explanation.scss";
+@import "../sass/bloks/explanation.scss";
 
 // example
-@import "../sass/bloks/example/example.scss";
+@import "../sass/bloks/example.scss";
 
 // adress section
 
-@import "../sass/bloks/adress/adress.scss";
+@import "../sass/bloks/adress.scss";
 
 // form section page
 
-@import "../sass/bloks/form/form.scss";
+@import "../sass/bloks/form.scss";
 
 // catalog section catalog page
 
-@import "../sass/bloks/catalog/catalog.scss";
+@import "../sass/bloks/catalog.scss";
 
 // additional cotalog section
 
-@import "../sass/bloks/additional/additional.scss";
+@import "../sass/bloks/additional.scss";
 
 // gift cotalog section
 
-@import "../sass/bloks/gift/gift.scss";
+@import "../sass/bloks/gift.scss";
 
 // footer section
 
-@import "../sass/bloks/footer/footer.scss";
+@import "../sass/bloks/footer.scss";

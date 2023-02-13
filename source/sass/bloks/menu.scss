@@ -7,7 +7,7 @@
 
   //tablet menu
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -27,7 +27,7 @@
 
   //tablet menu list
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     padding: 0;
     margin: 0;
     border: none;
@@ -35,14 +35,14 @@
 
   //descktop menu list
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     background-color: transparent;
   }
 }
 
 //menu list current
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .menu__list--curent::after {
     content: "";
     position: absolute;
@@ -54,7 +54,7 @@
 
     // descktop list current
 
-    @media (min-width: $vp-descktop) {
+    @media (min-width: $vp-1440) {
       background-color: $color-default-white;
     }
   }
@@ -62,7 +62,7 @@
 
 //descktop menu catalog current list
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .menu__catalog .menu__list--curent::after {
     background-color: $color-apple;
   }
@@ -75,7 +75,7 @@
 
   //tablet menu list condition
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     background-color: transparent;
     opacity: 0.8;
   }
@@ -87,7 +87,7 @@
 
   //tablet menu list condition
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     background-color: transparent;
     color: $color-default-black;
     opacity: 0.3;
@@ -96,8 +96,8 @@
 
 .menu__list-item {
   display: block;
-  font-family: $ff-second;
-  font-style: $fs-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -106,19 +106,19 @@
 
   //tablet menu list item
 
-  @media (min-width: $vp-tablet) {
-    font-family: $ff-second;
-    font-style: $fs-default;
-    font-weight: $fw-default;
+  @media (min-width: $vp-768) {
+    font-family: $ff-oswald;
+    font-style: $fs-normal;
+    font-weight: $fw-400;
     font-size: 18px;
-    line-height: $flh-default;
+    line-height: $flh-default-24;
   }
 
   //descktop menu list item
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     background-color: transparent;
-    font-weight: $fw-default;
+    font-weight: $fw-400;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
@@ -128,7 +128,7 @@
 
 // catalog desktop menu list item
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .menu__list-item--black {
     color: $color-nero-black;
   }

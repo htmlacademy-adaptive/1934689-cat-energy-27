@@ -14,11 +14,7 @@
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="preload" href="/fonts/lato/Lato-Regular.woff" as="font">
-  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font">
   <link rel="preload" href="/fonts/oswald/oswald-regular/Oswald-Regular.woff" as="font">
-  <link rel="preload" href="/fonts/oswald/oswald-regular/Oswald-Regular.woff2" as="font">
-  <link rel="preload" href="/fonts/oswald/oswald-medium/Oswald-Medium.woff" as="font">
-  <link rel="preload" href="/fonts/oswald/oswald-medium/Oswald-Medium.woff2" as="font">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -32,9 +28,9 @@
 
       <!-- header logo block-->
 
-      <div class="logo">
+      <div class="header__logo">
 
-        <a class="logo__link-img" href="index.html" aria-label="переход на главную страницу.">
+        <a class="header__logo-link-img" href="index.html" aria-label="переход на главную страницу.">
 
           <!--image logo adaptive tablet and descktop-->
 
@@ -45,15 +41,15 @@
 
             <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet/logo-tablet.svg" width="174" height="52">
 
-            <img class="logo__cat" src="./img/logo/logo-mobile/logo-mobile.svg" alt="логотип магазина Cat Enargy."
-              width="33" height="38">
+            <img class="header__logo-cat" src="./img/logo/logo-mobile/logo-mobile.svg"
+              alt="логотип магазина Cat Enargy." width="33" height="38">
 
           </picture>
 
           <!--image logo mobile -->
 
-          <img class="logo__text" src="./img/logo/logo-mobile/logo-text.svg" alt="логотип название магазина Cat Enargy."
-            width="101" height="18">
+          <img class="header__logo-text" src="./img/logo/logo-mobile/logo-text.svg"
+            alt="логотип название магазина Cat Enargy." width="101" height="18">
         </a>
 
         <!--header button-->
@@ -69,6 +65,7 @@
         </button>
 
       </div>
+
       <!--header navigation block-->
 
       <nav class="header__nav header__nav--no-js">
@@ -150,75 +147,95 @@
 
       <div class="container">
 
-        <div class="program__wrapper-block">
+        <!--wrapper program blocks-->
+
+        <div class="program__wrapper-blocks">
+
+          <!--first program block-->
 
           <div class="program__block">
 
-            <div class="program__block-top">
+            <!--circle bacground block image-->
 
-              <div class="program__block--revers">
+            <div class="program__block-img-background">
 
-                <div class="program__block-img-wrapper">
+              <!--image cat-->
 
-                  <span class="program__img-circle"></span>
-
-                  <svg class="program__img-slim" width="50" height="53" viewBox="0 0 50 53" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <use href="./img/sprite.svg#cat_back"></use>
-                  </svg>
-                </div>
-
-                <h3 class="program__block-title">похудение</h3>
-
-                <p class="program__block-description">Ваш кот весит больше собаки и почти утратил способность лазить по
-                  деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              </div>
-
-              <a href="#" class="program__link">каталог slim
-
-                <svg class="program__arrow" width="18" height="12" viewBox="0 0 24 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use href="./img/sprite.svg#black_arrow"></use>
-                </svg>
-
-              </a>
+              <svg class="program__block-img-slim" width="50" height="53" viewBox="0 0 50 53"
+                xmlns="http://www.w3.org/2000/svg" title="худой кот на зеленом фоне.">
+                <use href="./img/sprite.svg#cat_back"></use>
+              </svg>
             </div>
 
-            <div class="program__block-bottom">
+            <!--block title-->
 
-              <div class="program__block-top">
+            <h3 class="program__block-title">похудение</h3>
 
-                <div class="program__block--revers">
+            <!--block description-->
 
+            <p class="program__block-description">Ваш кот весит больше собаки и почти утратил способность лазить
+              по
+              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
 
-                  <div class="program__block-img-wrapper">
+            <!--block button-->
 
-                    <span class="program__img-circle"></span>
+            <a href="#" class="program__block-link">
 
-                    <svg class="program__img-pro" width="67" height="50" viewBox="0 0 67 50" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <use href="./img/sprite.svg#cat_back _two"></use>
-                    </svg>
-                  </div>
+              каталог slim
 
-                  <h3 class="program__block-title">Набор массы</h3>
+              <!--block button arrow-->
 
-
-                  <p class="program__block-description">Заработать авторитет среди дворовых котов и даже собак? Серия
-                    Cat
-                    Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                </div>
-                <a href="#" class="program__link">каталог pro
-
-                  <svg class="program__arrow" width="18" height="12" viewBox="0 0 24 12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <use href="./img/sprite.svg#black_arrow"></use>
-                  </svg>
-
-                </a>
-              </div>
-            </div>
+              <svg class="program__block-link-arrow" width="18" height="12" viewBox="0 0 24 12"
+                xmlns="http://www.w3.org/2000/svg" title="кнопка стрелка, переход на выбранную программу.">
+                <use href="./img/sprite.svg#black_arrow"></use>
+              </svg>
+            </a>
           </div>
+
+          <!--second program block-->
+
+          <div class="program__block">
+
+            <!--circle bacground block image-->
+
+            <div class="program__block-img-background">
+
+              <!--image cat-->
+
+              <svg class="program__block-img-pro" width="67" height="50" viewBox="0 0 67 50"
+                xmlns="http://www.w3.org/2000/svg" title="толстый кот на зеленом фоне.">
+                <use href="./img/sprite.svg#cat_back _two"></use>
+              </svg>
+            </div>
+
+            <!--block title-->
+
+            <h3 class="program__block-title">Набор массы</h3>
+
+            <!--block description-->
+
+            <p class="program__block-description">Заработать авторитет среди дворовых котов и даже собак? Серия
+              Cat
+              Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+
+            <!--block button-->
+
+            <a href="#" class="program__block-link">
+
+              каталог pro
+
+              <!--block button arrow-->
+
+              <svg class="program__block-link-arrow" width="18" height="12" viewBox="0 0 24 12"
+                xmlns="http://www.w3.org/2000/svg" title="кнопка стрелка, переход на выбранную программу.">
+                <use href="./img/sprite.svg#black_arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--explanation section-->
@@ -235,8 +252,7 @@
 
           <li class="explanation__list-item explanation__list-item-one">
 
-            <svg class="explanation__img" width="61" height="60" viewBox="0 0 61 60" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="explanation__img" width="61" height="60" viewBox="0 0 61 60" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/sprite.svg#group-1"></use>
             </svg>
 
@@ -249,8 +265,7 @@
 
           <li class="explanation__list-item explanation__list-item-two">
 
-            <svg class="explanation__img" width="61" height="60" viewBox="0 0 61 60" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="explanation__img" width="61" height="60" viewBox="0 0 61 60" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/sprite.svg#group-2"></use>
             </svg>
 
@@ -263,8 +278,7 @@
 
           <li class="explanation__list-item explanation__list-item-three">
 
-            <svg class="explanation__img" width="61" height="60" viewBox="0 0 61 60" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="explanation__img" width="61" height="60" viewBox="0 0 61 60" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/sprite.svg#group-3"></use>
             </svg>
 
@@ -277,8 +291,7 @@
 
           <li class="explanation__list-item explanation__list-item-four">
 
-            <svg class="explanation__img" width="61" height="60" viewBox="0 0 61 60" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="explanation__img" width="61" height="60" viewBox="0 0 61 60" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/sprite.svg#group-4"></use>
             </svg>
 
@@ -347,7 +360,10 @@
 
             <input class="example__range" type="range" min="1" max="100" value="50">
 
-            <div class="example__range-toggle"></div>
+            <svg class="example__range-toggle" width="40" height="256" viewBox="0 0 40 256"
+              xmlns="http://www.w3.org/2000/svg" fill="none">
+              <use href="./img/sprite.svg#curtain-mobile"></use>
+            </svg>
 
           </div>
 
@@ -445,9 +461,10 @@
 
     <!--footer logo-->
 
-    <a class="footer__logo" href="index.html" aria-label="переход на заглавную страницу.">
-      <svg class="footer__logo-link" width="143" height="27" viewBox="0 0 143 27" fill=""
-        xmlns="http://www.w3.org/2000/svg">
+    <a class="footer__logo" href="#" aria-label="переход на заглавную страницу.">
+
+      <svg class="footer__logo-link" width="143" height="27" viewBox="0 0 143 27" xmlns="http://www.w3.org/2000/svg">
+
         <use href="./img/sprite.svg#footer-logo"></use>
       </svg>
 
@@ -462,10 +479,9 @@
         <a class="footer__social-link" href="https://vk.com/htmlacademy"
           aria-label="больше информации о магазине всоциальной сети вконтакте." target="_blank">
 
-          <svg class="footer__img" width="28" height="17" viewBox="0 0 28 17" fill=""
-            xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer__img" width="28" height="17" viewBox="0 0 28 17" xmlns="http://www.w3.org/2000/svg">
 
-            <use href="./img/sprite.svg#vc"></use>
+            <use href="./img/sprite.svg#vk"></use>
           </svg>
         </a>
       </li>
@@ -475,8 +491,7 @@
         <a class="footer__social-link" href="https://youtube.com/user/htmlacademyru"
           aria-label="больше информации о магазине всоциальной сети в ютуб." target="_blank">
 
-          <svg class="footer__img" width="25" height="19" viewBox="0 0 25 19" fill=""
-            xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer__img" width="25" height="19" viewBox="0 0 25 19" xmlns="http://www.w3.org/2000/svg">
 
             <use href="./img/sprite.svg#youtube"></use>
           </svg>
@@ -487,26 +502,28 @@
 
         <a class="footer__social-link" href="https://t.me/htmlacademy"
           aria-label="больше информации о магазине всоциальной сети в телеграм." target="_blank">
-          <svg class="footer__img" width="21" height="18" viewBox="0 0 21 18" fill=""
-            xmlns="http://www.w3.org/2000/svg">
+
+          <svg class="footer__img" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
+
             <use href="./img/sprite.svg#telegram"></use>
           </svg>
         </a>
       </li>
     </ul>
 
-    <!--footer copyright-->
-    <div class="footer__copyright">
-      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <p class="footer__link-text">HTML Academy</p>
+    <!--footer link academy-->
 
-        <svg class="footer__copyright-img" width="27" height="34" viewBox="0 0 27 34" fill=""
-          xmlns="http://www.w3.org/2000/svg">
-          <use href="./img/sprite.svg#html-academy"></use>
-        </svg>
 
-      </a>
-    </div>
+    <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+
+      <p class="footer__link-text">HTML Academy</p>
+
+      <svg class="footer__link-img" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+
+        <use href="./img/sprite.svg#html-academy"></use>
+      </svg>
+
+    </a>
   </footer>
 
 

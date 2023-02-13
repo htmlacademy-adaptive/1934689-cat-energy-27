@@ -1,4 +1,4 @@
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .additional__wrapper {
     display: flex;
   }
@@ -10,7 +10,7 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin-bottom: 69px;
   }
 }
@@ -21,13 +21,13 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin: 0 30px;
   }
 
   //descktop
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin: 0;
   }
 }
@@ -46,7 +46,7 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     content: none;
   }
 }
@@ -65,14 +65,14 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     width: 770px;
     left: -32px;
   }
 
   //descktop
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     width: 1440px;
   }
 }
@@ -82,9 +82,9 @@
 .additional__title {
   position: relative;
   margin-bottom: 36px;
-  font-family: $ff-second;
-  font-style: $fs-default;
-  font-weight: $fw-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
   font-size: 24px;
   line-height: 24px;
   text-align: start;
@@ -95,7 +95,7 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 36px;
     line-height: 100%;
     max-width: 410px;
@@ -107,7 +107,7 @@
 
 //tablet additional list
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .additional__list {
     border: 1px solid $color-very-light-grey;
   }
@@ -115,7 +115,7 @@
 
 //descktop additional list
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .additional__list {
     border: none;
     min-width: 895px;
@@ -132,7 +132,7 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     padding: 26px 38px 28px;
     margin-bottom: 0;
     display: flex;
@@ -142,7 +142,7 @@
 
   //descktop
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     align-items: center;
     padding: 26px 0 28px;
   }
@@ -162,7 +162,7 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     width: 100%;
     left: 0;
   }
@@ -170,7 +170,7 @@
 
 //tablet
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .additional__item:nth-child(1)::before {
     content: none;
   }
@@ -178,13 +178,13 @@
 
 //descktop
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .additional__item:nth-child(1)::before {
     content: "";
   }
 }
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .additional__item:last-child::after {
     content: "";
     position: absolute;
@@ -201,24 +201,24 @@
 
 .additional__item-title {
   margin-bottom: 13px;
-  font-family: $ff-second;
-  font-style: $fs-default;
-  font-weight: $fw-default;
-  font-size: $fsize-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: $fsize-default-16;
   line-height: 16px;
   text-transform: uppercase;
   color: $color-nero;
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 20px;
   }
 
   //descktop
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin: 0;
     min-width: 161px;
     margin-right: 164px;
@@ -236,7 +236,7 @@
 
   //descktop additional goods wrapper
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin: 0;
     min-width: 285px;
     margin-right: 40px;
@@ -246,57 +246,57 @@
 // additional goods
 
 .additional__item-coast {
-  font-family: $ff-default;
-  font-style: $fs-default;
-  font-weight: $fw-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
   font-size: 14px;
   line-height: 14px;
   color: $color-charcoal;
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin-right: 49px;
-    font-size: $fsize-default;
+    font-size: $fsize-default-16;
     line-height: 20px;
   }
 
   //desctop
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin: 0;
     text-align: start;
   }
 }
 
 .additional__item-coast-unit {
-  font-family: $ff-default;
-  font-style: $fs-default;
-  font-weight: $fw-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
   font-size: 14px;
   line-height: 14px;
   color: $color-charcoal;
 
   //tablet button
 
-  @media (min-width: $vp-tablet) {
-    font-size: $fsize-default;
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
     line-height: 20px;
   }
 }
 
 //tablet button
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .additional__item-button {
     min-width: 100%;
-    font-size: $fsize-default;
+    font-size: $fsize-default-16;
   }
 }
 
 //descktop button
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .additional__item-button {
     width: 244px;
     min-width: unset;

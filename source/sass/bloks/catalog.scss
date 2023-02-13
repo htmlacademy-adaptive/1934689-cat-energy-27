@@ -5,7 +5,7 @@
 
   // tablet catalog
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin-bottom: 68px;
   }
 }
@@ -20,14 +20,14 @@
 
   // tablet catalog
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin: 0 30px;
     justify-content: flex-start;
   }
 
   // descktop catalog
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin: 0 110px;
   }
 }
@@ -46,7 +46,7 @@
 
   // tablet catalog list line off
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     content: none;
   }
 }
@@ -54,9 +54,9 @@
 // catalog title
 
 .catalog__title {
-  font-family: $ff-second;
-  font-style: $fs-default;
-  font-weight: $fw-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
   font-size: 36px;
   line-height: 36px;
   color: $color-default-black;
@@ -64,7 +64,7 @@
 
   // tablet catalog title
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 163px;
@@ -72,14 +72,14 @@
 
   // descktop catalog title
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin-bottom: 165px;
   }
 }
 
 // tablet catalog list
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -90,7 +90,7 @@
 
 // descktop catalog list
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(4, 245px);
@@ -109,7 +109,7 @@
 
   // tablet catalog item
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -121,7 +121,7 @@
 
   // descktop catalog item
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     min-width: 245px;
     margin-bottom: 0;
   }
@@ -133,7 +133,7 @@
 
 // descktop catalog item
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .catalog__item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -141,7 +141,7 @@
 
 //tablet
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .catalog__item:not(:last-child):not(:nth-child(7)) {
     margin-bottom: 141px;
   }
@@ -149,7 +149,7 @@
 
 //desctop
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .catalog__item:not(:last-child):not(:nth-child(7)) {
     margin-bottom: 0;
   }
@@ -169,7 +169,7 @@
 
   // tablet catalog item line off
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     content: none;
   }
 }
@@ -186,7 +186,7 @@
 
   // tablet last list item catalog list in catalog page
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin-bottom: 23px;
     line-height: 22px;
   }
@@ -198,14 +198,14 @@
 
   // tablet catalog image link
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin: 0;
   }
 }
 
 // tablet catalog card image
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .catalog__card-image {
     position: absolute;
     top: -47px;
@@ -215,7 +215,7 @@
   }
 }
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .catalog__item:nth-child(even) .catalog__card-image {
     width: 168px;
     height: 206px;
@@ -227,7 +227,7 @@
   margin-right: 28px;
   margin-left: 28px;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin: 0;
   }
 }
@@ -239,7 +239,7 @@
 
   //descktop catalog card
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     margin-bottom: 33px;
   }
 }
@@ -250,7 +250,7 @@
 
   //tablet catalog card
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin-bottom: 87px;
   }
 }
@@ -262,7 +262,7 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     padding-bottom: 39px;
     padding-top: 50px;
     background-color: $color-white-smoke;
@@ -278,7 +278,7 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     width: 60px;
     height: 60px;
     margin-bottom: 49px;
@@ -297,7 +297,7 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     width: 62px;
   }
 }
@@ -313,7 +313,7 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     width: 62px;
   }
 }
@@ -330,7 +330,7 @@
 
 //tablet ccard
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .catalog__card {
     display: flex;
     flex-direction: column;
@@ -345,7 +345,7 @@
 
   // tablet catalog card title br on
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     display: block;
   }
 }
@@ -354,10 +354,10 @@
 
 .catalog__card-title {
   display: inline-block;
-  font-family: $ff-second;
-  font-style: $fs-default;
-  font-weight: $fw-default;
-  font-size: $fsize-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: $fsize-default-16;
   line-height: 20px;
   color: $color-default-black;
   text-transform: uppercase;
@@ -366,17 +366,17 @@
 
   //tablet card title
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     max-width: 174px;
     font-size: 20px;
-    line-height: $flh-default;
+    line-height: $flh-default-24;
     margin-bottom: 21px;
     text-align: center;
   }
 
   //descktop card title
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     font-size: 20px;
     line-height: 21px;
   }
@@ -402,7 +402,7 @@
 
   //tablet card description
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     min-width: 250px;
     column-gap: 147px;
     align-items: normal;
@@ -410,7 +410,7 @@
 
   //descktop card description
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     min-width: 180px;
     column-gap: 80px;
   }
@@ -420,9 +420,9 @@
 
 .catalog__card-description p {
   position: relative;
-  font-family: $ff-default;
-  font-style: $fs-default;
-  font-weight: $fw-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
   font-size: 12px;
   line-height: 16px;
   text-align: start;
@@ -430,8 +430,8 @@
 
   //tablet taste
 
-  @media (min-width: $vp-tablet) {
-    font-size: $fsize-default;
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
     padding-bottom: 8px;
     margin-bottom: 8px;
   }
@@ -439,7 +439,7 @@
 
 //tablet card taste lines
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .catalog__card-description p::before {
     position: absolute;
     content: "";
@@ -453,7 +453,7 @@
 
 //descktop card taste lines
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .catalog__card-description p::before {
     width: 180px;
   }
@@ -462,9 +462,9 @@
 // card coast
 
 .catalog__card-description i {
-  font-family: $ff-default;
-  font-style: $fs-default;
-  font-weight: $fw-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
   font-size: 12px;
   line-height: 16px;
   text-align: end;
@@ -472,31 +472,31 @@
 
   //tablet coast
 
-  @media (min-width: $vp-tablet) {
-    font-size: $fsize-default;
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
   }
 }
 
 .catalog__item:last-child .catalog__card-title-description {
   text-align: center;
-  font-family: $ff-default;
-  font-style: $fs-default;
-  font-weight: $fw-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
   font-size: 12px;
   line-height: 16px;
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     max-width: 165px;
-    font-size: $fsize-default;
+    font-size: $fsize-default-16;
     line-height: 18px;
   }
 }
 
 //tablet  catalog card button
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .catalog__card-button {
     max-width: 248px;
     font-size: 18px;
@@ -507,7 +507,7 @@
 
 //descktop catalog card button
 
-@media (min-width: $vp-descktop) {
+@media (min-width: $vp-1440) {
   .catalog__card-button {
     max-width: 168px;
     padding: 10px 53px;
@@ -522,9 +522,9 @@
 
   //tablet
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     padding: 20px 75px;
-    font-size: $fsize-default;
+    font-size: $fsize-default-16;
   }
 }
 

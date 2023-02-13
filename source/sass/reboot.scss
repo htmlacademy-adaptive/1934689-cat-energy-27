@@ -26,14 +26,14 @@ ul {
 }
 
 .page__body {
-  font-family: $ff-default;
-  font-style: $fs-default;
-  font-weight: $fw-default;
-  font-size: $fsize-default;
-  line-height: $flh-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: $fsize-default-16;
+  line-height: $flh-default-24;
   color: $color-default-black;
   margin: 0 auto;
   background-color: $color-default-white;
   overflow-x: hidden;
-  max-width: $vp-descktop;
+  max-width: $vp-1440;
 }

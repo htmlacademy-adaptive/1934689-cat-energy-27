@@ -13,13 +13,13 @@
 
   // tablet adress text
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     padding: 56px 70px 63px;
   }
 
   // descktop adress text
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     position: absolute;
     padding: 56px 60px 63px;
     z-index: 3;
@@ -37,10 +37,10 @@
 }
 
 .adress__title {
-  font-family: $ff-second;
-  font-style: $fs-default;
-  font-weight: $fw-default;
-  font-size: $fsize-default;
+  font-family: $ff-oswald;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: $fsize-default-16;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
@@ -49,7 +49,7 @@
 
   // tablet adress title
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 26px;
     max-width: 172px;
@@ -57,9 +57,9 @@
 }
 
 .adress__description {
-  font-family: $ff-default;
-  font-style: $fs-default;
-  font-weight: $fw-default;
+  font-family: $ff-lato;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
   font-size: 14px;
   line-height: 20px;
   color: $color-charcoal;
@@ -68,8 +68,8 @@
 
   // tablet adress description
 
-  @media (min-width: $vp-tablet) {
-    font-size: $fsize-default;
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
     max-width: 160px;
     text-align: end;
     margin-bottom: 20px;
@@ -78,7 +78,7 @@
 
 // tablet adress description city
 
-@media (min-width: $vp-tablet) {
+@media (min-width: $vp-768) {
   .adress__description-city {
     text-align: end;
   }
@@ -113,7 +113,7 @@
 
   //tablet map offline
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     background-image: url("../img/adress/tablet/map-tablet@1x.png");
     height: 400px;
 
@@ -136,7 +136,7 @@
 
   //descktop map offline
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     background-image: url("../img/adress/descktop/map-descktop.png");
 
     // descktop adress map resolution 2ddpx
@@ -166,7 +166,7 @@
 
   //tablet adress pointer
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     width: 113px;
     height: 106px;
     transform: translate(-45%, -51%);
@@ -174,7 +174,7 @@
 
   //descktop adress pointer
 
-  @media (min-width: $vp-descktop) {
+  @media (min-width: $vp-1440) {
     transform: translate(162%, -69%);
   }
 }

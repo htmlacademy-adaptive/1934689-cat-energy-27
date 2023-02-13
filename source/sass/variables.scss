@@ -1,26 +1,29 @@
 // fonts
 
-$ff-second: "Oswald", "Arial", sans-serif;
+$ff-oswald: "Oswald", "Arial", sans-serif;
 
 // viev ports
 
-$vp-mobile: 320px;
-$vp-tablet: 768px;
-$vp-descktop: 1440px;
+$vp-320: 320px;
+$vp-768: 768px;
+$vp-1440: 1440px;
 
 //default
 //fonts famaly
-$ff-default: "Lato", "Arial", sans-serif;
-$fs-default: normal;
-$fw-default: 400;
-$fsize-default: 16px;
-$flh-default: 24px;
+
+$ff-lato: "Lato", "Arial", sans-serif;
+$fs-normal: normal;
+$fw-400: 400;
+$fsize-default-16: 16px;
+$flh-default-24: 24px;
 
 //colors
+
 $color-default-black: #000000;
 $color-default-white: #ffffff;
 
-// project colors
+// project colorsnod
+
 $color-light-grey: #d3d3d3;
 $color-gainsboro: #d9d9d9;
 $color-asparagus: #77ac56;
