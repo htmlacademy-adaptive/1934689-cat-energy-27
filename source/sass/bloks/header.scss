@@ -10,7 +10,7 @@
       url("../img/promo/descktop/index-background-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: calc(100% + 70px) 0;
-    background-size: 780px 694px;
+    background-size: 54% 100%;
     margin-bottom: 82px;
 
     // promo descktop image bacground resolution 2ddpx
@@ -80,6 +80,18 @@
 
 .header__catalog {
   padding-bottom: 27px;
+
+  //descktop header
+
+  @media (min-width: $vp-1440) {
+    max-width: 1440px;
+  }
+
+  //descktop header
+
+  @media (min-width: $vp-1441) {
+    margin: 0 auto;
+  }
 }
 
 //header wrapper

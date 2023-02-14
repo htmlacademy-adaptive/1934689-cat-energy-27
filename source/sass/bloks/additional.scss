@@ -1,6 +1,8 @@
 @media (min-width: $vp-1440) {
   .additional__wrapper {
     display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -12,6 +14,12 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 69px;
+  }
+
+  //descktop
+
+  @media (min-width: $vp-1441) {
+    margin: 0 auto;
   }
 }
 
@@ -74,6 +82,13 @@
 
   @media (min-width: $vp-1440) {
     width: 1440px;
+  }
+
+  //descktop
+
+  @media (min-width: $vp-1441) {
+    min-width: 3000px;
+    left: -100%;
   }
 }
 

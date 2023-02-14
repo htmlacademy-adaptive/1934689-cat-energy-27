@@ -8,6 +8,13 @@
   @media (min-width: $vp-768) {
     margin-bottom: 68px;
   }
+
+  // descktop catalog
+
+  @media (min-width: $vp-1440) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .catalog .container {
@@ -29,6 +36,7 @@
 
   @media (min-width: $vp-1440) {
     margin: 0 110px;
+    max-width: 1440px;
   }
 }
 

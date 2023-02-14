@@ -14,6 +14,22 @@
   @media (min-width: $vp-768) {
     margin: 0 30px;
   }
+
+  // descktop
+
+  @media (min-width: $vp-1440) {
+    margin: 0 110px;
+  }
+}
+
+// descktop wrapper program blocks
+
+@media (min-width: $vp-1440) {
+  .program__wrapper-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 // program section blocks
@@ -32,6 +48,21 @@
   @media (min-width: $vp-768) {
     padding: 77px 53px 57px;
     margin-bottom: 30px;
+  }
+
+  // tablet next resolution
+
+  @media (min-width: $vp-770) {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1300px;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1440) {
+    width: 46.72%;
+    margin-bottom: 0;
   }
 }
 
@@ -53,6 +84,16 @@
     right: 80px;
     width: 200px;
     height: 200px;
+  }
+
+  // desctop
+
+  @media (min-width: $vp-1440) {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    margin-right: 62px;
   }
 }
 
@@ -128,6 +169,21 @@
     max-width: 333px;
     margin-right: 145px;
   }
+
+  // tablet next resolution
+
+  @media (min-width: $vp-770) {
+    max-width: 50%;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1440) {
+    margin-top: 39px;
+    margin-bottom: 27px;
+    min-width: 457px;
+    margin-right: 0;
+  }
 }
 
 // program blocks description underlines
@@ -135,7 +191,7 @@
 .program__block-description::before {
   position: absolute;
   content: "";
-  width: 240px;
+  width: 100%;
   height: 0;
   border: 1px solid $color-gainsboro;
   left: 0;
@@ -165,6 +221,12 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1440) {
+    margin-top: 0;
   }
 }
 

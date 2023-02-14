@@ -3,6 +3,7 @@
   flex-direction: column;
   border-color: $color-default-white;
   padding: 40px 20px;
+  align-items: center;
 
   //tablet footer
 
@@ -116,11 +117,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  max-width: 320px;
 }
 
 .footer__link-text {
   display: inline-block;
+  margin-right: 140px;
 
   // tablet
 
