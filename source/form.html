@@ -74,12 +74,12 @@
           <a class="menu__list-item menu__list-item--black" href="index.html">главная</a>
         </li>
 
-        <li class="menu__list menu__list--curent">
+        <li class="menu__list">
 
           <a class="menu__list-item menu__list-item--black" href="catalog.html">каталог продукции</a>
         </li>
 
-        <li class="menu__list">
+        <li class="menu__list menu__list--curent">
 
           <a class="menu__list-item menu__list-item--black" href="form.html">подбор программы</a>
         </li>
@@ -99,19 +99,20 @@
         подбор программы похудения или набора массы, для оптимального питания коту или кошки.
       </h1>
 
-      <!--form title-->
+      <div class="container">
+        <!--form title-->
 
-      <h2 class="form__hero-title">
-        Подбор программы
-      </h2>
+        <h2 class="form__hero-title">
+          Подбор программы
+        </h2>
 
-      <!--form title description-->
+        <!--form title description-->
 
-      <p class="form__hero-description">
-        Заполните анкету, и мы подберем
-        программу питания для вашего кота
-      </p>
-
+        <p class="form__hero-description">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+      </div>
     </section>
 
     <!--form-->
@@ -122,211 +123,195 @@
         анкета с данными вашего питомца, для подбора оптимальной программы питания.
       </h2>
 
-      <!--form data pets input-->
+      <div class="container">
 
-      <form class="form__program" action="https://echo.htmlacademy.ru" method="get">
+        <!--form data pets input-->
 
-        <fieldset class="form__data-pets">
+        <form class="form__program" action="https://echo.htmlacademy.ru" method="post">
 
-          <legend class="visually-hidden">ввуедите данные вашего питомца, ниже в поля формы.</legend>
+          <fieldset class="form__data-pets">
 
-          <label class="form__data-title">
+            <legend class="visually-hidden">введите данные вашего питомца, ниже в поля формы.</legend>
 
-            ИМЯ:*
+            <label class="form__data-title">
 
-            <input class="form__data-input" type="text" value="барсик" required>
+              ИМЯ:*
 
-          </label>
+              <input class="form__data-input" type="text" value="барсик" required tabindex="0">
 
-          <label class="form__data-title">
+            </label>
 
-            Вес (кг):*
+            <label class="form__data-title">
 
-            <input class="form__data-input" type="text" value="7" required>
+              Вес (кг):*
 
-          </label>
+              <input class="form__data-input" type="text" value="7" required>
 
-          <label class="form__data-title">
+            </label>
 
-            Возраст (лет):
+            <label class="form__data-title">
 
-            <input class="form__data-input" type="text" value="7">
+              Возраст (лет):
 
-          </label>
+              <input class="form__data-input" type="text" value="7">
 
-        </fieldset>
+            </label>
 
-        <!--form radio box data pets-->
+          </fieldset>
 
-        <fieldset class="form__radio-box">
+          <!--form radio box data pets-->
 
-          <legend class="visually-hidden">
-            цель программы.
-          </legend>
+          <fieldset class="form__radio-box">
 
-          <label class="form__radio-choice">
+            <legend class="visually-hidden">
 
-            <input class="form__radio-input" type="radio" name="program" checked>
+              цель программы.
 
-            <span class="form__radio-control-mark"></span>
+            </legend>
 
-            <span class="form__radio-title">
+            <input class="form__radio-input" type="radio" value="slim" id="slim" name="program" checked>
+
+            <label class="form__radio-choice" for="slim" tabindex="0">
+
               похудение
-            </span>
 
-          </label>
+            </label>
 
-          <label class="form__radio-choice">
+            <input class="form__radio-input" type="radio" name="program" value="mass" id="mass">
 
-            <input class="form__radio-input" type="radio" name="program">
+            <label class="form__radio-choice" for="mass" tabindex="0">
 
-            <span class="form__radio-control-mark"></span>
-
-            <span class="form__radio-title">
               Набор массы
-            </span>
 
-          </label>
+            </label>
 
-          <label class="form__radio-choice">
+            <input class="form__radio-input" type="radio" name="program" value="question" id="question">
 
-            <input class="form__radio-input" type="radio" name="program">
+            <label class="form__radio-choice" for="question" tabindex="0">
 
-            <span class="form__radio-control-mark"></span>
-
-            <span class="form__radio-title">
               Не знаю (Нужен ваш совет)
-            </span>
 
-          </label>
-        </fieldset>
+            </label>
+          </fieldset>
 
-        <!--form contacts input-->
+          <!--form contacts input-->
 
-        <fieldset class="form__contacts">
+          <fieldset class="form__contacts">
 
-          <legend class="form__contacts-title">
-            Контактные данные
-            (владельца кота)
-          </legend>
+            <legend class="form__contacts-title">
 
-          <!--e-mail input-->
+              Контактные данные
+              (владельца кота)
 
-          <label class="form__email">
+            </legend>
 
-            E-mail:*
+            <!--e-mail input-->
 
-            <input class="form__contacts-input" type="email" placeholder="kuklachev@gmail.com" required>
+            <label class="form__contacts-email">
 
-            <div class="form__email-ico"></div>
+              E-mail:*
 
-          </label>
+              <input class="form__contacts-input" type="email" placeholder="kuklachev@gmail.com" required>
 
-          <!--tel input-->
+              <svg class="form__input-ico-mail" width="18" height="14" viewBox="0 0 18 14"
+                xmlns="http://www.w3.org/2000/svg" title="конвертик.">
 
-          <label class="form-review__label form-review__label--tablet" for="input-tel">
+                <use href="./img/sprite.svg#mail"></use>
+              </svg>
+            </label>
 
-            Телефон:*
+            <!--tel input-->
 
-            <input class="form__contacts-input" type="tel" placeholder="8 (960) 900-60-90" required>
+            <label class="form__contacts-tell" for="input-tel">
 
-            <div class="form__tel-ico"></div>
-          </label>
-        </fieldset>
+              Телефон:*
 
-        <!--coments area imput-->
+              <input class="form__contacts-input" type="tel" placeholder="8 (960) 900-60-90" required>
 
-        <div class="form__coments">
+              <svg class="form__input-ico-tell" width="16" height="16" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg" tabindex="телефоннафя трубка.">
 
-          <h2 class="form__coments-title">Комментарий</h2>
+                <use href="./img/sprite.svg#tell"></use>
+              </svg>
 
-          <textarea class="form__coments-input" rows="10" placeholder="Расскажите обо всех повАдках кота">
-          </textarea>
-        </div>
+            </label>
+          </fieldset>
 
-        <!--form checkbox-->
+          <!--coments area imput-->
 
-        <fieldset class="form__checkbox">
+          <div class="form__coments">
 
-          <legend class="form__checkbox-title">
+            <h2 class="form__coments-title">Комментарий</h2>
 
-            Дополнительно
+            <textarea class="form__coments-input" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
 
-          </legend>
+          <!--form checkbox-->
 
-          <label class="form__checkbox-item">
+          <fieldset class="form__checkbox">
 
-            <input class="visually-hidden" type="checkbox" name="sweetener" value="sweetener" checked>
+            <legend class="form__checkbox-title">
 
-            <span class="form__checkbox-mark"></span>
+              Дополнительно
 
-            <span class="form__checkbox-description">
+            </legend>
+
+            <input class="form__checkbox-input" type="checkbox" name="sweetener" value="sweetener" id="sweetener"
+              checked>
+
+            <label class="form__checkbox-item" for="sweetener" tabindex="0">
 
               сахарозаменитель
 
-            </span>
+            </label>
 
-          </label>
+            <input class="form__checkbox-input" type="checkbox" name="drinking-water" value="drinking-water"
+              id="drinking-water">
 
-          <label class="form__checkbox-item">
-
-            <input class="visually-hidden" type="checkbox" name="drinking-water" value="drinking-water">
-
-            <span class="form__checkbox-mark"></span>
-
-            <span class="form__checkbox-description">
+            <label class="form__checkbox-item" for="drinking-water" tabindex="0">
 
               питьевая вода
 
-            </span>
-          </label>
+            </label>
 
-          <label class="form__checkbox-item">
+            <input class="form__checkbox-input" type="checkbox" name="milk" value="milk" id="milk">
 
-            <input class="visually-hidden" type="checkbox" name="milk" value="milk">
-
-            <span class="form__checkbox-mark"></span>
-
-            <span class="form__checkbox-description">
+            <label class="form__checkbox-item" for="milk" tabindex="0">
 
               молоко
 
-            </span>
+            </label>
 
-          </label>
 
-          <label class="form__checkbox-item">
+            <input class="form__checkbox-input" type="checkbox" name="vitamins" value="vitamins" id="vitamins">
 
-            <input class="visually-hidden" type="checkbox" name="vitamins" value="vitamins">
-
-            <span class="form__checkbox-mark"></span>
-
-            <span class="form__checkbox-description">
+            <label class="form__checkbox-item" for="vitamins" tabindex="0">
 
               витамины
 
-            </span>
+            </label>
 
-          </label>
-        </fieldset>
 
-        <!--form submit button block-->
+          </fieldset>
 
-        <div class="form__button-block">
+          <!--form submit button block-->
 
-          <button class="form-button button">
+          <div class="form__button-block">
 
-            отправить заявку
+            <button class="form-button button">
 
-          </button>
+              отправить заявку
 
-          <div class="form__button-block-rulles">
+            </button>
 
-            * — обязательные поля
+            <div class="form__button-block-rulles">
+
+              * — обязательные поля
+            </div>
+
           </div>
-
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
 
     <!--adress section-->
