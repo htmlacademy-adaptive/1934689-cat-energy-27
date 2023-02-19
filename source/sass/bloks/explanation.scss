@@ -13,29 +13,8 @@
 
   //descktop explanation section
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 69px;
-  }
-}
-
-//explanation container
-
-.explanation .container {
-  margin-left: 20px;
-  margin-right: 20px;
-
-  //tablet explanation container
-
-  @media (min-width: $vp-768) {
-    margin-left: 31px;
-    margin-right: 31px;
-  }
-
-  //desctop explanation container
-
-  @media (min-width: $vp-1440) {
-    margin-left: 110px;
-    margin-right: 110px;
   }
 }
 
@@ -71,29 +50,19 @@
 .explanation__list {
   list-style: none;
 
-  //explanation list next resposive
-
-  @media (min-width: 321px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   //tablet explanation list
 
   @media (min-width: $vp-768) {
     display: grid;
     grid-template-columns: repeat(2, 230px);
-    column-gap: 153px;
-    row-gap: 37px;
+    column-gap: 23%;
+    row-gap: 5%;
   }
 
   //desctop explanation list
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 0;
     row-gap: 0;
@@ -115,7 +84,7 @@
 
   //descktop explanation list item
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 0;
     flex-direction: column;
     align-items: flex-start;
@@ -133,7 +102,7 @@
 
     //descktop list item number
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       background-position: top right 42px;
     }
   }
@@ -146,7 +115,7 @@
 
     //descktop list item number
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       background-position: top right 15px;
     }
   }
@@ -159,7 +128,7 @@
 
     //descktop list item number
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       background-position: top right 15px;
     }
   }
@@ -172,7 +141,7 @@
 
     //descktop list item number
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       background-position: top right -8px;
     }
   }
@@ -192,7 +161,7 @@
 
   //descktop explanation image
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 31px;
   }
 }
@@ -218,7 +187,7 @@
 
   //descktop explanation list text
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-top: 0;
   }
 }

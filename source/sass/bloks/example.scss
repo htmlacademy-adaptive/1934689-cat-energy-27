@@ -9,33 +9,13 @@
   @media (min-width: $vp-768) {
     background-color: transparent;
   }
-
-  @media (min-width: $vp-1440) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
 }
 
-.example .container {
-  margin-left: 20px;
-  margin-right: 20px;
+// example wrapper
 
-  //tablet
-
-  @media (min-width: $vp-768) {
-    margin-left: 31px;
-    margin-right: 31px;
-  }
-
-  //descktop
-
-  @media (min-width: $vp-1440) {
-    margin-left: 110px;
-    margin-right: 110px;
-    width: 1440px;
+.example__wrapper {
+  @media (min-width: $vp-1024) {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
@@ -47,8 +27,8 @@
   .example__text-wrapper {
     max-width: 100%;
 
-    @media (min-width: $vp-1440) {
-      max-width: 440px;
+    @media (min-width: $vp-1024) {
+      max-width: 436px;
     }
   }
 }
@@ -75,8 +55,9 @@
 
   // desctop example title
 
-  @media (min-width: $vp-1440) {
-    margin-bottom: 146px;
+  @media (min-width: $vp-1024) {
+    margin-top: 51px;
+    margin-bottom: 164px;
   }
 }
 
@@ -102,7 +83,7 @@
 
   //descktop description
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 69px;
   }
 }
@@ -144,7 +125,7 @@
 
   //descktop example table
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 60px;
   }
 }
@@ -166,7 +147,7 @@
 
   // descktop example weith wrapper
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     padding: 15px 53px 18px;
   }
 }
@@ -304,7 +285,7 @@
 
   // descktop example total br
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     display: none;
   }
 }
@@ -320,8 +301,8 @@
 
 //descktop example total number
 
-@media (min-width: $vp-1440) {
-  .example__total--number {
+@media (min-width: $vp-1024) {
+  .example__total-number {
     display: inline-block;
     font-family: $ff-oswald;
     font-style: $fs-normal;
@@ -354,7 +335,7 @@
 
   // descktop example slide
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin: 0;
     background-color: transparent;
   }
@@ -380,8 +361,8 @@
 
     //descktop example bacground color
 
-    @media (min-width: $vp-1440) {
-      height: 430px;
+    @media (min-width: $vp-1024) {
+      height: 470px;
     }
   }
 }

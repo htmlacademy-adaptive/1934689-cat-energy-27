@@ -1,7 +1,7 @@
-.header__container {
+.header__block {
   // promo descktop image bacground
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     background-image: linear-gradient(
         to top,
         rgba(104, 183, 56, 0.85),
@@ -10,7 +10,7 @@
       url("../img/promo/descktop/index-background-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: calc(100% + 70px) 0;
-    background-size: 54% 100%;
+    background-size: 55% 100%;
     margin-bottom: 82px;
 
     // promo descktop image bacground resolution 2ddpx
@@ -48,31 +48,31 @@
   }
 }
 
-.header {
-  display: block;
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   position: relative;
   background-color: $color-default-white;
   padding-top: 10px;
   padding-bottom: 10px;
 
-  //tablet header
+  //tablet
 
   @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  //descktop header
+  //descktop
 
-  @media (min-width: $vp-1440) {
-    z-index: 1;
+  @media (min-width: $vp-1024) {
     background-color: transparent;
     padding-top: 53px;
-    margin-right: 110px;
-    margin-left: 110px;
   }
 }
 
@@ -83,67 +83,9 @@
 
   //descktop header
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     max-width: 1440px;
   }
-
-  //descktop header
-
-  @media (min-width: $vp-1441) {
-    margin: 0 auto;
-  }
-}
-
-//header wrapper
-
-.header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0 20px;
-  justify-content: space-between;
-}
-
-// header logo
-
-.header__logo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  margin: 0 20px;
-
-  //tablet logo wrapper
-
-  @media (min-width: $vp-768) {
-    margin: 0;
-    margin-left: 30px;
-  }
-
-  //descktop logo wrapper
-
-  @media (min-width: $vp-1440) {
-    margin-left: 0;
-  }
-}
-
-//condition logo
-
-.header__logo:hover {
-  opacity: 0.8;
-}
-
-.header__logo:active {
-  opacity: 0.3;
-}
-
-.header__logo-text:hover {
-  opacity: 0.8;
-}
-
-.header__logo-text:active {
-  opacity: 0.3;
 }
 
 // mobile second logo text
@@ -153,6 +95,13 @@
   align-items: center;
   justify-content: space-between;
   width: calc(50% + 51px);
+  pointer-events: none;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    width: unset;
+  }
 }
 
 @media (min-width: $vp-768) {
@@ -161,27 +110,37 @@
   }
 }
 
+.header__logo-link-img img {
+  pointer-events: all;
+}
+
 //header nav drop menu list
 
 .header__nav {
+  display: none;
+  width: 100%;
+  margin-bottom: -13px;
+  margin-top: 13px;
   height: 0;
   opacity: 0;
   transition: height 0.5s, opacity 0.2s;
 
+  // tablet
+
   @media (min-width: $vp-768) {
     height: auto;
     opacity: 1;
-  }
-
-  //descktop header nav
-
-  @media (min-width: $vp-768) {
-    max-width: 600px;
+    margin: 0;
+    width: unset;
+    display: block;
   }
 }
 
+// open menu navigation
+
 .header--drop-menu {
-  height: 197px;
+  display: block;
+  height: 225px;
   opacity: 1;
   transition: height 0.5s, opacity 1s;
 }
@@ -189,7 +148,8 @@
 //header menu no js
 
 .header__nav--no-js {
-  height: 216px;
+  display: block;
+  height: 225px;
   opacity: 1;
   transition: height 0.5s, opacity 1s;
 }
@@ -203,13 +163,14 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  margin-left: auto;
 
   @media (min-width: $vp-768) {
     display: none;
   }
 }
 
-//geader button withaut JS
+//header button withaut JS
 
 .header__button--no-js {
   visibility: hidden;

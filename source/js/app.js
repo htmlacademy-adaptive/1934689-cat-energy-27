@@ -1,5 +1,4 @@
 const headerBtn = document.querySelector('.header__button'),
-      menu = document.querySelector('.menu')
       bodyMenu = document.querySelector('.page__body')
       headerNavDropDown = document.querySelector('.header__nav')
 
@@ -8,7 +7,7 @@ const headerBtn = document.querySelector('.header__button'),
         const exp = "true" === headerBtn.getAttribute('aria-expanded')
         headerBtn.setAttribute('aria-expanded', !exp)
 
-        menu.classList.toggle('menu--opened')
+
         headerBtn.classList.toggle('header__button--active')
         bodyMenu.classList.toggle('page__body--menu')
         headerNavDropDown.classList.toggle('header--drop-menu')

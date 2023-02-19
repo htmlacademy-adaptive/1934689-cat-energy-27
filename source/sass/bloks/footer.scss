@@ -1,22 +1,31 @@
 .footer {
+  background-color: $color-white-smoke;
+}
+
+// footer wrapper
+
+.footer__wrapper {
   display: flex;
   flex-direction: column;
   border-color: $color-default-white;
-  padding: 40px 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   align-items: center;
 
   //tablet footer
 
   @media (min-width: $vp-768) {
-    padding: 57px 30px;
+    padding-top: 57px;
+    padding-bottom: 57px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   //descktop footer
 
-  @media (min-width: $vp-1440) {
-    padding: 68px 110px;
+  @media (min-width: $vp-1024) {
+    padding-top: 68px;
+    padding-bottom: 68px;
   }
 }
 

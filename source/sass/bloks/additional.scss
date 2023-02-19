@@ -1,4 +1,4 @@
-@media (min-width: $vp-1440) {
+@media (min-width: $vp-1024) {
   .additional__wrapper {
     display: flex;
     max-width: 1440px;
@@ -15,12 +15,6 @@
   @media (min-width: $vp-768) {
     margin-bottom: 69px;
   }
-
-  //descktop
-
-  @media (min-width: $vp-1441) {
-    margin: 0 auto;
-  }
 }
 
 .additional .container {
@@ -35,7 +29,7 @@
 
   //descktop
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin: 0;
   }
 }
@@ -80,15 +74,8 @@
 
   //descktop
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     width: 1440px;
-  }
-
-  //descktop
-
-  @media (min-width: $vp-1441) {
-    min-width: 3000px;
-    left: -100%;
   }
 }
 
@@ -130,7 +117,7 @@
 
 //descktop additional list
 
-@media (min-width: $vp-1440) {
+@media (min-width: $vp-1024) {
   .additional__list {
     border: none;
     min-width: 895px;
@@ -157,7 +144,7 @@
 
   //descktop
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     align-items: center;
     padding: 26px 0 28px;
   }
@@ -193,13 +180,13 @@
 
 //descktop
 
-@media (min-width: $vp-1440) {
+@media (min-width: $vp-1024) {
   .additional__item:nth-child(1)::before {
     content: "";
   }
 }
 
-@media (min-width: $vp-1440) {
+@media (min-width: $vp-1024) {
   .additional__item:last-child::after {
     content: "";
     position: absolute;
@@ -233,7 +220,7 @@
 
   //descktop
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin: 0;
     min-width: 161px;
     margin-right: 164px;
@@ -251,7 +238,7 @@
 
   //descktop additional goods wrapper
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin: 0;
     min-width: 285px;
     margin-right: 40px;
@@ -278,7 +265,7 @@
 
   //desctop
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin: 0;
     text-align: start;
   }
@@ -311,7 +298,7 @@
 
 //descktop button
 
-@media (min-width: $vp-1440) {
+@media (min-width: $vp-1024) {
   .additional__item-button {
     width: 244px;
     min-width: unset;

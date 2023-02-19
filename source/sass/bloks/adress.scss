@@ -1,6 +1,5 @@
 .adress {
   position: relative;
-  margin-bottom: 39px;
 }
 
 .adress__text {
@@ -14,14 +13,16 @@
   // tablet adress text
 
   @media (min-width: $vp-768) {
-    padding: 56px 70px 63px;
+    padding: 56px 70px 63px 70px;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   // descktop adress text
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     position: absolute;
-    padding: 56px 60px 63px;
+    padding: 56px 60px 63px 60px;
     z-index: 3;
     background-color: $color-default-white;
     max-width: 585px;
@@ -136,7 +137,7 @@
 
   //descktop map offline
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     background-image: url("../img/adress/descktop/map-descktop.png");
 
     // descktop adress map resolution 2ddpx
@@ -174,7 +175,7 @@
 
   //descktop adress pointer
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     transform: translate(162%, -69%);
   }
 }

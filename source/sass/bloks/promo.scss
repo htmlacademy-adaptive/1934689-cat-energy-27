@@ -46,23 +46,15 @@
       url("../img/promo/mobile/index-background-mobile@2x.webp");
   }
 
-  //promo next resposive
-
-  @media (min-width: 321px) {
-    background-size: contain;
-    max-height: 305px;
-    margin-bottom: 206px;
-  }
-
   //promo tablet product image
 
   @media (min-width: $vp-768) {
     background-image: url("../img/promo/tablet/index-can-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: 709px 609px;
-    background-position: 52px 257px;
-    padding-top: 52px;
-    padding-bottom: 800px;
+    background-size: 677px 555px;
+    background-position: 67px 259px;
+    padding-top: 62px;
+    padding-bottom: 530px;
     margin-bottom: 0;
 
     // resolution 2ddpx
@@ -83,23 +75,13 @@
     }
   }
 
-  //promo next resposive
-
-  @media (min-width: 900px) {
-    display: flex;
-    justify-content: center;
-    background-position: center 257px;
-  }
-
   //descktop promo
 
-  @media (min-width: $vp-1440) {
-    justify-content: flex-start;
-    padding-bottom: 470px;
-    padding-top: 111px;
-    padding-left: 190px;
+  @media (min-width: $vp-1024) {
+    padding-bottom: 270px;
+    padding-left: 150px;
     background-size: 552px 499px;
-    background-position: 568px 30px;
+    background-position: 556px 30px;
   }
 }
 
@@ -107,11 +89,11 @@
 
 @media (min-width: $vp-768) {
   .promo__content {
-    margin-left: 118px;
+    margin-left: 88px;
 
     //descktop promo content
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       margin: 0;
     }
   }

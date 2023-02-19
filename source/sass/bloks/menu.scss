@@ -1,9 +1,8 @@
 .menu {
-  list-style: none;
-  display: none;
-  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  border-top: 1px solid $color-whisper-light;
 
   //tablet menu
 
@@ -15,15 +14,18 @@
     border: none;
     min-width: 450px;
   }
+
+  //descktop menu
+
+  @media (min-width: $vp-1024) {
+    min-width: 480px;
+  }
 }
 
 //menu list
 
 .menu__list {
   position: relative;
-  background-color: $color-default-white;
-  padding: 24px 50px 24px;
-  border-top: 1px solid $color-whisper-light;
 
   //tablet menu list
 
@@ -35,7 +37,7 @@
 
   //descktop menu list
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     background-color: transparent;
   }
 }
@@ -43,7 +45,7 @@
 //menu list current
 
 @media (min-width: $vp-768) {
-  .menu__list--curent::after {
+  .menu__list--curent::before {
     content: "";
     position: absolute;
     left: 0;
@@ -54,7 +56,7 @@
 
     // descktop list current
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       background-color: $color-default-white;
     }
   }
@@ -62,7 +64,7 @@
 
 //descktop menu catalog current list
 
-@media (min-width: $vp-1440) {
+@media (min-width: $vp-1024) {
   .menu__catalog .menu__list--curent::after {
     background-color: $color-apple;
   }
@@ -103,6 +105,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-default-black;
+  padding: 25px 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #e6e6e6;
 
   //tablet menu list item
 
@@ -112,11 +118,15 @@
     font-weight: $fw-400;
     font-size: 18px;
     line-height: $flh-default-24;
+    border: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
   }
 
   //descktop menu list item
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     background-color: transparent;
     font-weight: $fw-400;
     font-size: 20px;
@@ -128,16 +138,12 @@
 
 // catalog desktop menu list item
 
-@media (min-width: $vp-1440) {
+@media (min-width: $vp-1024) {
   .menu__list-item--black {
     color: $color-nero-black;
   }
 }
 
-.menu--opened {
-  display: flex;
-}
-
 .menu--no-js {
-  display: flex;
+  display: block;
 }
