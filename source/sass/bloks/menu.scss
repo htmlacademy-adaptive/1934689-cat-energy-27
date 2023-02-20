@@ -65,7 +65,13 @@
 //descktop menu catalog current list
 
 @media (min-width: $vp-1024) {
-  .menu__catalog .menu__list--curent::after {
+  .menu__list--curent-catalog::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
     background-color: $color-apple;
   }
 }

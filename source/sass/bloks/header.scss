@@ -54,8 +54,8 @@
   align-items: center;
   position: relative;
   background-color: $color-default-white;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 17px;
 
   //tablet
 
@@ -72,19 +72,7 @@
 
   @media (min-width: $vp-1024) {
     background-color: transparent;
-    padding-top: 53px;
-  }
-}
-
-// header catalog
-
-.header__catalog {
-  padding-bottom: 27px;
-
-  //descktop header
-
-  @media (min-width: $vp-1024) {
-    max-width: 1440px;
+    padding-top: 54px;
   }
 }
 

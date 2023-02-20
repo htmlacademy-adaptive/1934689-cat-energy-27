@@ -1,10 +1,42 @@
 .gift {
   position: relative;
-  padding-top: 25px;
+
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    padding-top: 113px;
+    padding-left: 80px;
+  }
 }
 
-.gift .container {
-  margin: 0 20px;
+@media (min-width: $vp-1024) {
+  .gift .container {
+    padding: 0;
+  }
+}
+
+.gift__link {
+  position: relative;
+}
+
+.gift__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: -29px;
+  margin: 0 auto;
+  border: 1px solid $color-gainsboro;
+
+  //tablet
+
+  @media (min-width: $vp-768) {
+    content: none;
+  }
+}
+
+.gift__wrapper {
   position: relative;
   padding-top: 300px;
   background-image: linear-gradient(
@@ -16,8 +48,8 @@
   background-size: 100% 305px;
   background-position: center top;
   background-repeat: no-repeat;
-  margin-bottom: 20px;
   color: $color-default-black;
+  margin: 20px auto;
 
   // gift image bacground resolution 2ddpx
 
@@ -55,8 +87,6 @@
   //tablet
 
   @media (min-width: $vp-768) {
-    margin: 0 30px;
-
     background-image: linear-gradient(
         to top,
         rgba(104, 183, 56, 0.85),
@@ -65,6 +95,8 @@
       url("../img/catalog/gift/tablet/bugpuck-tablet-@1x.png");
     padding-top: 200px;
     background-size: 100% 200px;
+    margin: 0;
+    margin-bottom: 76px;
 
     // gift image bacground resolution 2ddpx
 
@@ -99,6 +131,58 @@
         url("../img/catalog/gift/tablet/bugpuck-tablet-@2x.webp");
     }
   }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    position: relative;
+    padding-top: 292px;
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/catalog/gift/mobile/bagpuck-@1x.png");
+    background-size: 100% 289px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: $color-default-black;
+    min-width: 245px;
+    margin-bottom: 0;
+
+    // gift image bacground resolution 2ddpx
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/catalog/gift/mobile/bagpuck-@2x.png");
+    }
+
+    // gift image bacground resolution 3ddpx
+
+    @media (min-resolution: 3dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/catalog/gift/mobile/bagpuck-@1x.webp");
+    }
+
+    // gift image bacground resolution 4ddpx
+
+    @media (min-resolution: 4dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/catalog/gift/mobile/bagpuck-@2x.webp");
+    }
+  }
 }
 
 // gift block
@@ -106,28 +190,47 @@
 .gift__block {
   position: absolute;
   text-align: center;
-  top: 66px;
-  left: 62px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 160px;
 
   //tablet
 
   @media (min-width: $vp-768) {
-    min-width: 600px;
+    min-width: 700px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-left: 77px;
+    padding-right: 124px;
   }
 
   //descktop
 
   @media (min-width: $vp-1024) {
-    min-width: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 160px;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+// gift image
+
+.gift__image {
+  margin-bottom: 48px;
+
+  //tablet
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
   }
 }
 
