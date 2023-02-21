@@ -65,7 +65,7 @@
 //descktop menu catalog current list
 
 @media (min-width: $vp-1024) {
-  .menu__list--curent-catalog::before {
+  .menu__list--curent-negativ::before {
     content: "";
     position: absolute;
     left: 0;

@@ -76,6 +76,14 @@
   }
 }
 
+//tablet
+
+@media (min-width: $vp-768) {
+  .header__form {
+    margin-bottom: 65px;
+  }
+}
+
 // mobile second logo text
 
 .header__logo-link-img {
