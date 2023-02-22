@@ -88,7 +88,7 @@
 
   <!--main form-->
 
-  <main class="main-form">
+  <main class="form-main">
 
     <!--hero form-->
 
@@ -129,71 +129,73 @@
 
         <form class="form__program" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="form__data-pets">
+          <div class="form__fildset-wrapper">
 
-            <legend class="visually-hidden">введите данные вашего питомца, ниже в поля формы.</legend>
+            <fieldset class="form__data-pets">
 
-            <label class="form__data-title">
+              <legend class="visually-hidden">введите данные вашего питомца, ниже в поля формы.</legend>
 
-              <span class="form__data-text">ИМЯ:*</span>
+              <label class="form__data-title">
 
-              <input class="form__data-input" type="text" value="барсик" required tabindex="0">
+                <span class="form__data-text">ИМЯ:*</span>
 
-            </label>
+                <input class="form__data-input" type="text" value="барсик" required tabindex="0">
 
-            <label class="form__data-title">
+              </label>
 
-              <span class="form__data-text">Вес (кг):*</span>
+              <label class="form__data-title">
 
-              <input class="form__data-input" type="text" value="7" required>
+                <span class="form__data-text">Вес (кг):*</span>
 
-            </label>
+                <input class="form__data-input" type="text" value="7" required>
 
-            <label class="form__data-title">
+              </label>
 
-              <span class="form__data-text">Возраст (лет):</span>
+              <label class="form__data-title">
 
-              <input class="form__data-input" type="text" value="7">
+                <span class="form__data-text">Возраст (лет):</span>
 
-            </label>
+                <input class="form__data-input" type="text" value="7">
 
-          </fieldset>
+              </label>
 
-          <!--form radio box data pets-->
+            </fieldset>
 
-          <fieldset class="form__radio-box">
+            <!--form radio box data pets-->
 
-            <legend class="visually-hidden">
+            <fieldset class="form__radio-box">
 
-              цель программы.
+              <legend class="visually-hidden">
 
-            </legend>
+                цель программы.
 
-            <input class="form__radio-input" type="radio" value="slim" id="slim" name="program" checked>
+              </legend>
 
-            <label class="form__radio-choice" for="slim" tabindex="0">
+              <input class="form__radio-input" type="radio" value="slim" id="slim" name="program" checked>
 
-              <span class="form__radio-text">похудение</span>
+              <label class="form__radio-choice" for="slim" tabindex="0">
 
-            </label>
+                <span class="form__radio-text">похудение</span>
 
-            <input class="form__radio-input" type="radio" name="program" value="mass" id="mass">
+              </label>
 
-            <label class="form__radio-choice" for="mass" tabindex="0">
+              <input class="form__radio-input" type="radio" name="program" value="mass" id="mass">
 
-              <span class="form__radio-text">Набор массы</span>
+              <label class="form__radio-choice" for="mass" tabindex="0">
 
-            </label>
+                <span class="form__radio-text">Набор массы</span>
 
-            <input class="form__radio-input" type="radio" name="program" value="question" id="question">
+              </label>
 
-            <label class="form__radio-choice" for="question" tabindex="0">
+              <input class="form__radio-input" type="radio" name="program" value="question" id="question">
 
-              <span class="form__radio-text">Не знаю (Нужен ваш совет)</span>
+              <label class="form__radio-choice" for="question" tabindex="0">
 
-            </label>
-          </fieldset>
+                <span class="form__radio-text">Не знаю (Нужен ваш совет)</span>
 
+              </label>
+            </fieldset>
+          </div>
           <!--form contacts input-->
 
           <fieldset class="form__contacts">
@@ -213,7 +215,7 @@
 
               <input class="form__contacts-input" type="email" placeholder="kuklachev@gmail.com" required>
 
-              <svg class="form__input-ico-mail" width="18" height="14" viewBox="0 0 18 14"
+              <svg class="form__input-ico-mail" fill="none" width="18" height="14" viewBox="0 0 18 14"
                 xmlns="http://www.w3.org/2000/svg" title="конвертик.">
 
                 <use href="./img/sprite.svg#mail"></use>
@@ -228,7 +230,7 @@
 
               <input class="form__contacts-input" type="tel" placeholder="8 (960) 900-60-90" required>
 
-              <svg class="form__input-ico-tell" width="16" height="16" viewBox="0 0 16 16"
+              <svg class="form__input-ico-tell" fill="none" width="16" height="16" viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg" tabindex="телефоннафя трубка.">
 
                 <use href="./img/sprite.svg#tell"></use>
