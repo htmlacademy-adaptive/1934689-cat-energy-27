@@ -2,76 +2,50 @@
 
 .promo {
   position: relative;
-  padding-top: 26px;
-  background-image: linear-gradient(
-      to top,
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)
-    ),
-    url("../img/promo/mobile/index-background-mobile@1x.png");
-  background-size: 100% 305px;
-  background-position: center top;
-  background-repeat: no-repeat;
+  padding-top: 27px;
   margin-bottom: 20px;
   color: $color-default-black;
+  z-index: 1;
+  text-align: center;
 
-  // promo image bacground resolution 2ddpx
-
-  @media (min-resolution: 2dppx) {
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 302px;
     background-image: linear-gradient(
         to top,
         rgba(104, 183, 56, 0.85),
         rgba(104, 183, 56, 0.85)
       ),
-      url("../img/promo/mobile/index-background-mobile@2x.png");
-  }
-  // promo image bacground resolution 3ddpx
+      url("../img/promo/mobile/index-background-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 
-  @media (min-resolution: 3dppx) {
-    background-image: linear-gradient(
-        to top,
-        rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)
-      ),
-      url("../img/promo/mobile/index-background-mobile@1x.webp");
-  }
-  // promo image bacground resolution 4ddpx
+    // promo image bacground resolution 2ddpx
 
-  @media (min-resolution: 4dppx) {
-    background-image: linear-gradient(
-        to top,
-        rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)
-      ),
-      url("../img/promo/mobile/index-background-mobile@2x.webp");
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/promo/mobile/index-background-mobile@2x.png");
+    }
   }
 
   //promo tablet product image
 
   @media (min-width: $vp-768) {
-    background-image: url("../img/promo/tablet/index-can-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-size: 677px 555px;
-    background-position: 67px 259px;
     padding-top: 62px;
-    padding-bottom: 530px;
     margin-bottom: 0;
 
-    // resolution 2ddpx
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo/tablet/index-can-tablet@2x.png");
-    }
-
-    // resolution 3ddpx
-
-    @media (min-resolution: 3dppx) {
-      background-image: url("../img/promo/tablet/index-can-tablet@2x.webp");
-    }
-    // resolution 4ddpx
-
-    @media (min-resolution: 4dppx) {
-      background-image: url("../img/promo/tablet/index-can-tablet@2x.webp");
+    &::before {
+      display: none;
     }
   }
 
@@ -87,15 +61,15 @@
 
 //promo tablet content
 
-@media (min-width: $vp-768) {
-  .promo__content {
-    margin-left: 88px;
-
-    //descktop promo content
-
-    @media (min-width: $vp-1024) {
-      margin: 0;
-    }
+.promo__content {
+  @media (min-width: $vp-768) {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "description"
+      "button"
+      "image";
+    margin: 0 72px;
   }
 }
 
@@ -127,6 +101,7 @@
     margin: 0;
     text-align: start;
     margin-bottom: 41px;
+    grid-area: title;
   }
 }
 
@@ -154,30 +129,20 @@
     margin: 0;
     text-align: start;
     margin-bottom: 49px;
+    grid-area: description;
   }
 }
 
-//promo image product
+// promo image
 
-.promo__bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  //promo button tablet
+.promo__product {
+  vertical-align: bottom;
 
   @media (min-width: $vp-768) {
-    align-items: flex-start;
-  }
-}
-
-//promo tablet product
-
-@media (min-width: $vp-768) {
-  .promo__product {
-    display: none;
-
-    //descktop logo wrapper
+    width: 709px;
+    height: 609px;
+    grid-area: image;
+    margin-top: -97px;
   }
 }
 
@@ -199,6 +164,7 @@
   height: 40px;
   background-color: $color-apple;
   padding: 7px 44px;
+  margin: 0 auto;
 
   //promo tablet button
 
@@ -207,5 +173,7 @@
     max-width: 244px;
     font-size: 20px;
     line-height: 20px;
+    grid-area: button;
+    margin-left: 0;
   }
 }

@@ -41,7 +41,6 @@ return gulp.src('source/*.html')
 const scripts = () => {
 return gulp.src('source/js/**/*.js')
 .pipe(terser())
-.pipe(rename('app.min.js'))
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
 }

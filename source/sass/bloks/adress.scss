@@ -7,7 +7,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 26px 20px;
+  padding: 26px 0;
+  margin: 0 auto;
+  max-width: 500px;
   width: 100%;
 
   // tablet adress text
@@ -85,77 +87,12 @@
   }
 }
 
-//map offline
+// adress map
 
 .adress__map {
   position: relative;
-  background-image: url("../img/adress/mobile/map@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
   height: 362px;
-  z-index: -2;
-
-  // adress map resolution 2ddpx
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/adress/mobile/map@2x.png");
-  }
-  // adress map resolution 3ddpx
-
-  @media (min-resolution: 3dppx) {
-    background-image: url("../img/adress/mobile/map@1x.webp");
-  }
-  // adress map resolution 4ddpx
-
-  @media (min-resolution: 4dppx) {
-    background-image: url("../img/adress/mobile/map@2x.webp");
-  }
-
-  //tablet map offline
-
-  @media (min-width: $vp-768) {
-    background-image: url("../img/adress/tablet/map-tablet@1x.png");
-    height: 400px;
-
-    // tablet adress map resolution 2ddpx
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/adress/tablet/map-tablet@2x.png");
-    }
-    // tablet adress map resolution 3ddpx
-
-    @media (min-resolution: 3dppx) {
-      background-image: url("../img/adress/tablet/map-tablet@1x.webp");
-    }
-    // tablet adress map resolution 4ddpx
-
-    @media (min-resolution: 4dppx) {
-      background-image: url("../img/adress/tablet/map-tablet@2x.webp");
-    }
-  }
-
-  //descktop map offline
-
-  @media (min-width: $vp-1024) {
-    background-image: url("../img/adress/descktop/map-descktop.png");
-
-    // descktop adress map resolution 2ddpx
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/adress/descktop/map-descktop@2x.png");
-    }
-    // descktop adress map resolution 3ddpx
-
-    @media (min-resolution: 3dppx) {
-      background-image: url("../img/adress/descktop/map-descktop@1x.webp");
-    }
-    // descktop adress map resolution 4ddpx
-
-    @media (min-resolution: 4dppx) {
-      background-image: url("../img/adress/descktop/map-descktop@2x.webp");
-    }
-  }
 }
 
 .adress__pointer {
@@ -163,7 +100,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-46%, -79%);
-  z-index: -1;
+  z-index: 0;
 
   //tablet adress pointer
 
@@ -180,7 +117,20 @@
   }
 }
 
+// adress map ofline
+
+.adress__map-offline {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+}
+
 .adress__map-link {
+  top: 0;
+  left: 0;
+  position: absolute;
   width: 100%;
   z-index: 1;
 }

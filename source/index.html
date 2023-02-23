@@ -98,37 +98,37 @@
 
         <div class="promo__content">
 
-          <div class="promo__top">
+          <h1 class="promo__title">Функциональное
+            питание для котов</h1>
 
-            <h1 class="promo__title">Функциональное
-              питание для котов</h1>
+          <p class="promo__description">Занялся собой? Займись котом!</p>
 
-            <p class="promo__description">Занялся собой? Займись котом!</p>
-          </div>
+          <picture>
 
-          <div class="promo__bottom">
+            <source type="image/webp" media="(min-width: 1024px)"
+              srcset="./img/promo/descktop/index-can-descktop@1x.webp 1x, ./img/promo/descktop/index-can-descktop@2x.webp 2x">
 
-            <picture>
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/promo/tablet/index-can-tablet@1x.webp 1x, ./img/promo/tablet/index-can-tablet@2x.webp 2x">
 
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/promo/descktop/index-can-descktop@1x.webp 1x, ./img/promo/descktop/index-can-descktop@2x.webp 2x">
+            <source type="image/webp"
+              srcset="./img/promo/mobile/index-can-mobile@1x.webp 1x, ./img/promo/mobile/index-can-mobile@2x.webp 2x">
 
-              <source type="image/webp"
-                srcset="./img/promo/mobile/index-can-mobile@1x.webp 1x, ./img/promo/mobile/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1024px)"
+              srcset="./img/promo/descktop/index-can-descktop@1x.png 1x, ./img/promo/descktop/index-can-descktop@2x.png 2x">
 
-              <source media="(min-width: 1200px)"
-                srcset="./img/promo/descktop/index-can-descktop@1x.png 1x, ./img/promo/descktop/index-can-descktop@2x.png 2x"
-                width="552" height="499">
+            <source media="(min-width: 768px)"
+              srcset="./img/promo/tablet/index-can-tablet@1x.png 1x, ./img/promo/tablet/index-can-tablet@2x.png 2x">
 
-              <img class="promo__product" src="./img/promo/mobile/index-can-mobile@1x.png"
-                srcset="./img/promo/mobile/index-can-mobile@2x.png" alt="корм Cat Energy с курицей." width="280"
-                height="271">
-            </picture>
+            <img class="promo__product" src="./img/promo/mobile/index-can-mobile@1x.png"
+              srcset="./img/promo/mobile/index-can-mobile@2x.png" alt="корм Cat Energy с курицей." width="280"
+              height="271">
+          </picture>
 
-            <a class="promo__button button" href="form.html">
-              подобрать программу
-            </a>
-          </div>
+          <a class="promo__button button" href="form.html">
+            подобрать программу
+          </a>
+
         </div>
       </div>
     </section>
@@ -352,28 +352,13 @@
 
         <div class="example__slide">
 
-          <!--slide range-->
-
-          <div class="example__range-wrapper">
-
-            <!--slide button-->
-
-            <input class="example__range" type="range" min="1" max="100" value="50">
-
-            <svg class="example__range-toggle" width="40" height="256" viewBox="0 0 40 256"
-              xmlns="http://www.w3.org/2000/svg" fill="none">
-              <use href="./img/sprite.svg#curtain-mobile"></use>
-            </svg>
-
-          </div>
-
           <!--slide image before-->
 
-          <div class="example__range-image example__range-image--before">
+          <div class="example__image-block example__image-block--before">
 
             <picture>
 
-              <source type="image/webp" media="(min-width: 1440px)"
+              <source type="image/webp" media="(min-width: 1024px)"
                 srcset="./img/example/descktop/cat-before@1x.webp 1x, ./img/example/descktop/cat-before@2x.webp 2x">
 
               <source type="image/webp" media="(min-width: 768px)"
@@ -382,24 +367,35 @@
               <source type="image/webp"
                 srcset="./img/example/mobile/cat-before@1x.webp 1x, ./img/example/mobile/cat-before@2x.webp 2x">
 
-              <source media="(min-width: 1440px)"
+              <source media="(min-width: 1024px)"
                 srcset="./img/example/descktop/cat-before@1x.png 1x, ./img/example/descktop/cat-before@2x.png 2x">
 
               <source media="(min-width: 768px)"
                 srcset="./img/example/tablet/cat-before@1x.png 1x, ./img/example/tablet/cat-before@2x.png 2x">
 
-              <img class="example__img-before" src="./img/example/mobile/cat-before@1x.png"
+              <img class="example__image example__image--before" src="./img/example/mobile/cat-before@1x.png"
                 srcset="./img/example/mobile/cat-before@2x.png" alt="зад толстого кота." width="280" height="256">
             </picture>
           </div>
 
+          <!--slide button-->
+
+          <button class="example__slider" style="left: 50%;" type="button" aria-label="Кнопка слайдера.">
+
+            <svg class="example__slider-image" width="40" height="256" viewBox="0 0 40 256"
+              xmlns="http://www.w3.org/2000/svg" fill="none">
+
+              <use href="./img/sprite.svg#curtain-mobile"></use>
+            </svg>
+          </button>
+
           <!--slide image after-->
 
-          <div class="example__range-image example__range-image--after">
+          <div class="example__image-block example__image-block--after">
 
             <picture>
 
-              <source type="image/webp" media="(min-width: 1440px)"
+              <source type="image/webp" media="(min-width: 1024px)"
                 srcset="./img/example/descktop/cat-after@1x.webp 1x, ./img/example/descktop/cat-after@2x.webp 2x">
 
               <source type="image/webp" media="(min-width: 768px)"
@@ -408,13 +404,13 @@
               <source type="image/webp"
                 srcset="./img/example/mobile/cat-after@1x.webp 1x, ./img/example/mobile/cat-after@2x.webp 2x">
 
-              <source media="(min-width: 1440px)"
+              <source media="(min-width: 1024px)"
                 srcset="./img/example/descktop/cat-after@1x.png 1x, ./img/example/descktop/cat-after@2x.png 2x">
 
               <source media="(min-width: 768px)"
                 srcset="./img/example/tablet/cat-after@1x.png 1x, ./img/example/tablet/cat-after@2x.png 2x">
 
-              <img class="example__img-after" src="./img/example/mobile/cat-after@1x.png"
+              <img class="example__image example__image--after" src="./img/example/mobile/cat-after@1x.png"
                 srcset="./img/example/mobile/cat-after@2x.png" alt="зад толстого кота." width="280" height="256">
             </picture>
           </div>
@@ -429,16 +425,19 @@
 
       <h2 class="visually-hidden">адрес магазина кошачьего корма.</h2>
 
-      <div class="adress__text">
+      <div class="container">
 
-        <p class="adress__title">приглашаем к сотрудничеству дилеров!</p>
+        <div class="adress__text">
 
-        <div class="adress__text-wrapper">
+          <p class="adress__title">приглашаем к сотрудничеству дилеров!</p>
 
-          <p class="adress__description">ул. Большая
-            Конюшенная, д. 19/8</p>
+          <div class="adress__text-wrapper">
 
-          <p class="adress__description-city">Санкт-Петербург</p>
+            <p class="adress__description">ул. Большая
+              Конюшенная, д. 19/8</p>
+
+            <p class="adress__description-city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
 
@@ -446,10 +445,26 @@
 
         <img class="adress__pointer" src="../img/adress/map-pin.png" alt="указатель на карте точного адреса." width="57"
           height="53">
+        <picture>
+          <source type="imag/webp" media="(min-width:1024px)"
+            srcset="./img/adress/map/descktop/map-descktop@1x.webp 1x, ./img/adress/map/descktop/map-descktop@2x.webp 2x">
+          <source type="imag/webp" media="(min-width:768px)"
+            srcset="./img/adress/map/tablet/map-tablet@1x.webp 1x, ./img/adress/map/tablet/map-tablet@2x.webp 2x">
+          <source type="imag/webp"
+            srcset="./img/adress/map/mobile/map-mobile@1x.webp 1x, ./img/adress/map/mobile/map-mobile@2x.webp 2x">
+          <source media="(min-width:1024px)"
+            srcset="./img/adress/map/descktop/map-descktop@1x.png 1x, ./img/adress/map/descktop/map-descktop@2x.png 2x">
+          <source media="(min-width:768px)"
+            srcset="./img/adress/map/tablet/map-tablet@1x.png 1x, ./img/adress/map/tablet/map-tablet@2x.png 2x">
+          <img class="adress__map-offline" src="./img/adress/map/mobile/map@1x.png"
+            srcset="./img/adress/map/mobile/map@2x.png 2x"
+            alt="адресс магазина CatEnergy город Санкт-Петербург, улица большая конюшенная д19/8." width="320"
+            height="362">
+        </picture>
 
         <iframe class="adress__map-link" title="адрес на интерактивной карте."
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15988.401752037196!2d30.3112327!3d59.9396053!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1675503674663!5m2!1sru!2sru"
-          width="1440" height="400" style="border: 0;" allowfullscreen="" loading="lazy"
+          width="1440" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
@@ -530,7 +545,8 @@
   </footer>
 
 
-  <script src="/js/app.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="js/slider.js"></script>
 
 </body>
 

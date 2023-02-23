@@ -2,6 +2,12 @@
 
 .program {
   margin-bottom: 20px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 45px;
+  }
 }
 
 // descktop wrapper program blocks
@@ -114,6 +120,7 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $color-default-black;
+  max-width: 250px;
 
   // tablet
 
