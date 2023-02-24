@@ -1,35 +1,30 @@
 //container catalog
 .catalog {
   position: relative;
-  padding-top: 27px;
+  padding-top: 100px;
   margin-bottom: 50px;
 
   border-top: 1px solid $color-gainsboro;
 
-  // tablet catalog
-
-  @media (min-width: $vp-768) {
-    margin-bottom: 68px;
-    border: none;
-  }
-
-  // descktop catalog
-
-  @media (min-width: $vp-1024) {
-    margin-bottom: 75px;
-  }
-}
-
-@media (min-width: $vp-1024) {
-  .catalog::before {
+  &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 0;
     left: 0;
-    bottom: -101px;
-    border: 2px solid #68b738;
-    z-index: -1;
+    top: 74px;
+    margin: 0 auto;
+    border: 1px solid #d9d9d9;
+
+    // tablet
+
+    @media (min-width: $vp-768) {
+      content: none;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    border: none;
   }
 }
 
@@ -40,11 +35,6 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  // tablet catalog
-
-  @media (min-width: $vp-768) {
-    padding: 0 30px;
-  }
 }
 
 // catalog title
@@ -57,44 +47,19 @@
   line-height: 36px;
   color: $color-default-black;
   margin-bottom: 60px;
+  margin-left: 20px;
   text-align: center;
-
-  // tablet catalog title
-
-  @media (min-width: $vp-768) {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 163px;
-    text-align: start;
-    margin-left: 30px;
-  }
-
-  // descktop catalog title
-
-  @media (min-width: $vp-1024) {
-    margin-bottom: 165px;
-    margin-left: 110px;
-  }
+  margin-right: 42px;
 }
 
 .catalog__list {
-  // tablet catalog list
+  // tablet
 
   @media (min-width: $vp-768) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-// descktop catalog list
-
-@media (min-width: $vp-1024) {
-  .catalog__list {
     display: grid;
-    grid-template-columns: repeat(4, 245px);
-    column-gap: 80px;
-    row-gap: 143px;
+    grid-template-columns: repeat(2, 324px);
+    column-gap: 60px;
+    row-gap: 68px;
   }
 }
 
@@ -106,75 +71,66 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  // tablet catalog item
 
-  @media (min-width: $vp-768) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    min-width: 324px;
-    padding: 161px 36px 39px;
-    background-color: $color-white-smoke;
+  //catalog item lines
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: -22px;
+    margin: 0 auto;
+    border: 1px solid $color-gainsboro;
+
+    // tablet
+
+    @media (min-width: $vp-768) {
+      content: none;
+    }
   }
 
-  // descktop catalog item
+  // tablet
 
-  @media (min-width: $vp-1024) {
-    min-width: 245px;
-    margin-bottom: 0;
+  @media (min-width: $vp-768) {
+    display: grid;
+    justify-items: center;
+
+    // card background fill
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 324px;
+      height: 430px;
+      background: $color-white-smoke;
+      z-index: -1;
+    }
+  }
+}
+
+.catalog__item:nth-child(odd) .catalog__card-image {
+  @media (min-width: $vp-768) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.catalog__item:nth-child(even) .catalog__card-image {
+  @media (min-width: $vp-768) {
+    width: 168px;
+    height: 206px;
   }
 }
 
 .catalog__item:not(:last-child) {
   margin-bottom: 44px;
-}
 
-// descktop catalog item
-
-@media (min-width: $vp-1024) {
-  .catalog__item:not(:last-child) {
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: $vp-768) {
-  .catalog__item:nth-child(odd) {
-    margin: 0;
-  }
-}
-//tablet
-
-@media (min-width: $vp-768) {
-  .catalog__item:not(:last-child):not(:nth-child(7)) {
-    margin-bottom: 141px;
-  }
-}
-
-//desctop
-
-@media (min-width: $vp-1024) {
-  .catalog__item:not(:last-child):not(:nth-child(7)) {
-    margin-bottom: 0;
-  }
-}
-
-//catalog item lines
-
-.catalog__item::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0;
-  left: 0;
-  top: -22px;
-  margin: 0 auto;
-  border: 1px solid $color-gainsboro;
-
-  // tablet catalog item line off
+  // tablet
 
   @media (min-width: $vp-768) {
-    content: none;
+    margin-bottom: 0;
   }
 }
 
@@ -187,92 +143,40 @@
   justify-content: center;
   max-width: 300px;
   margin-bottom: 8px;
-
-  // tablet last list item catalog list in catalog page
-
-  @media (min-width: $vp-768) {
-    margin-bottom: 23px;
-    line-height: 22px;
-    color: $color-nero-black;
-  }
 }
 
 .catalog__image-link {
   margin-right: 36px;
   margin-left: 36px;
 
-  // tablet catalog image link
+  // tablet
 
   @media (min-width: $vp-768) {
     margin: 0;
-  }
-}
-
-// tablet catalog card image
-
-@media (min-width: $vp-768) {
-  .catalog__card-image {
-    position: absolute;
-    top: -47px;
-    left: calc(50% + -78px);
-    width: 161px;
-    height: 172px;
-  }
-}
-
-@media (min-width: $vp-768) {
-  .catalog__item:nth-child(even) .catalog__card-image {
-    width: 168px;
-    height: 206px;
-    top: -77px;
   }
 }
 
 .catalog__item:nth-child(even):not(:last-child) .catalog__image-link {
   margin-right: 28px;
   margin-left: 28px;
-
-  @media (min-width: $vp-768) {
-    margin: 0;
-  }
 }
 
 // catalog card
 
 .catalog__card {
   margin-bottom: 22px;
-
-  //descktop catalog card
-
-  @media (min-width: $vp-1024) {
-    margin-bottom: 33px;
-  }
 }
 
 .catalog__item:last-child .catalog__card {
   margin: 0 auto;
   margin-bottom: 21px;
-
-  //tablet catalog card
-
-  @media (min-width: $vp-768) {
-    margin-bottom: 87px;
-  }
 }
 
 //last list item image catalog list "plus"
 
 .catalog__item:last-child {
   flex-direction: column;
-
-  //tablet
-
-  @media (min-width: $vp-768) {
-    padding-bottom: 39px;
-    padding-top: 50px;
-    background-color: $color-default-white;
-    border: 2px solid $color-white-smoke;
-  }
+  margin: 0 20px;
 }
 
 .catalog__item:last-child .catalog__image-link {
@@ -282,45 +186,25 @@
   height: 30px;
   margin-bottom: 23px;
 
-  //tablet
-
-  @media (min-width: $vp-768) {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 49px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 0;
+    left: -2px;
+    top: 49%;
+    border: 1px solid $color-light-grey;
+    transform: rotate(90deg);
   }
-}
 
-.catalog__item:last-child .catalog__image-link::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 0;
-  left: -2px;
-  top: 49%;
-  border: 1px solid $color-light-grey;
-  transform: rotate(90deg);
-
-  //tablet
-
-  @media (min-width: $vp-768) {
-    width: 62px;
-  }
-}
-
-.catalog__item:last-child .catalog__image-link::after {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 0;
-  left: -3px;
-  top: 49%;
-  border: 1px solid $color-light-grey;
-
-  //tablet
-
-  @media (min-width: $vp-768) {
-    width: 62px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 0;
+    left: -3px;
+    top: 49%;
+    border: 1px solid $color-light-grey;
   }
 }
 
@@ -334,26 +218,10 @@
   opacity: 0.5;
 }
 
-//tablet ccard
-
-@media (min-width: $vp-768) {
-  .catalog__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 // catalog card title br off
 
 .catalog__card-title--br {
   display: none;
-
-  // tablet catalog card title br on
-
-  @media (min-width: $vp-768) {
-    display: block;
-  }
 }
 
 // catalog card title
@@ -379,13 +247,6 @@
     margin-bottom: 21px;
     text-align: center;
   }
-
-  //descktop card title
-
-  @media (min-width: $vp-1024) {
-    font-size: 20px;
-    line-height: 21px;
-  }
 }
 
 // catalog card condition
@@ -405,22 +266,6 @@
   grid-template-columns: repeat(2, 50px);
   column-gap: 40px;
   align-items: center;
-
-  //tablet card description
-
-  @media (min-width: $vp-768) {
-    min-width: 250px;
-    column-gap: 147px;
-    align-items: normal;
-  }
-
-  //descktop card description
-
-  @media (min-width: $vp-1024) {
-    min-width: unset;
-    column-gap: 70px;
-    align-items: normal;
-  }
 }
 
 //card taste
@@ -444,28 +289,6 @@
   }
 }
 
-//tablet card taste lines
-
-@media (min-width: $vp-768) {
-  .catalog__card-description p::before {
-    position: absolute;
-    content: "";
-    width: 250px;
-    height: 0;
-    left: 0;
-    top: 24px;
-    border: 1px solid $color-very-light-grey;
-  }
-}
-
-//descktop card taste lines
-
-@media (min-width: $vp-1024) {
-  .catalog__card-description p::before {
-    width: 169px;
-  }
-}
-
 // card coast
 
 .catalog__card-description i {
@@ -476,12 +299,6 @@
   line-height: 16px;
   text-align: end;
   color: $color-charcoal;
-
-  //tablet coast
-
-  @media (min-width: $vp-768) {
-    font-size: $fsize-default-16;
-  }
 }
 
 .catalog__item:last-child .catalog__card-title-description {
@@ -491,15 +308,6 @@
   font-weight: $fw-400;
   font-size: 12px;
   line-height: 16px;
-
-  //tablet
-
-  @media (min-width: $vp-768) {
-    max-width: 165px;
-    font-size: $fsize-default-16;
-    line-height: 18px;
-    color: $color-charcoal;
-  }
 }
 
 // catalog card button
@@ -507,23 +315,6 @@
 .catalog__card-button {
   width: 280px;
   margin: 0 20px;
-
-  //tablet  catalog card button
-
-  @media (min-width: $vp-768) {
-    max-width: 248px;
-    font-size: $fsize-default-16;
-    line-height: 20px;
-    padding: 10px 93px;
-    margin: 0;
-  }
-
-  //descktop catalog card button
-
-  @media (min-width: $vp-1024) {
-    max-width: 168px;
-    padding: 10px 53px;
-  }
 }
 
 //catalog last item card button
@@ -531,21 +322,9 @@
 .catalog__item:last-child .catalog__card-button {
   background: $color-white-smoke;
   color: $color-charcoal;
+  min-width: 280px;
+  width: 100%;
   margin: 0;
-
-  //tablet
-
-  @media (min-width: $vp-768) {
-    padding: 20px 78px;
-    font-size: $fsize-default-16;
-    line-height: 1px;
-  }
-
-  //descktop
-
-  @media (min-width: $vp-1024) {
-    padding: 20px 36px;
-  }
 }
 
 //catalog last item card button condition

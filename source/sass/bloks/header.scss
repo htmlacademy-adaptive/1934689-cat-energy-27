@@ -1,7 +1,16 @@
 .header__block {
-  // promo descktop image bacground
+  position: relative;
+}
 
-  @media (min-width: $vp-1024) {
+@media (min-width: $vp-1024) {
+  .header__block::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    width: 50vw;
+    height: 100%;
     background-image: linear-gradient(
         to top,
         rgba(104, 183, 56, 0.85),
@@ -9,9 +18,8 @@
       ),
       url("../img/promo/descktop/index-background-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: calc(100% + 70px) 0;
-    background-size: 55% 100%;
-    margin-bottom: 82px;
+    background-position: right;
+    background-size: cover;
 
     // promo descktop image bacground resolution 2ddpx
 
@@ -22,28 +30,6 @@
           rgba(104, 183, 56, 0.85)
         ),
         url("../img/promo/descktop/index-background-desktop@2x.png");
-    }
-
-    // promo descktop image bacground resolution 3ddpx
-
-    @media (min-resolution: 3dppx) {
-      background-image: linear-gradient(
-          to top,
-          rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)
-        ),
-        url("../img/promo/descktop/index-background-desktop@2x.webp");
-    }
-
-    // promo descktop image bacground resolution 4ddpx
-
-    @media (min-resolution: 4dppx) {
-      background-image: linear-gradient(
-          to top,
-          rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)
-        ),
-        url("../img/promo/descktop/index-background-desktop@2x.webp");
     }
   }
 }

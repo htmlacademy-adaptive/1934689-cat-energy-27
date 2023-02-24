@@ -382,10 +382,11 @@
 
           <button class="example__slider" style="left: 50%;" type="button" aria-label="Кнопка слайдера.">
 
-            <svg class="example__slider-image" width="40" height="256" viewBox="0 0 40 256"
-              xmlns="http://www.w3.org/2000/svg" fill="none">
+            <span class="example__slider-stick"></span>
 
-              <use href="./img/sprite.svg#curtain-mobile"></use>
+            <svg class="example__slider-button" width="40" height="40" fill="none">
+
+              <use href="./img/sprite.svg#button-stick"></use>
             </svg>
           </button>
 
@@ -427,20 +428,22 @@
 
       <div class="container">
 
-        <div class="adress__text">
+        <div class="adress__wrapper">
 
-          <p class="adress__title">приглашаем к сотрудничеству дилеров!</p>
+          <div class="adress__text">
 
-          <div class="adress__text-wrapper">
+            <p class="adress__title">приглашаем к сотрудничеству дилеров!</p>
 
-            <p class="adress__description">ул. Большая
-              Конюшенная, д. 19/8</p>
+            <div class="adress__text-wrapper">
 
-            <p class="adress__description-city">Санкт-Петербург</p>
+              <p class="adress__description">ул. Большая
+                Конюшенная, д. 19/8</p>
+
+              <p class="adress__description-city">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
       </div>
-
       <div class="adress__map">
 
         <img class="adress__pointer" src="../img/adress/map-pin.png" alt="указатель на карте точного адреса." width="57"

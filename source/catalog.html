@@ -588,27 +588,48 @@
 
       <h2 class="visually-hidden">адрес магазина кошачьего корма.</h2>
 
-      <div class="adress__text adress__text--darck">
+      <div class="container">
 
-        <p class="adress__title">приглашаем к сотрудничеству дилеров!</p>
+        <div class="adress__wrapper">
 
-        <div class="adress__text-wrapper">
+          <div class="adress__text">
 
-          <p class="adress__description">ул. Большая
-            Конюшенная, д. 19/8</p>
+            <p class="adress__title">приглашаем к сотрудничеству дилеров!</p>
 
-          <p class="adress__description-city">Санкт-Петербург</p>
+            <div class="adress__text-wrapper">
+
+              <p class="adress__description">ул. Большая
+                Конюшенная, д. 19/8</p>
+
+              <p class="adress__description-city">Санкт-Петербург</p>
+            </div>
+          </div>
         </div>
       </div>
-
       <div class="adress__map">
 
         <img class="adress__pointer" src="../img/adress/map-pin.png" alt="указатель на карте точного адреса." width="57"
           height="53">
+        <picture>
+          <source type="imag/webp" media="(min-width:1024px)"
+            srcset="./img/adress/map/descktop/map-descktop@1x.webp 1x, ./img/adress/map/descktop/map-descktop@2x.webp 2x">
+          <source type="imag/webp" media="(min-width:768px)"
+            srcset="./img/adress/map/tablet/map-tablet@1x.webp 1x, ./img/adress/map/tablet/map-tablet@2x.webp 2x">
+          <source type="imag/webp"
+            srcset="./img/adress/map/mobile/map-mobile@1x.webp 1x, ./img/adress/map/mobile/map-mobile@2x.webp 2x">
+          <source media="(min-width:1024px)"
+            srcset="./img/adress/map/descktop/map-descktop@1x.png 1x, ./img/adress/map/descktop/map-descktop@2x.png 2x">
+          <source media="(min-width:768px)"
+            srcset="./img/adress/map/tablet/map-tablet@1x.png 1x, ./img/adress/map/tablet/map-tablet@2x.png 2x">
+          <img class="adress__map-offline" src="./img/adress/map/mobile/map@1x.png"
+            srcset="./img/adress/map/mobile/map@2x.png 2x"
+            alt="адресс магазина CatEnergy город Санкт-Петербург, улица большая конюшенная д19/8." width="320"
+            height="362">
+        </picture>
 
         <iframe class="adress__map-link" title="адрес на интерактивной карте."
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15988.401752037196!2d30.3112327!3d59.9396053!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1675503674663!5m2!1sru!2sru"
-          width="1440" height="400" style="border: 0;" allowfullscreen="" loading="lazy"
+          width="1440" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>

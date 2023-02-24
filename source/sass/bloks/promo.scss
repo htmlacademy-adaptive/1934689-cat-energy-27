@@ -2,7 +2,7 @@
 
 .promo {
   position: relative;
-  padding-top: 27px;
+  padding-top: 100px;
   margin-bottom: 20px;
   color: $color-default-black;
   z-index: 1;
@@ -12,7 +12,7 @@
     position: absolute;
     content: "";
     left: 0;
-    top: 0;
+    top: 70px;
     width: 100%;
     height: 302px;
     background-image: linear-gradient(
@@ -38,7 +38,7 @@
     }
   }
 
-  //promo tablet product image
+  // tablet
 
   @media (min-width: $vp-768) {
     padding-top: 62px;
@@ -49,13 +49,12 @@
     }
   }
 
-  //descktop promo
+  // descktop
 
   @media (min-width: $vp-1024) {
-    padding-bottom: 270px;
-    padding-left: 150px;
-    background-size: 552px 499px;
-    background-position: 556px 30px;
+    padding-top: 117px;
+    padding-bottom: 180px;
+    margin-bottom: 82px;
   }
 }
 
@@ -70,6 +69,18 @@
       "button"
       "image";
     margin: 0 72px;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    grid-template-areas:
+      "title image"
+      "description image"
+      "button image";
+    grid-template-rows: 120px 22px 54px;
+    grid-row-gap: 40px;
+    grid-template-columns: 414px 51%;
   }
 }
 
@@ -88,7 +99,7 @@
   text-align: center;
   margin: 0 auto 25px;
 
-  //promo title tablet
+  // tablet
 
   @media (min-width: $vp-768) {
     font-family: $ff-oswald;
@@ -103,6 +114,12 @@
     margin-bottom: 41px;
     grid-area: title;
   }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+  }
 }
 
 .promo__description {
@@ -116,7 +133,7 @@
   text-align: center;
   margin-bottom: 29px;
 
-  //promo description tablet
+  // tablet
 
   @media (min-width: $vp-768) {
     font-family: $ff-oswald;
@@ -131,6 +148,12 @@
     margin-bottom: 49px;
     grid-area: description;
   }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+  }
 }
 
 // promo image
@@ -138,11 +161,20 @@
 .promo__product {
   vertical-align: bottom;
 
+  // tablet
+
   @media (min-width: $vp-768) {
     width: 709px;
     height: 609px;
     grid-area: image;
-    margin-top: -97px;
+    margin-top: -125px;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    margin-top: -149px;
+    margin-left: -14%;
   }
 }
 
@@ -166,7 +198,7 @@
   padding: 7px 44px;
   margin: 0 auto;
 
-  //promo tablet button
+  // tablet
 
   @media (min-width: $vp-768) {
     padding: 8px 26px;
@@ -175,5 +207,14 @@
     line-height: 20px;
     grid-area: button;
     margin-left: 0;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    padding: 14px 26px;
+    max-width: 244px;
+    line-height: 0;
+    margin-top: 12px;
   }
 }
