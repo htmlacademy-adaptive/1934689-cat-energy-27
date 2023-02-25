@@ -25,6 +25,7 @@
 
   @media (min-width: $vp-768) {
     border: none;
+    margin-bottom: 154px;
   }
 }
 
@@ -50,6 +51,15 @@
   margin-left: 20px;
   text-align: center;
   margin-right: 42px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 173px;
+    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .catalog__list {
@@ -59,7 +69,7 @@
     display: grid;
     grid-template-columns: repeat(2, 324px);
     column-gap: 60px;
-    row-gap: 68px;
+    row-gap: 218px;
   }
 }
 
@@ -114,6 +124,7 @@
   @media (min-width: $vp-768) {
     width: 161px;
     height: 172px;
+    margin-top: -70px;
   }
 }
 
@@ -121,6 +132,7 @@
   @media (min-width: $vp-768) {
     width: 168px;
     height: 206px;
+    margin-top: -83px;
   }
 }
 
@@ -165,6 +177,12 @@
 
 .catalog__card {
   margin-bottom: 22px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog__item:last-child .catalog__card {
@@ -222,6 +240,12 @@
 
 .catalog__card-title--br {
   display: none;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    display: block;
+  }
 }
 
 // catalog card title
@@ -238,7 +262,7 @@
   max-width: 76px;
   margin-bottom: 14px;
 
-  //tablet card title
+  //tablet
 
   @media (min-width: $vp-768) {
     max-width: 174px;
@@ -246,6 +270,7 @@
     line-height: $flh-default-24;
     margin-bottom: 21px;
     text-align: center;
+    margin-left: 60px;
   }
 }
 
@@ -266,6 +291,12 @@
   grid-template-columns: repeat(2, 50px);
   column-gap: 40px;
   align-items: center;
+
+  //tablet card title
+
+  @media (min-width: $vp-768) {
+    column-gap: 150px;
+  }
 }
 
 //card taste
@@ -286,6 +317,15 @@
     font-size: $fsize-default-16;
     padding-bottom: 8px;
     margin-bottom: 8px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      border-bottom: 1px solid $color-very-light-grey;
+      width: 250px;
+      height: 0;
+      bottom: 0;
+    }
   }
 }
 
