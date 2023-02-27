@@ -120,8 +120,8 @@
 
 .program__block-title {
   font-family: $ff-oswald;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
+  font-style: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -141,8 +141,8 @@
 .program__block-description {
   position: relative;
   font-family: $ff-lato;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $color-charcoal;
@@ -188,8 +188,8 @@
 
 .program__block-link {
   font-family: $ff-oswald;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
+  font-style: normal;
+  font-weight: 400;
   font-size: $fsize-default-16;
   line-height: 16px;
   text-transform: uppercase;

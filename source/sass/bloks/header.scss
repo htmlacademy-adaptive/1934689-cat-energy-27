@@ -1,5 +1,7 @@
 .header__block {
   position: relative;
+  min-width: 320px;
+  width: 100%;
 }
 
 @media (min-width: $vp-1024) {
@@ -34,6 +36,16 @@
   }
 }
 
+// catalog header
+
+.header__block--noimage {
+  @media (min-width: $vp-1024) {
+    &::before {
+      content: none;
+    }
+  }
+}
+
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -41,8 +53,6 @@
   background-color: $color-default-white;
   padding-top: 11px;
   padding-bottom: 17px;
-  position: fixed;
-  z-index: 2;
 
   //tablet
 
@@ -117,6 +127,12 @@
     margin: 0;
     width: unset;
     display: block;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    max-width: 450px;
   }
 }
 

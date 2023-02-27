@@ -2,7 +2,6 @@
 
 .promo {
   position: relative;
-  padding-top: 100px;
   margin-bottom: 20px;
   color: $color-default-black;
   z-index: 1;
@@ -12,9 +11,8 @@
     position: absolute;
     content: "";
     left: 0;
-    top: 70px;
     width: 100%;
-    height: 302px;
+    height: 70%;
     background-image: linear-gradient(
         to top,
         rgba(104, 183, 56, 0.85),
@@ -61,6 +59,8 @@
 //promo tablet content
 
 .promo__content {
+  padding-top: 27px;
+
   @media (min-width: $vp-768) {
     display: grid;
     grid-template-areas:
@@ -90,8 +90,8 @@
 
 .promo__title {
   font-family: $ff-oswald;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
+  font-style: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $color-default-white;
@@ -103,8 +103,8 @@
 
   @media (min-width: $vp-768) {
     font-family: $ff-oswald;
-    font-style: $fs-normal;
-    font-weight: $fw-400;
+    font-style: normal;
+    font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     color: $color-default-black;
@@ -113,6 +113,7 @@
     text-align: start;
     margin-bottom: 41px;
     grid-area: title;
+    z-index: 1;
   }
 
   // descktop
@@ -124,8 +125,8 @@
 
 .promo__description {
   font-family: $ff-oswald;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -137,8 +138,8 @@
 
   @media (min-width: $vp-768) {
     font-family: $ff-oswald;
-    font-style: $fs-normal;
-    font-weight: $fw-400;
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
@@ -147,6 +148,7 @@
     text-align: start;
     margin-bottom: 49px;
     grid-area: description;
+    z-index: 1;
   }
 
   // descktop
@@ -160,6 +162,7 @@
 
 .promo__product {
   vertical-align: bottom;
+  pointer-events: none;
 
   // tablet
 
@@ -182,8 +185,8 @@
 
 .promo__button {
   font-family: $ff-oswald;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   display: flex;

@@ -35,14 +35,14 @@
 
 .explanation__title {
   font-family: $ff-oswald;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
+  font-style: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
   color: $color-default-black;
   margin-bottom: 42px;
-  margin-right: 54px;
+  margin-right: 35px;
 
   // tablet explanation title
 
@@ -178,8 +178,8 @@
 
 .explanation__list-text {
   font-family: $ff-lato;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $color-charcoal;
