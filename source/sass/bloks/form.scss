@@ -7,6 +7,8 @@
 
 .form__hero {
   position: relative;
+
+  margin: 0 auto;
   margin-bottom: 39px;
   padding-top: 27px;
 
@@ -35,27 +37,6 @@
   }
 }
 
-.form__hero-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-
-  // tablet
-
-  @media (min-width: $vp-768) {
-    padding: 0 70px;
-  }
-
-  // desctop
-
-  @media (min-width: $vp-1024) {
-    flex-direction: column;
-    align-items: start;
-    margin-bottom: 66px;
-  }
-}
-
 // form hero title
 
 .form__hero-title {
@@ -65,6 +46,8 @@
   font-size: 36px;
   line-height: 36px;
   color: $color-default-black;
+
+  margin-right: 20px;
   margin-bottom: 37px;
 
   // tablet
@@ -86,6 +69,9 @@
   line-height: 18px;
   color: $color-default-black;
   text-transform: uppercase;
+  text-align: start;
+  margin-right: 20px;
+
   max-width: 226px;
 
   // tablet
@@ -115,11 +101,13 @@
 
 .form__data-pets {
   position: relative;
+
   border: none;
+
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  justify-content: start;
   margin-bottom: 24px;
 
   // tablet
@@ -188,7 +176,7 @@
   color: $color-charcoal;
   border: 2px solid $color-Whisper-light-2;
   padding: 14px 0 13px 20px;
-  width: 228px;
+  width: 100%;
   margin-left: 13px;
 
   // tablet
@@ -205,8 +193,6 @@
 }
 
 .form__data-title:nth-child(3) .form__data-input {
-  width: 207px;
-
   // tablet
 
   @media (min-width: $vp-768) {
@@ -221,8 +207,6 @@
 }
 
 .form__data-title:nth-child(4) .form__data-input {
-  width: 173px;
-
   // tablet
 
   @media (min-width: $vp-768) {
@@ -425,10 +409,14 @@
 .form__contacts {
   position: relative;
   padding-top: 26px;
+
   border: none;
+
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: start;
+
   margin-bottom: 24px;
 
   // tablet
@@ -500,6 +488,9 @@
   position: relative;
   margin-bottom: 14px;
 
+  display: flex;
+  width: 100%;
+
   // tablet
 
   @media (min-width: $vp-768) {
@@ -515,6 +506,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-charcoal;
+
+  display: flex;
+  min-width: 53px;
+  align-items: center;
 
   // tablet
 
@@ -535,6 +530,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-charcoal;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 // form contacts imput
@@ -550,7 +549,7 @@
   border: 2px solid $color-Whisper-light-2;
   padding: 14px 19px 14px 15px;
   margin-left: 10px;
-  width: 214px;
+  width: 100%;
 
   // tablet
 
@@ -570,7 +569,7 @@
 }
 
 .form__contacts-tell .form__contacts-input {
-  width: 198px;
+  width: 100%;
 
   // tablet
 
@@ -696,7 +695,7 @@
   text-transform: uppercase;
   color: $color-charcoal;
   border: 1px solid $color-Whisper-light-2;
-  width: 280px;
+  width: 100%;
   padding: 10px 15px 0 12px;
   resize: none;
 
