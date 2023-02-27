@@ -1,5 +1,10 @@
 // form contacts title green lines
 
+.form-main {
+  display: block;
+  overflow: hidden;
+}
+
 .form__hero {
   position: relative;
   margin-bottom: 39px;
@@ -121,7 +126,7 @@
   height: 0;
   border: 1px solid $color-gainsboro;
   position: absolute;
-  top: 30%;
+  top: 29%;
 
   // tablet
 
@@ -456,6 +461,10 @@
 // form contacts title
 
 .form__contacts-title {
+  position: relative;
+
+  display: flex;
+
   font-family: $ff-oswald;
   font-style: normal;
   font-weight: 400;
@@ -465,6 +474,28 @@
   max-width: 195px;
   background-color: $color-default-white;
   z-index: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vh;
+    height: 0;
+    border: 2px solid $color-apple;
+    top: 26px;
+    left: 0;
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: calc(100% + 20px);
+    height: 100%;
+    background-color: $color-default-white;
+  }
 
   // tablet
 
@@ -649,6 +680,16 @@
   background-color: $color-default-white;
   max-width: 143px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vh;
+    height: 0;
+    border: 2px solid $color-apple;
+    top: 16px;
+    left: 0;
+    z-index: -1;
+  }
   // tablet
 
   @media (min-width: $vp-768) {
@@ -730,6 +771,17 @@
   color: $color-default-black;
   background-color: $color-default-white;
   min-width: 164px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vh;
+    height: 0;
+    border: 2px solid $color-apple;
+    top: 16px;
+    left: 0;
+    z-index: -1;
+  }
 
   // tablet
 
