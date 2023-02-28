@@ -1,17 +1,28 @@
 .menu {
+  left: -20px;
+  position: absolute;
+
   list-style-type: none;
+
   margin: 0;
   padding: 0;
+
   text-align: center;
+
+  width: calc(100% + 40px);
 
   //tablet menu
 
   @media (min-width: $vp-768) {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+
     border: none;
+
     min-width: 450px;
   }
 
@@ -33,6 +44,7 @@
   @media (min-width: $vp-768) {
     padding: 0;
     margin: 0;
+
     border: none;
   }
 
@@ -45,17 +57,19 @@
 
 //menu list current
 
-@media (min-width: $vp-768) {
-  .menu__list--curent::before {
-    content: "";
+.menu__list--curent::before {
+  @media (min-width: $vp-768) {
     position: absolute;
+    content: "";
     left: 0;
     bottom: -10px;
+
     width: 100%;
     height: 2px;
+
     background-color: $color-apple;
 
-    // descktop list current
+    // descktop
 
     @media (min-width: $vp-1024) {
       background-color: $color-default-white;
@@ -65,14 +79,16 @@
 
 //descktop menu catalog current list
 
-@media (min-width: $vp-1024) {
-  .menu__list--curent-negativ::before {
-    content: "";
+.menu__list--curent-negativ::before {
+  @media (min-width: $vp-1024) {
     position: absolute;
+    content: "";
     left: 0;
     bottom: -10px;
+
     width: 100%;
     height: 2px;
+
     background-color: $color-apple;
   }
 }
@@ -104,6 +120,7 @@
 
 .menu__list-item {
   display: block;
+
   font-family: $ff-oswald;
   font-style: normal;
   font-weight: 500;
@@ -111,19 +128,24 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-default-black;
+
   padding: 25px 0;
+
   border-top: 1px solid #e6e6e6;
 
   //tablet menu list item
 
   @media (min-width: $vp-768) {
+    display: inline;
+
     font-family: $ff-oswald;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: $flh-default-24;
+
     border: none;
-    display: inline;
+
     margin: 0;
     padding: 0;
   }
@@ -142,14 +164,14 @@
 
 // catalog desktop menu list item
 
-@media (min-width: $vp-1024) {
-  .menu--black .menu__list-item {
+.menu--black .menu__list-item {
+  @media (min-width: $vp-1024) {
     color: $color-nero-black;
   }
 }
 
-@media (min-width: $vp-1024) {
-  .menu--black .menu__list--curent::before {
+.menu--black .menu__list--curent::before {
+  @media (min-width: $vp-1024) {
     background-color: $color-apple;
   }
 }

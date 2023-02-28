@@ -7,16 +7,19 @@
 
   @media (min-width: $vp-768) {
     position: relative;
+
     min-height: 700px;
     margin-bottom: 69px;
 
     &::before {
       position: absolute;
       content: "";
-      border: 1px solid $color-whisper-light;
-      width: 100%;
       left: 0;
       bottom: 0;
+
+      border: 1px solid $color-whisper-light;
+
+      width: 100%;
     }
   }
   //descktop explanation section
@@ -39,8 +42,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: $color-default-black;
+
+  text-align: center;
+
   margin-bottom: 42px;
   margin-right: 35px;
 
@@ -50,6 +55,7 @@
     margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
+
     text-align: start;
   }
 }
@@ -58,9 +64,11 @@
 
 .explanation__list {
   list-style: none;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
   margin: 0 auto;
   max-width: 323px;
 
@@ -71,6 +79,7 @@
     grid-template-columns: repeat(2, 230px);
     column-gap: 22%;
     row-gap: 32%;
+
     max-width: 1023px;
   }
 
@@ -81,6 +90,7 @@
     justify-content: space-between;
     column-gap: 0;
     row-gap: 0;
+
     max-width: 1220px;
   }
 }
@@ -89,8 +99,10 @@
 
 .explanation__list-item {
   display: flex;
+
   min-width: 280px;
   margin-bottom: 20px;
+
   align-items: center;
 
   &:last-child {
@@ -105,6 +117,7 @@
     grid-template-areas:
       "explanation-img"
       "explanation-text";
+
     min-width: 230px;
     margin-bottom: 0;
   }
@@ -113,41 +126,44 @@
 
   @media (min-width: $vp-1024) {
     margin-bottom: 0;
+
     flex-direction: column;
+
     align-items: flex-start;
   }
 }
 
 //explanation list item number
 
-@media (min-width: $vp-768) {
-  .explanation__list-item-one::before {
+.explanation__list-item-one::before {
+  @media (min-width: $vp-768) {
     position: absolute;
     content: url("../img/explanation/explanation-1.png");
     right: 40px;
     top: 0;
+
     z-index: -1;
-  }
 
-  .explanation__list-item-two::before {
-    position: absolute;
-    content: url("../img/explanation/explanation-2.png");
-    right: 0;
-    top: 0;
-  }
+    .explanation__list-item-two::before {
+      position: absolute;
+      content: url("../img/explanation/explanation-2.png");
+      right: 0;
+      top: 0;
+    }
 
-  .explanation__list-item-three::before {
-    position: absolute;
-    content: url("../img/explanation/explanation-3.png");
-    right: 0;
-    top: 0;
-  }
+    .explanation__list-item-three::before {
+      position: absolute;
+      content: url("../img/explanation/explanation-3.png");
+      right: 0;
+      top: 0;
+    }
 
-  .explanation__list-item-four::before {
-    position: absolute;
-    content: url("../img/explanation/explanation-4.png");
-    right: 0;
-    top: 0;
+    .explanation__list-item-four::before {
+      position: absolute;
+      content: url("../img/explanation/explanation-4.png");
+      right: 0;
+      top: 0;
+    }
   }
 }
 
@@ -155,6 +171,7 @@
 
 .explanation__img {
   display: block;
+
   margin-right: 20px;
   min-width: 60px;
 
@@ -164,8 +181,9 @@
     margin-right: 0;
     width: 80px;
     height: 80px;
-    grid-area: explanation-img;
     margin-bottom: 31px;
+
+    grid-area: explanation-img;
   }
 
   //descktop explanation image
@@ -174,6 +192,7 @@
     margin-bottom: 31px;
   }
 }
+
 //explanation list text
 
 .explanation__list-text {

@@ -2,17 +2,23 @@
 
 .promo {
   position: relative;
+
   margin-bottom: 20px;
-  color: $color-default-black;
-  z-index: 1;
+
   text-align: center;
+
+  color: $color-default-black;
+
+  z-index: 1;
 
   &::before {
     position: absolute;
     content: "";
     left: 0;
+
     width: 100%;
     height: 70%;
+
     background-image: linear-gradient(
         to top,
         rgba(104, 183, 56, 0.85),
@@ -22,6 +28,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     z-index: -1;
 
     // promo image bacground resolution 2ddpx
@@ -68,6 +75,7 @@
       "description"
       "button"
       "image";
+
     margin: 0 72px;
   }
 
@@ -95,8 +103,11 @@
   font-size: 36px;
   line-height: 36px;
   color: $color-default-white;
-  max-width: 249px;
+
   text-align: center;
+
+  max-width: 249px;
+
   margin: 0 auto 25px;
 
   // tablet
@@ -108,11 +119,16 @@
     font-size: 60px;
     line-height: 60px;
     color: $color-default-black;
+
     max-width: 414px;
-    margin: 0;
-    text-align: start;
-    margin-bottom: 41px;
+
     grid-area: title;
+
+    text-align: start;
+
+    margin: 0;
+    margin-bottom: 41px;
+
     z-index: 1;
   }
 
@@ -131,7 +147,9 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $color-default-white;
+
   text-align: center;
+
   margin-bottom: 29px;
 
   // tablet
@@ -144,10 +162,15 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $color-default-black;
-    margin: 0;
-    text-align: start;
-    margin-bottom: 49px;
+
     grid-area: description;
+
+    margin: 0;
+
+    text-align: start;
+
+    margin-bottom: 49px;
+
     z-index: 1;
   }
 
@@ -167,9 +190,11 @@
   // tablet
 
   @media (min-width: $vp-768) {
+    grid-area: image;
+
     width: 709px;
     height: 609px;
-    grid-area: image;
+
     margin-top: -125px;
   }
 
@@ -189,14 +214,18 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+  color: $color-default-white;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   align-items: center;
-  text-transform: uppercase;
-  color: $color-default-white;
+
   max-width: 280px;
   height: 40px;
+
   background-color: $color-apple;
   padding: 7px 44px;
   margin: 0 auto;
@@ -204,20 +233,25 @@
   // tablet
 
   @media (min-width: $vp-768) {
-    padding: 8px 26px;
-    max-width: 244px;
+    grid-area: button;
+
     font-size: 20px;
     line-height: 20px;
-    grid-area: button;
+
+    max-width: 244px;
+
+    padding: 8px 26px;
     margin-left: 0;
   }
 
   // descktop
 
   @media (min-width: $vp-1024) {
-    padding: 14px 26px;
     max-width: 244px;
+
     line-height: 0;
+
+    padding: 14px 26px;
     margin-top: 12px;
   }
 }

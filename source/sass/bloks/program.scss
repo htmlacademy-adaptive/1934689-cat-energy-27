@@ -18,8 +18,8 @@
 
 // descktop wrapper program blocks
 
-@media (min-width: $vp-1024) {
-  .program__wrapper-blocks {
+.program__wrapper-blocks {
+  @media (min-width: $vp-1024) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -30,12 +30,16 @@
 
 .program__block {
   position: relative;
-  padding: 21px 33px 22px 20px;
-  background-color: $color-white-smoke;
-  margin-bottom: 20px;
+
   display: flex;
   flex-wrap: wrap;
+
   align-items: center;
+
+  background-color: $color-white-smoke;
+
+  padding: 21px 33px 22px 20px;
+  margin-bottom: 20px;
 
   // tablet
 
@@ -57,18 +61,24 @@
 
 .program__block-img-background {
   position: relative;
+
   width: 50px;
   height: 50px;
+
   border-radius: 50%;
+
   background-color: $color-apple;
+
   margin-right: 19px;
 
   // tablet
 
   @media (min-width: $vp-768) {
-    margin-right: 0;
     position: absolute;
     right: 80px;
+
+    margin-right: 0;
+
     width: 200px;
     height: 200px;
   }
@@ -77,9 +87,11 @@
 
   @media (min-width: $vp-1024) {
     position: relative;
+    right: 0;
+
     width: 100px;
     height: 100px;
-    right: 0;
+
     margin-right: 6%;
   }
 }
@@ -111,6 +123,7 @@
   @media (min-width: $vp-768) {
     height: 100%;
     width: 133%;
+
     left: -34px;
     top: 41px;
   }
@@ -126,6 +139,7 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $color-default-black;
+
   max-width: 250px;
 
   // tablet
@@ -140,12 +154,14 @@
 
 .program__block-description {
   position: relative;
+
   font-family: $ff-lato;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $color-charcoal;
+
   margin-top: 22px;
   margin-bottom: 23px;
 
@@ -171,11 +187,13 @@
 .program__block-description::before {
   position: absolute;
   content: "";
-  width: 100%;
-  height: 0;
-  border: 1px solid $color-gainsboro;
   left: 0;
   bottom: -24px;
+
+  width: 100%;
+  height: 0;
+
+  border: 1px solid $color-gainsboro;
 
   // tablet
 
@@ -194,6 +212,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-default-black;
+
   margin-top: 19px;
 
   // tablet

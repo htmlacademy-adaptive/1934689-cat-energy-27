@@ -22,13 +22,15 @@
 // form gray lines
 
 .form__hero::before {
-  content: "";
-  width: 100%;
-  height: 0;
-  border: 1px solid $color-gainsboro;
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
+
+  width: 100%;
+  height: 0;
+
+  border: 1px solid $color-gainsboro;
 
   // tablet
 
@@ -55,6 +57,7 @@
   @media (min-width: $vp-768) {
     font-size: 60px;
     line-height: 60px;
+
     margin-bottom: 54px;
   }
 }
@@ -69,9 +72,10 @@
   line-height: 18px;
   color: $color-default-black;
   text-transform: uppercase;
-  text-align: start;
-  margin-right: 20px;
 
+  text-align: start;
+
+  margin-right: 20px;
   max-width: 226px;
 
   // tablet
@@ -79,6 +83,7 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 30px;
+
     max-width: 323px;
   }
 }
@@ -90,8 +95,6 @@
 // form wrapper
 
 .form__wrapper {
-  // tablet
-
   @media (min-width: $vp-768) {
     padding: 0 70px;
   }
@@ -102,12 +105,12 @@
 .form__data-pets {
   position: relative;
 
-  border: none;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: start;
+
+  border: none;
   margin-bottom: 24px;
 
   // tablet
@@ -115,6 +118,7 @@
   @media (min-width: $vp-768) {
     flex-direction: column;
     align-items: flex-start;
+
     margin-bottom: 72px;
   }
 
@@ -133,8 +137,10 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $color-charcoal;
+
   display: flex;
   align-items: center;
+
   margin-bottom: 14px;
 
   // descktop
@@ -146,8 +152,8 @@
 
 // descktop
 
-@media (min-width: $vp-1024) {
-  .form__data-title:last-child {
+.form__data-title:last-child {
+  @media (min-width: $vp-1024) {
     margin-bottom: 0;
   }
 }
@@ -174,7 +180,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-charcoal;
+
   border: 2px solid $color-Whisper-light-2;
+
   padding: 14px 0 13px 20px;
   width: 100%;
   margin-left: 13px;
@@ -193,8 +201,6 @@
 }
 
 .form__data-title:nth-child(3) .form__data-input {
-  // tablet
-
   @media (min-width: $vp-768) {
     width: 542px;
   }
@@ -240,38 +246,47 @@
 
 .form__radio-box {
   position: relative;
-  padding-top: 22px;
-  margin-bottom: 27px;
-  border: none;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+
   align-items: start;
+
+  padding-top: 22px;
+  margin-bottom: 27px;
+
+  border: none;
 
   &::before {
     position: absolute;
     content: "";
-    width: 100vh;
-    height: 0;
-    border: 1px solid #d9d9d9;
     top: 0;
     left: -150px;
+
+    width: 100vh;
+    height: 0;
+
+    border: 1px solid #d9d9d9;
   }
 
   &::after {
     position: absolute;
     content: "";
-    width: 100vh;
-    height: 0;
-    border: 1px solid #d9d9d9;
     left: -150px;
     bottom: 0;
+
+    width: 100vh;
+    height: 0;
+
+    border: 1px solid #d9d9d9;
   }
 
   // tablet
 
   @media (min-width: $vp-768) {
     border: 1px solid $color-Whisper-light-2;
+
     padding: 25px 28px;
     margin-bottom: 75px;
   }
@@ -288,8 +303,10 @@
 
 .form__radio-choice {
   position: relative;
+
   margin-bottom: 19px;
   margin-left: 45px;
+
   cursor: pointer;
 
   // tablet
@@ -316,29 +333,39 @@
 // decorated radio button
 
 .form__radio-choice::before {
-  content: "";
-  position: absolute;
   display: none;
+
+  position: absolute;
+  content: "";
   left: -36px;
   top: 50%;
+
   width: 12px;
   height: 12px;
+
   border-radius: 50%;
+
   border: none;
+
   background: $color-apple;
+
   transform: translateY(-50%);
 }
 
 .form__radio-choice::after {
-  content: "";
   position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $color-gainsboro;
-  transition: 0.3s;
+  content: "";
   left: -45px;
   top: 50%;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid $color-gainsboro;
   border-radius: 50%;
+
+  transition: opacity 0.3s;
+
   transform: translateY(-50%);
 }
 
@@ -394,12 +421,13 @@
 
 // form fildset wrapper
 
-@media (min-width: $vp-1024) {
-  .form__fildset-wrapper {
+.form__fildset-wrapper {
+  @media (min-width: $vp-1024) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
     margin-bottom: 69px;
   }
 }
@@ -408,15 +436,16 @@
 
 .form__contacts {
   position: relative;
-  padding-top: 26px;
-
-  border: none;
 
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  border: none;
+
   align-items: start;
 
+  padding-top: 26px;
   margin-bottom: 24px;
 
   // tablet
@@ -445,29 +474,38 @@
   font-size: 24px;
   line-height: 26px;
   color: $color-default-black;
+
   max-width: 195px;
+
   background-color: $color-default-white;
+
   z-index: 1;
 
   &::after {
     position: absolute;
     content: "";
-    width: 100vh;
-    height: 0;
-    border: 2px solid $color-apple;
     top: 26px;
     left: 0;
+
+    width: 100vh;
+    height: 0;
+
+    border: 2px solid $color-apple;
+
     z-index: -2;
   }
 
   &::before {
-    content: "";
     position: absolute;
+    content: "";
     top: 0;
     left: 0;
+
     z-index: -1;
+
     width: calc(100% + 20px);
     height: 100%;
+
     background-color: $color-default-white;
   }
 
@@ -476,6 +514,7 @@
   @media (min-width: $vp-768) {
     font-size: 36px;
     line-height: 36px;
+
     max-width: unset;
     margin-bottom: 76px;
     min-width: 582px;
@@ -486,9 +525,10 @@
 
 .form__contacts-email {
   position: relative;
-  margin-bottom: 14px;
 
   display: flex;
+
+  margin-bottom: 14px;
   width: 100%;
 
   // tablet
@@ -508,7 +548,9 @@
   color: $color-charcoal;
 
   display: flex;
+
   min-width: 53px;
+
   align-items: center;
 
   // tablet
@@ -523,6 +565,9 @@
 
 .form__contacts-tell {
   position: relative;
+
+  display: flex;
+
   font-family: $ff-oswald;
   font-style: normal;
   font-weight: 400;
@@ -531,8 +576,8 @@
   text-transform: uppercase;
   color: $color-charcoal;
 
-  display: flex;
   align-items: center;
+
   width: 100%;
 }
 
@@ -546,7 +591,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-charcoal;
+
   border: 2px solid $color-Whisper-light-2;
+
   padding: 14px 19px 14px 15px;
   margin-left: 10px;
   width: 100%;
@@ -554,9 +601,10 @@
   // tablet
 
   @media (min-width: $vp-768) {
-    width: 542px;
     font-size: 20px;
     line-height: 30px;
+
+    width: 542px;
     padding: 11px 20px 11px 20px;
     margin-left: 20px;
   }
@@ -621,25 +669,31 @@
 .form__input-ico-mail {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   right: 12px;
+
+  transform: translateY(-50%);
+
   color: $color-default-black;
 }
 
 .form__input-ico-tell {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   right: 12px;
+
+  transform: translateY(-50%);
+
   color: $color-default-black;
 }
 
 // form coments block
 
 .form__coments {
-  border: none;
-  margin-bottom: 23px;
   position: relative;
+
+  border: none;
+
+  margin-bottom: 23px;
 
   // tablet
 
@@ -662,17 +716,22 @@
   font-size: 24px;
   line-height: 26px;
   color: $color-default-black;
+
   background-color: $color-default-white;
+
   max-width: 143px;
 
   &::after {
     position: absolute;
     content: "";
-    width: 100vh;
-    height: 0;
-    border: 2px solid $color-apple;
     top: 16px;
     left: 0;
+
+    width: 100vh;
+    height: 0;
+
+    border: 2px solid $color-apple;
+
     z-index: -1;
   }
   // tablet
@@ -694,9 +753,12 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-charcoal;
+
   border: 1px solid $color-Whisper-light-2;
+
   width: 100%;
   padding: 10px 15px 0 12px;
+
   resize: none;
 
   // tablet
@@ -719,26 +781,31 @@
 
 .form__checkbox {
   position: relative;
-  border: none;
-  padding-top: 34px;
+
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
-  margin-bottom: 34px;
   flex-direction: column;
+
+  align-items: start;
+
+  border: none;
+  padding-top: 34px;
+  margin-bottom: 34px;
 
   // tablet
 
   @media (min-width: $vp-768) {
     flex-direction: row;
-    max-width: 533px;
     justify-content: space-between;
+
+    max-width: 533px;
   }
 
   // descktop
 
   @media (min-width: $vp-1024) {
     flex-direction: row;
+
     min-width: 1150px;
     margin-bottom: 61px;
   }
@@ -747,24 +814,29 @@
 // form checkbox title
 
 .form__checkbox-title {
-  margin-bottom: 38px;
   font-family: $ff-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $color-default-black;
+
   background-color: $color-default-white;
+
+  margin-bottom: 38px;
   min-width: 164px;
 
   &::after {
     position: absolute;
     content: "";
-    width: 100vh;
-    height: 0;
-    border: 2px solid $color-apple;
     top: 16px;
     left: 0;
+
+    width: 100vh;
+    height: 0;
+
+    border: 2px solid $color-apple;
+
     z-index: -1;
   }
 
@@ -787,8 +859,9 @@
 
   @media (min-width: $vp-1024) {
     flex-direction: row;
-    min-width: 515px;
     justify-content: space-between;
+
+    min-width: 515px;
   }
 }
 
@@ -808,12 +881,15 @@
 // decorated radio button
 
 .form__checkbox-item::before {
-  content: url("../img/form/check-mark.svg");
   display: none;
+
+  content: url("../img/form/check-mark.svg");
   position: absolute;
   left: 7;
   top: 50%;
+
   transform: translateY(-80%);
+
   margin-top: -3px;
   width: 12px;
   height: 21px;
@@ -830,14 +906,18 @@
 }
 
 .form__checkbox-item::after {
-  content: "";
   position: absolute;
+  content: "";
   left: 0;
   top: 50%;
+
   transform: translateY(-90%);
+
   width: 30px;
   height: 30px;
+
   border: 1px solid $color-gainsboro;
+
   transition: 0.3s;
 
   // tablet
@@ -851,6 +931,7 @@
 
 .form__checkbox-item-text {
   display: inline-block;
+
   font-family: $ff-oswald;
   font-style: normal;
   font-weight: 400;
@@ -858,6 +939,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-default-black;
+
   margin-left: 46px;
   margin-bottom: 25px;
 
@@ -919,14 +1001,18 @@
 
 .form__button-block {
   display: block;
+
   text-align: center;
+
   margin-bottom: 32px;
 
   // tablet
 
   @media (min-width: $vp-768) {
     display: flex;
+
     align-items: center;
+
     margin-bottom: 72px;
   }
 
@@ -941,9 +1027,11 @@
 
 .form-button {
   border: none;
-  margin-bottom: 19px;
+
   font-size: $fsize-default-16;
   line-height: 20px;
+
+  margin-bottom: 19px;
 
   // tablet
 
@@ -969,9 +1057,10 @@
   // tablet
 
   @media (min-width: $vp-768) {
-    margin-left: 64px;
     font-size: $fsize-default-16;
     line-height: 16px;
+
+    margin-left: 64px;
   }
 
   // descktop

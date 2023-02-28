@@ -7,18 +7,22 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
+
   border-color: $color-default-white;
+
   padding-top: 40px;
   padding-bottom: 40px;
+
   align-items: center;
 
   //tablet footer
 
   @media (min-width: $vp-768) {
-    padding-top: 57px;
-    padding-bottom: 57px;
     flex-direction: row;
     justify-content: space-between;
+
+    padding-top: 57px;
+    padding-bottom: 57px;
   }
 
   //descktop footer
@@ -74,7 +78,9 @@
   position: absolute;
   content: "";
   top: -30px;
+
   width: 281px;
+
   border: 1px solid $color-gainsboro;
 
   // tqblet lines
@@ -87,8 +93,10 @@
 .footer__social-list::after {
   position: absolute;
   content: "";
+
   bottom: -30px;
   width: 281px;
+
   border: 1px solid $color-gainsboro;
 
   // tqblet lines
@@ -124,7 +132,9 @@
 
 .footer__link {
   display: flex;
+
   align-items: center;
+
   max-width: 320px;
 }
 

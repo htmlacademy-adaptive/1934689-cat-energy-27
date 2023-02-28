@@ -1,7 +1,9 @@
 //example section
 .example {
   position: relative;
+
   background-color: $color-whisper;
+
   padding-top: 25px;
   padding-bottom: 40px;
 
@@ -43,8 +45,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: $color-default-black;
+
+  text-align: center;
+
   margin-bottom: 40px;
   margin-right: 55px;
 
@@ -54,6 +58,7 @@
     text-align: start;
     font-size: 60px;
     line-height: 60px;
+
     margin-bottom: 63px;
   }
 
@@ -72,6 +77,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-charcoal;
+
   min-width: 275px;
   margin: 0 auto;
   max-width: 560px;
@@ -83,6 +89,7 @@
     text-align: start;
     font-size: $fsize-default-16;
     line-height: $flh-default-24;
+
     margin-bottom: 54px;
     margin-left: 0;
     max-width: unset;
@@ -107,9 +114,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+
     margin: 0;
     margin-bottom: 91px;
-    justify-content: space-between;
     max-width: 100%;
   }
 
@@ -127,12 +135,14 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
   margin-bottom: 34px;
 
   //table example table
 
   @media (min-width: $vp-768) {
     justify-content: flex-start;
+
     margin-bottom: 0;
   }
 
@@ -147,9 +157,12 @@
 
 .example__weith-wrapper {
   position: relative;
+
   text-align: center;
+
   border: 1px solid $color-very-light-grey;
   border-radius: 3px;
+
   padding: 15px 43px 18px;
 
   //table example weith wrapper
@@ -189,21 +202,25 @@
   position: absolute;
   bottom: -17px;
   left: 50%;
-  transform: translateX(-50%);
+
   font-family: $ff-lato;
   font-style: normal;
   font-size: 12px;
   line-height: 100%;
   text-align: center;
   color: $color-charcoal;
+
   min-width: 77px;
+
   background-color: $color-whisper;
+  transform: translateX(-50%);
 
   //tablet example weith text
 
   @media (min-width: $vp-768) {
     font-size: 14px;
     line-height: 14px;
+
     min-width: 110px;
     bottom: -5px;
   }
@@ -245,15 +262,20 @@
   position: absolute;
   bottom: -17px;
   left: 50%;
-  transform: translateX(-50%);
+
   font-family: $ff-lato;
   font-style: normal;
   font-size: 12px;
   line-height: 100%;
   text-align: center;
   color: $color-charcoal;
+
   min-width: 77px;
+
   background-color: $color-whisper;
+  transform: translateX(-50%);
+
+  // tablet
 
   @media (min-width: $vp-768) {
     font-size: 14px;
@@ -273,15 +295,18 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-default-black;
+
   margin: 0 auto 20px;
 
-  // tablet example total
+  // tablet
 
   @media (min-width: $vp-768) {
-    margin: 0;
-    text-align: end;
     font-size: 20px;
     line-height: 20px;
+
+    margin: 0;
+
+    text-align: end;
   }
 }
 
@@ -290,7 +315,7 @@
 .example__total--br {
   display: none;
 
-  // tablet example total br
+  // tablet
 
   @media (min-width: $vp-768) {
     display: block;
@@ -307,15 +332,14 @@
 
 .example__total-number {
   display: inline-block;
+
   font-family: $ff-oswald;
   font-style: normal;
   font-weight: 400;
-}
 
-//descktop example total number
+  //descktop
 
-@media (min-width: $vp-1024) {
-  .example__total-number {
+  @media (min-width: $vp-1024) {
     display: inline-block;
     font-family: $ff-oswald;
     font-style: normal;
@@ -324,6 +348,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $color-default-black;
+
     margin-left: 63px;
   }
 }
@@ -356,8 +381,10 @@
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
   overflow: hidden;
 }
 
@@ -391,19 +418,23 @@
   position: absolute;
   top: 50%;
   left: 50%;
+
+  color: $color-dim-gray;
+
   z-index: 1;
 
   width: 40px;
   height: 100%;
   padding: 0;
 
-  color: $color-dim-gray;
-
   background-color: transparent;
+
   border: none;
   outline: none;
   transform: translateY(-50%);
+
   cursor: pointer;
+
   opacity: 0.9;
 
   pointer-events: auto;
@@ -431,9 +462,11 @@
   position: absolute;
   top: 0;
   left: 50%;
-  z-index: 2;
 
   display: block;
+
+  z-index: 2;
+
   width: 4px;
   height: 100%;
 
@@ -449,23 +482,27 @@
 
 //tablet example bacground color
 
-@media (min-width: $vp-768) {
-  .example::before {
+.example::before {
+  @media (min-width: $vp-768) {
     position: absolute;
     content: "";
+
     background-image: linear-gradient(
       90deg,
       rgba(234, 234, 234, 1) 0%,
       rgba(234, 234, 234, 1) 100%
     );
+
     background-position: center;
     bottom: 0;
     left: 0;
+
     width: 100%;
     height: 462px;
+
     z-index: -1;
 
-    //descktop example bacground color
+    //descktop
 
     @media (min-width: $vp-1024) {
       height: 488px;

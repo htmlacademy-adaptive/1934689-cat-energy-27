@@ -35,9 +35,11 @@
     content: "";
     top: -20px;
     left: 0;
+
     width: 100%;
     min-width: 320px;
     height: 1px;
+
     background-color: $color-whisper-light;
     overflow: hidden;
   }
@@ -47,9 +49,11 @@
     content: "";
     bottom: -30px;
     left: 0;
+
     width: 100%;
     min-width: 320px;
     height: 1px;
+
     background-color: $color-whisper-light;
     overflow: hidden;
   }
@@ -91,6 +95,7 @@
   @media (min-width: $vp-768) {
     grid-template-columns: repeat(2, 1fr);
     gap: 6%;
+
     max-width: unset;
   }
 
@@ -119,9 +124,12 @@
     content: "";
     bottom: -30px;
     left: -150px;
+
     width: 100vh;
     height: 1px;
+
     background-color: $color-whisper-light;
+
     overflow: hidden;
   }
 
@@ -139,10 +147,13 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      z-index: -1;
+
       width: 100%;
       height: calc(100% - 81px);
+
       background-color: $color-white-smoke;
+
+      z-index: -1;
     }
 
     padding: 0 12% 12%;
@@ -170,8 +181,8 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 200px;
 
+    height: 200px;
     margin-bottom: 28px;
   }
 }
@@ -189,6 +200,7 @@
 
   display: block;
   text-align: start;
+
   max-width: 76px;
   margin-bottom: 14px;
 
@@ -197,9 +209,10 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: $flh-default-24;
-    max-width: 147px;
+
     text-align: center;
 
+    max-width: 147px;
     margin: 0 auto;
     margin-bottom: 21px;
   }
@@ -245,6 +258,7 @@
 
 .catalog__card-content-wrapper {
   grid-area: text;
+
   margin-bottom: 22px;
 
   @media (min-width: $vp-768) {
@@ -256,6 +270,7 @@
 
 .catalog__card-button {
   grid-area: button;
+
   width: 100%;
 
   @media (min-width: $vp-768) {
@@ -277,7 +292,9 @@
   @media (min-width: $vp-768) {
     margin-top: 81px;
     padding: 161px 37px 12% 12%;
+
     border: 2px solid $color-white-smoke;
+
     background-color: transparent;
 
     &::before {
@@ -288,6 +305,7 @@
 
 .catalog__item-last-link {
   display: block;
+
   width: 100%;
 }
 
@@ -300,8 +318,10 @@
     position: absolute;
     top: -50px;
     left: 50%;
+
     width: 2px;
     height: 30px;
+
     background-color: #d3d3d3;
     transform: translateX(-50%);
 
@@ -316,8 +336,10 @@
     position: absolute;
     top: -50px;
     left: 50%;
+
     width: 2px;
     height: 30px;
+
     background-color: #d3d3d3;
     transform: translateX(-50%) rotate(90deg);
 
@@ -345,7 +367,6 @@
     line-height: 22px;
 
     margin-bottom: 23px;
-
     max-width: 134px;
   }
 }
@@ -367,7 +388,6 @@
     line-height: 18px;
 
     margin-bottom: 87px;
-
     max-width: 165px;
   }
 }
@@ -384,6 +404,7 @@
   text-transform: uppercase;
 
   display: block;
+
   padding: 10px;
   width: 100%;
 
