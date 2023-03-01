@@ -67,9 +67,9 @@
 
           <!--header menu navigation list-->
 
-          <ul class="menu menu--no-js" id="menu">
+          <ul class="menu menu--black menu--no-js" id="menu">
 
-            <li class="menu__list menu__list--curent">
+            <li class="menu__list ">
 
               <a class="menu__list-item" href="index.html">главная</a>
             </li>
@@ -81,7 +81,7 @@
 
             <li class="menu__list">
 
-              <a class="menu__list-item" href="form.html">подбор программы</a>
+              <a class="menu__list-item menu__list--curent" href="form.html">подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -96,7 +96,7 @@
 
       <section class="form__hero">
 
-        <div class="container">
+        <div class="container form__hero-wrapper">
 
           <h1 class="visually-hidden">
             подбор программы похудения или набора массы, для оптимального питания коту или кошки.
@@ -204,9 +204,10 @@
 
               <legend class="form__contacts-title">
 
-                Контактные данные
-                (владельца кота)
-
+                <span class="title-decorate">
+                  Контактные данные
+                  (владельца кота)
+                </span>
               </legend>
 
               <!--e-mail input-->
@@ -245,7 +246,11 @@
 
             <fieldset class="form__coments">
 
-              <h2 class="form__coments-title">Комментарий</h2>
+              <h2 class="form__coments-title">
+                <span class="title-decorate">
+                  Комментарий
+                </span>
+              </h2>
 
               <textarea class="form__coments-input" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
@@ -256,50 +261,60 @@
 
               <legend class="form__checkbox-title">
 
-                <span class="form__checkbox-title-item">Дополнительно</span>
+                <span class="form__checkbox-title-item title-decorate">Дополнительно</span>
 
               </legend>
 
-              <div class="form__checkbox-wraper">
-                <input class="form__checkbox-input" type="checkbox" name="sweetener" value="sweetener" id="sweetener"
-                  checked>
 
-                <label class="form__checkbox-item" for="sweetener" tabindex="0">
+              <ul class="form__checkbox-list">
 
-                  <span class="form__checkbox-item-text">сахарозаменитель</span>
+                <li class="form__checkbox-list-item">
 
-                </label>
+                  <input class="form__checkbox-input" type="checkbox" name="sugar" value="sugar" id="sugar" checked>
 
-                <input class="form__checkbox-input" type="checkbox" name="drinking-water" value="drinking-water"
-                  id="drinking-water">
+                  <label class="form__checkbox-item" for="sugar" tabindex="0">
 
-                <label class="form__checkbox-item" for="drinking-water" tabindex="0">
+                    <span class="form__checkbox-item-text">сахорозаменитель</span>
 
-                  <span class="form__checkbox-item-text">питьевая вода</span>
+                  </label>
+                </li>
 
-                </label>
-              </div>
+                <li class="form__checkbox-list-item">
 
-              <div class="form__checkbox-wraper">
+                  <input class="form__checkbox-input" type="checkbox" name="drinking-water" value="drinking-water"
+                    id="drinking-water">
 
-                <input class="form__checkbox-input" type="checkbox" name="milk" value="milk" id="milk">
+                  <label class="form__checkbox-item" for="drinking-water" tabindex="0">
 
-                <label class="form__checkbox-item" for="milk" tabindex="0">
+                    <span class="form__checkbox-item-text">питьевая вода</span>
 
-                  <span class="form__checkbox-item-text">молоко</span>
-
-                </label>
+                  </label>
+                </li>
 
 
-                <input class="form__checkbox-input" type="checkbox" name="vitamins" value="vitamins" id="vitamins">
+                <li class="form__checkbox-list-item">
 
-                <label class="form__checkbox-item" for="vitamins" tabindex="0">
+                  <input class="form__checkbox-input" type="checkbox" name="milk" value="milk" id="milk">
 
-                  <span class="form__checkbox-item-text">витамины</span>
+                  <label class="form__checkbox-item" for="milk" tabindex="0">
 
-                </label>
-              </div>
+                    <span class="form__checkbox-item-text">молоко</span>
 
+                  </label>
+
+                </li>
+
+                <li class="form__checkbox-list-item">
+
+                  <input class="form__checkbox-input" type="checkbox" name="vitamins" value="vitamins" id="vitamins">
+
+                  <label class="form__checkbox-item" for="vitamins" tabindex="0">
+
+                    <span class="form__checkbox-item-text">витамины</span>
+
+                  </label>
+                </li>
+              </ul>
             </fieldset>
 
             <!--form submit button block-->

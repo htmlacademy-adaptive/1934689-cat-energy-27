@@ -43,34 +43,6 @@
   }
 }
 
-// additional title green lines
-
-.additional::before {
-  position: absolute;
-  content: "";
-  left: 20px;
-  top: 15px;
-
-  width: 100%;
-  height: 0;
-
-  border: 2px solid $color-apple;
-  z-index: -1;
-
-  //tablet
-
-  @media (min-width: $vp-768) {
-    left: 0;
-    top: 20px;
-  }
-
-  //descktop
-
-  @media (min-width: $vp-1024) {
-    content: none;
-  }
-}
-
 // additional title
 
 .additional__title {
@@ -86,23 +58,23 @@
 
   background-color: $color-default-white;
 
-  margin-bottom: 36px;
-  max-width: 247px;
   margin-left: 20px;
-
-  z-index: 2;
+  margin-bottom: 36px;
 
   //tablet
 
   @media (min-width: $vp-768) {
     font-size: 36px;
     line-height: 100%;
-    text-align: center;
-
-    max-width: 410px;
-    margin-left: 67px;
+    text-align: start;
 
     margin-bottom: 80px;
+  }
+
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    margin-left: 110px;
   }
 }
 
@@ -201,7 +173,7 @@
     left: 0;
     bottom: 0;
 
-    width: 895px;
+    width: 100%;
     height: 0;
 
     margin: 0 auto;

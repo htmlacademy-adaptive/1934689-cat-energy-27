@@ -122,10 +122,15 @@
 //header nav drop menu list
 
 .header__nav {
+  width: calc(100% + 40px);
+  left: -20px;
+  position: absolute;
+  top: 52px;
+  z-index: 3;
+  background-color: $color-default-white;
   display: none;
 
   height: 0;
-  width: 100%;
 
   margin-bottom: -13px;
   margin-top: 13px;
@@ -135,6 +140,13 @@
   // tablet
 
   @media (min-width: $vp-768) {
+    left: unset;
+    position: relative;
+    top: unset;
+    z-index: unset;
+
+    background-color: transparent;
+
     display: block;
 
     height: auto;
