@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.form__hero {
+.form-hero {
   position: relative;
 
   margin: 0 auto;
@@ -42,7 +42,7 @@
 
 // form hero title
 
-.form__hero-title {
+.form-hero__title {
   font-family: $ff-oswald;
   font-style: normal;
   font-weight: 400;
@@ -66,7 +66,7 @@
 
 // form hero description
 
-.form__hero-description {
+.form-hero__description {
   font-family: $ff-oswald;
   font-style: normal;
   font-weight: 400;
@@ -123,7 +123,7 @@
 
 // form hero wrapper
 
-.form__hero-wrapper {
+.form-hero__wrapper {
   @media (min-width: $vp-768) {
     padding-left: 70px;
     padding-right: 66px;
