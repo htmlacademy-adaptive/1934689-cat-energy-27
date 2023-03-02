@@ -87,7 +87,6 @@
   grid-template-columns: repeat(1, 1fr);
 
   max-width: 500px;
-  align-items: center;
   margin: 0 auto;
 
   // tablet
@@ -113,6 +112,7 @@
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
   grid-template-areas:
     "image text"
     "button button";
@@ -181,6 +181,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    align-self: start;
 
     height: 200px;
     margin-bottom: 28px;
@@ -276,6 +277,7 @@
   @media (min-width: $vp-768) {
     font-size: $fsize-default-16;
     line-height: 20px;
+    margin-top: auto;
   }
 }
 

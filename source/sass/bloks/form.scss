@@ -321,7 +321,6 @@
   position: relative;
 
   margin-bottom: 19px;
-  margin-left: 45px;
 
   cursor: pointer;
 
@@ -626,16 +625,16 @@
   color: $color-apple;
 }
 
-.form__contacts-input:focus:invalid {
+.is-invalid {
   outline: none;
   border: 2px solid #ff8282;
 }
 
-.form__contacts-input:focus:invalid + .form__input-ico-mail {
+.is-invalid + .form__input-ico-mail {
   color: #ff8282;
 }
 
-.form__contacts-input:focus:invalid + .form__input-ico-tell {
+.is-invalid + .form__input-ico-tell {
   color: #ff8282;
 }
 
@@ -827,7 +826,7 @@
 
   content: url("../img/form/check-mark.svg");
   position: absolute;
-  left: 7;
+  left: 7px;
   top: 50%;
 
   transform: translateY(-80%);
@@ -961,14 +960,15 @@
   font-size: $fsize-default-16;
   line-height: 20px;
 
+  margin: 0 auto;
   margin-bottom: 19px;
 
   // tablet
 
   @media (min-width: $vp-768) {
     line-height: 0;
-    margin-right: 64px;
     margin-bottom: 0;
+    margin-left: 0;
   }
 
   //descktop

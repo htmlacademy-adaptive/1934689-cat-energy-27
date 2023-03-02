@@ -143,27 +143,33 @@
     top: 0;
 
     z-index: -1;
+  }
+}
 
-    .explanation__list-item-two::before {
-      position: absolute;
-      content: url("../img/explanation/explanation-2.png");
-      right: 0;
-      top: 0;
-    }
+.explanation__list-item-two::before {
+  @media (min-width: $vp-768) {
+    position: absolute;
+    content: url("../img/explanation/explanation-2.png");
+    right: 0;
+    top: 0;
+  }
+}
 
-    .explanation__list-item-three::before {
-      position: absolute;
-      content: url("../img/explanation/explanation-3.png");
-      right: 0;
-      top: 0;
-    }
+.explanation__list-item-three::before {
+  @media (min-width: $vp-768) {
+    position: absolute;
+    content: url("../img/explanation/explanation-3.png");
+    right: 0;
+    top: 0;
+  }
+}
 
-    .explanation__list-item-four::before {
-      position: absolute;
-      content: url("../img/explanation/explanation-4.png");
-      right: 0;
-      top: 0;
-    }
+.explanation__list-item-four::before {
+  @media (min-width: $vp-768) {
+    position: absolute;
+    content: url("../img/explanation/explanation-4.png");
+    right: 0;
+    top: 0;
   }
 }
 
