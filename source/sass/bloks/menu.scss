@@ -18,7 +18,7 @@
 
     border: none;
 
-    min-width: 450px;
+    min-width: 440px;
   }
 
   //descktop menu
@@ -47,6 +47,7 @@
 
   @media (min-width: $vp-1024) {
     background-color: transparent;
+    margin-left: -9px;
   }
 }
 

@@ -29,6 +29,7 @@
 
   @media (min-width: $vp-1024) {
     margin-bottom: 86px;
+    padding-top: 17px;
   }
 }
 
@@ -57,13 +58,15 @@
     line-height: 100%;
     text-align: start;
 
-    margin-bottom: 80px;
+    margin-bottom: 83px;
+    margin-left: 67px;
   }
 
   //descktop
 
   @media (min-width: $vp-1024) {
     margin-left: 110px;
+    margin-bottom: 80px;
   }
 }
 
@@ -78,6 +81,7 @@
 
   @media (min-width: $vp-768) {
     border: 1px solid $color-very-light-grey;
+    margin-bottom: 66px;
   }
 
   //descktop additional list
@@ -103,7 +107,7 @@
   //tablet
 
   @media (min-width: $vp-768) {
-    padding: 26px 38px 28px;
+    padding: 26px 38px 30px;
     margin-bottom: 0;
 
     display: flex;
@@ -117,9 +121,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 0.7fr;
     align-items: center;
-    gap: 2%;
+    gap: 5%;
 
-    padding: 15px 0 17px;
+    padding: 15px 0 17px 10px;
   }
 
   //mobile additional list lines
@@ -153,7 +157,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -25px;
+    bottom: -19px;
 
     width: 100%;
     height: 1px;
@@ -214,6 +218,7 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 0;
   }
 
   //descktop
@@ -232,6 +237,12 @@
   align-items: center;
   justify-content: space-between;
 
+  //tablet
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    margin-bottom: 23px;
+  }
   //descktop additional goods wrapper
 
   @media (min-width: $vp-1024) {
@@ -344,7 +355,7 @@
     background-size: 100% 200px;
 
     text-align: start;
-    padding: 57px 124px 74px 77px;
+    padding: 70px 124px 70px 77px;
 
     // gift image bacground resolution 2ddpx
 
@@ -378,6 +389,7 @@
     color: $color-default-black;
 
     padding: 185px 43px 42px 42px;
+    margin-left: 8px;
 
     width: 100%;
 
@@ -399,12 +411,12 @@
     width: 78px;
     height: 80px;
     left: 50%;
-    top: 65px;
+    top: 58px;
     transform: translateX(-50%);
 
     @media (min-width: $vp-768) {
-      left: 105px;
-      top: 26%;
+      left: 119px;
+      top: 29%;
       width: 80px;
       height: 83px;
     }
@@ -413,7 +425,7 @@
       width: 78px;
       height: 80px;
       left: 50%;
-      top: 65px;
+      top: 57px;
     }
   }
 }

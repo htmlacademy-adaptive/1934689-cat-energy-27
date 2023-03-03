@@ -10,11 +10,11 @@
     position: absolute;
     content: "";
     top: 0;
-    left: 50%;
+    left: 51%;
     z-index: -1;
 
-    width: 50vw;
-    height: 100%;
+    width: 52%;
+    height: 81%;
 
     background-image: linear-gradient(
         to top,
@@ -57,7 +57,7 @@
   background-color: $color-default-white;
 
   padding-top: 11px;
-  padding-bottom: 17px;
+  padding-bottom: 11px;
 
   //tablet
 
@@ -79,7 +79,23 @@
 
   @media (min-width: $vp-1024) {
     background-color: transparent;
+    padding-top: 51px;
+    margin-bottom: 32px;
+    padding-right: 52px;
+  }
+}
+
+.header__wrapper-catalog {
+  @media (min-width: $vp-1024) {
     padding-top: 54px;
+  }
+}
+
+.header__wrapper-form {
+  @media (min-width: $vp-1024) {
+    padding-top: 52px;
+    padding-right: 60px;
+    padding-left: 33px;
   }
 }
 
@@ -106,6 +122,13 @@
 
   @media (min-width: $vp-768) {
     width: unset;
+  }
+
+  // dexcktop
+
+  @media (min-width: $vp-1024) {
+    width: unset;
+    margin-left: 7px;
   }
 }
 
@@ -198,6 +221,7 @@
 
   cursor: pointer;
 
+  padding-bottom: 6px;
   margin-left: auto;
 
   @media (min-width: $vp-768) {

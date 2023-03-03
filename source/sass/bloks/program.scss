@@ -38,7 +38,7 @@
 
   background-color: $color-white-smoke;
 
-  padding: 21px 33px 22px 20px;
+  padding: 25px 33px 22px 23px;
   margin-bottom: 20px;
 
   // tablet
@@ -75,9 +75,10 @@
 
   @media (min-width: $vp-768) {
     position: absolute;
-    right: 80px;
+    right: 61px;
 
     margin-right: 0;
+    margin-bottom: 10px;
 
     width: 200px;
     height: 200px;
@@ -100,14 +101,15 @@
 
 .program__block-img-slim {
   position: absolute;
-  bottom: 2px;
-  left: 5px;
+  bottom: 0;
+  left: 7px;
 
   // tablet
 
   @media (min-width: $vp-768) {
-    height: 107%;
-    width: 118%;
+    height: 103%;
+    width: 121%;
+    margin-bottom: 4px;
   }
 }
 
@@ -163,13 +165,15 @@
   color: $color-charcoal;
 
   margin-top: 22px;
-  margin-bottom: 23px;
+  margin-bottom: 33px;
 
   // tablet
 
   @media (min-width: $vp-768) {
     font-size: $fsize-default-16;
     line-height: $flh-default-24;
+
+    margin-top: 24px;
   }
 
   // descktop
@@ -226,6 +230,17 @@
 
   @media (min-width: $vp-1024) {
     margin-top: 0;
+  }
+}
+
+//  arrow
+
+.program__block-link-arrow {
+  margin-left: 13px;
+
+  @media (min-width: $vp-768) {
+    margin-left: 25px;
+    margin-bottom: 2px;
   }
 }
 

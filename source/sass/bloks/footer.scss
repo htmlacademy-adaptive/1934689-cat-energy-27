@@ -33,11 +33,20 @@
   }
 }
 
+.footer__wrapper-catalog {
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    padding-left: 48px;
+    padding-right: 32px;
+  }
+}
+
 //footer logo
 
 .footer__logo {
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 
   //tablet footer logo
 
@@ -62,13 +71,16 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 49px;
+  margin-bottom: 35px;
   list-style: none;
 
   // tqblet social list
 
   @media (min-width: $vp-768) {
     margin-bottom: 0;
+    justify-content: space-between;
+    min-width: 151px;
+    padding-left: 20px;
   }
 }
 
@@ -94,7 +106,7 @@
   position: absolute;
   content: "";
 
-  bottom: -30px;
+  bottom: -16px;
   width: 281px;
 
   border: 1px solid $color-gainsboro;
@@ -140,7 +152,7 @@
 
 .footer__link-text {
   display: inline-block;
-  margin-right: 120px;
+  margin-right: 140px;
 
   // tablet
 

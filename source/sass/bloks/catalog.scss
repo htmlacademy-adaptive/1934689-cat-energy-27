@@ -4,13 +4,19 @@
   padding-top: 27px;
 
   @media (min-width: $vp-768) {
-    padding-top: 65px;
-    margin-bottom: 425px;
+    padding-top: 58px;
+    margin-bottom: 246px;
   }
 
   @media (min-width: $vp-1024) {
     margin-bottom: 120px;
-    padding-top: 88px;
+    padding-top: 37px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: $vp-1024) {
+    margin-right: 52px;
   }
 }
 
@@ -28,12 +34,12 @@
 
   margin-bottom: 60px;
   text-align: center;
-  margin-right: 30px;
+  margin-right: 21px;
 
   &::before {
     position: absolute;
     content: "";
-    top: -20px;
+    top: -27px;
     left: 0;
 
     width: 100%;
@@ -47,7 +53,7 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: -30px;
+    bottom: -42px;
     left: 0;
 
     width: 100%;
@@ -63,7 +69,7 @@
     line-height: 60px;
     text-align: start;
     margin-left: 30px;
-    margin-bottom: 90px;
+    margin-bottom: 84px;
 
     &::before {
       content: none;
@@ -76,6 +82,7 @@
 
   @media (min-width: $vp-1024) {
     margin-left: 110px;
+    margin-bottom: 84px;
   }
 }
 
@@ -93,7 +100,8 @@
 
   @media (min-width: $vp-768) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 6%;
+    row-gap: 3%;
+    column-gap: 9%;
 
     max-width: unset;
   }
@@ -102,6 +110,7 @@
 
   @media (min-width: $vp-1024) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 6%;
   }
 }
 
@@ -117,12 +126,12 @@
     "image text"
     "button button";
 
-  margin-bottom: 44px;
+  margin-bottom: 43px;
 
   &::before {
     position: absolute;
     content: "";
-    bottom: -30px;
+    bottom: -25px;
     left: -150px;
 
     width: 100vh;
@@ -158,6 +167,10 @@
 
     padding: 0 12% 12%;
   }
+
+  @media (min-width: $vp-1024) {
+    padding: 0 17% 16%;
+  }
 }
 
 // catalog card img
@@ -183,8 +196,13 @@
     justify-content: center;
     align-self: start;
 
+    height: 210px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $vp-1024) {
     height: 200px;
-    margin-bottom: 28px;
+    margin-bottom: 44px;
   }
 }
 
@@ -215,13 +233,14 @@
 
     max-width: 147px;
     margin: 0 auto;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 
   // descktop
 
   @media (min-width: $vp-1024) {
     line-height: 21px;
+    margin-bottom: 24px;
   }
 }
 
@@ -235,7 +254,7 @@
   @media (min-width: $vp-768) {
     border-bottom: 1px solid $color-very-light-grey;
 
-    margin-bottom: 16px;
+    margin-bottom: 7px;
   }
 }
 
@@ -252,6 +271,7 @@
 
   @media (min-width: $vp-768) {
     font-size: 16px;
+    margin-bottom: 8px;
   }
 }
 
@@ -260,10 +280,10 @@
 .catalog__card-content-wrapper {
   grid-area: text;
 
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 33px;
+    margin-bottom: 26px;
   }
 }
 
@@ -289,19 +309,24 @@
   align-items: center;
   flex-direction: column;
 
-  padding-top: 70px;
+  padding-top: 60px;
+  margin-bottom: 50px;
 
   @media (min-width: $vp-768) {
-    margin-top: 81px;
-    padding: 161px 37px 12% 12%;
+    margin-bottom: 0;
 
-    border: 2px solid $color-white-smoke;
+    padding: 244px 39px 12% 12%;
 
     background-color: transparent;
 
     &::before {
       background-color: transparent;
+      border: 2px solid $color-white-smoke;
     }
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 244px 26px 12% 12%;
   }
 }
 
@@ -329,7 +354,7 @@
 
     @media (min-width: $vp-768) {
       height: 60px;
-      top: -100px;
+      top: -107px;
     }
   }
 
@@ -347,7 +372,7 @@
 
     @media (min-width: $vp-768) {
       height: 60px;
-      top: -100px;
+      top: -107px;
     }
   }
 }
@@ -411,6 +436,10 @@
   width: 100%;
 
   background-color: $color-white-smoke;
+
+  @media (min-width: $vp-1024) {
+    width: 88%;
+  }
 }
 
 // card more button condition

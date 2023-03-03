@@ -36,7 +36,7 @@
   // tablet adress text
 
   @media (min-width: $vp-768) {
-    padding: 56px 40px;
+    padding: 58px 5px 60px 39px;
     max-width: 1220px;
     margin: 0 auto;
   }
@@ -44,15 +44,21 @@
   // descktop adress text
 
   @media (min-width: $vp-1024) {
-    padding: 56px 60px 63px 60px;
+    padding: 61px 80px 41px;
 
     z-index: 3;
 
     background-color: $color-default-white;
 
-    max-width: 585px;
-    margin-left: 0;
+    max-width: 564px;
+    margin-left: 2px;
     align-items: unset;
+  }
+}
+
+.adress__text-wrapper {
+  @media (min-width: $vp-768) {
+    margin-right: 35px;
   }
 }
 
@@ -102,6 +108,12 @@
 
     margin-bottom: 20px;
   }
+
+  @media (min-width: $vp-1024) {
+    text-align: start;
+    max-width: 120px;
+    margin-bottom: 0;
+  }
 }
 
 // tablet adress description city
@@ -112,9 +124,16 @@
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
+    font-size: 16px;
     text-align: end;
   }
+
+  @media (min-width: $vp-1024) {
+    text-align: start;
+    max-width: 120px;
+  }
 }
+
 // adress map
 
 .adress__map {
@@ -122,6 +141,10 @@
   width: 100%;
   height: 362px;
   overflow: hidden;
+
+  @media (min-width: $vp-768) {
+    height: 402px;
+  }
 
   //descktop
 

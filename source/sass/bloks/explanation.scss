@@ -9,13 +9,13 @@
     position: relative;
 
     min-height: 700px;
-    margin-bottom: 69px;
+    margin-bottom: 54px;
 
     &::before {
       position: absolute;
       content: "";
       left: 0;
-      bottom: 0;
+      bottom: -34px;
 
       border: 1px solid $color-whisper-light;
 
@@ -47,7 +47,7 @@
   text-align: center;
 
   margin-bottom: 42px;
-  margin-right: 35px;
+  margin-right: 51px;
 
   // tablet explanation title
 
@@ -78,7 +78,7 @@
     display: grid;
     grid-template-columns: repeat(2, 230px);
     column-gap: 22%;
-    row-gap: 32%;
+    row-gap: 34%;
 
     max-width: 1023px;
   }
@@ -139,7 +139,7 @@
   @media (min-width: $vp-768) {
     position: absolute;
     content: url("../img/explanation/explanation-1.png");
-    right: 40px;
+    right: 33px;
     top: 0;
 
     z-index: -1;
@@ -159,7 +159,7 @@
   @media (min-width: $vp-768) {
     position: absolute;
     content: url("../img/explanation/explanation-3.png");
-    right: 0;
+    right: -7px;
     top: 0;
   }
 }
@@ -168,7 +168,7 @@
   @media (min-width: $vp-768) {
     position: absolute;
     content: url("../img/explanation/explanation-4.png");
-    right: 0;
+    right: -16px;
     top: 0;
   }
 }
@@ -178,7 +178,7 @@
 .explanation__img {
   display: block;
 
-  margin-right: 20px;
+  margin-right: 22px;
   min-width: 60px;
 
   //tablet explanation image
@@ -208,6 +208,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-charcoal;
+  padding-bottom: 6px;
 
   //tablet explanation list text
 
