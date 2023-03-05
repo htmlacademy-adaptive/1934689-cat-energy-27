@@ -16,7 +16,7 @@
 
   @media (min-width: $vp-768) {
     padding-top: 58px;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
   }
 
   // descktop
@@ -117,9 +117,14 @@
 // form wrapper
 
 .form__wrapper {
+  @media (min-width: $vp-768) {
+    padding-left: 71px;
+    padding-right: 67px;
+  }
+
   @media (min-width: $vp-1024) {
-    padding-left: 40;
-    padding-right: 40;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -191,7 +196,7 @@
   // tablet
 
   @media (min-width: $vp-768) {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 }
 
@@ -235,7 +240,7 @@
     font-size: 20px;
     line-height: 30px;
 
-    padding: 11px 0 11px 20px;
+    padding: 10px 0 10px 20px;
   }
 
   // descktop
@@ -281,7 +286,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: -23px;
+    top: -26px;
     left: -150px;
 
     width: 100vh;
@@ -314,10 +319,10 @@
 
   @media (min-width: $vp-768) {
     border: 1px solid $color-Whisper-light-2;
-    margin-bottom: 73px;
-    min-height: 200px;
-    padding-top: 30px;
-    padding-left: 30px;
+    margin-bottom: 76px;
+    min-height: 194px;
+    padding-top: 27px;
+    padding-left: 27px;
   }
 
   // descktop
@@ -325,7 +330,7 @@
   @media (min-width: $vp-1024) {
     padding-top: 29px;
     margin-left: -5px;
-
+    margin-bottom: 79px;
     padding-left: 27px;
   }
 }
@@ -553,7 +558,7 @@
 
   display: flex;
 
-  margin-bottom: 7px;
+  margin-bottom: 12px;
   width: 100%;
 
   // tablet
@@ -636,7 +641,7 @@
 
   border: 2px solid $color-Whisper-light-2;
 
-  padding: 14px 19px 14px 15px;
+  padding: 14px 19px 11px 15px;
   margin-left: 10px;
   width: 100%;
 
@@ -652,7 +657,7 @@
 }
 
 .form__contacts-tell .form__contacts-input {
-  margin-left: 22px;
+  margin-left: 21px;
   width: 100%;
 }
 
@@ -723,6 +728,12 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 59px;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 62px;
   }
 }
 
@@ -805,7 +816,7 @@
 
   @media (min-width: $vp-1024) {
     margin-bottom: 65px;
-    padding-top: 60px;
+    padding-top: 57px;
   }
 }
 
@@ -911,23 +922,22 @@
   content: url("../img/form/check-mark.svg");
   position: absolute;
   left: 7px;
-  top: 50%;
+  top: 67%;
 
-  transform: translateY(-80%);
+  transform: translateY(-50%);
 
   margin-top: -3px;
   width: 12px;
   height: 21px;
 
   @media (min-width: $vp-768) {
-    width: 20px;
-    height: 20px;
-    left: 10px;
-    margin-top: -11px;
+    width: 30px;
+    height: 24px;
+    left: 9px;
   }
 
   @media (min-width: $vp-1024) {
-    top: 28px;
+    top: 22px;
   }
 }
 
@@ -937,7 +947,7 @@
   left: 0;
   top: 50%;
 
-  transform: translateY(-90%);
+  transform: translateY(-50%);
 
   width: 30px;
   height: 30px;
@@ -950,7 +960,7 @@
   }
 
   @media (min-width: $vp-1024) {
-    top: 28px;
+    top: 14px;
   }
 }
 
@@ -1059,7 +1069,7 @@
   line-height: 20px;
 
   margin: 0 auto;
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 
   // tablet
 

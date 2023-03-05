@@ -2,6 +2,12 @@
 
 .explanation {
   margin-bottom: 46px;
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 61px;
+  }
 }
 
 //explanation title
@@ -60,6 +66,10 @@
       width: calc(100% + 60px);
       height: 1px;
       background-color: $color-whisper-light;
+
+      @media (min-width: $vp-1024) {
+        content: none;
+      }
     }
   }
 

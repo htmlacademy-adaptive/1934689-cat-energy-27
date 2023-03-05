@@ -7,12 +7,18 @@
   padding-top: 25px;
   padding-bottom: 40px;
 
-  // descktop example section
+  // tablet
 
   @media (min-width: $vp-768) {
     background-color: transparent;
     padding-bottom: 96px;
     padding-top: 0;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    padding-bottom: 70px;
   }
 }
 
@@ -23,6 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
   }
 }
 
@@ -99,7 +106,7 @@
   //descktop description
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 69px;
+    margin-bottom: 70px;
   }
 }
 
@@ -150,7 +157,7 @@
   //descktop example table
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
 }
 
@@ -176,7 +183,8 @@
   // descktop example weith wrapper
 
   @media (min-width: $vp-1024) {
-    padding: 15px 53px 18px;
+    padding: 15px 56px 18px;
+    margin-right: 45px;
   }
 }
 
@@ -381,6 +389,7 @@
 
   @media (min-width: $vp-1024) {
     margin: 0 0 0 auto;
+    margin-bottom: 15px;
   }
 }
 
@@ -514,7 +523,7 @@
     //descktop
 
     @media (min-width: $vp-1024) {
-      height: 488px;
+      height: 462px;
     }
   }
 }

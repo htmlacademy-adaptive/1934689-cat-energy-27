@@ -11,6 +11,7 @@
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
+    margin-left: -8px;
   }
 }
 
@@ -58,7 +59,7 @@
     line-height: 100%;
     text-align: start;
 
-    margin-bottom: 83px;
+    margin-bottom: 79px;
     margin-left: 67px;
   }
 
@@ -66,7 +67,7 @@
 
   @media (min-width: $vp-1024) {
     margin-left: 110px;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
   }
 }
 
@@ -81,7 +82,7 @@
 
   @media (min-width: $vp-768) {
     border: 1px solid $color-very-light-grey;
-    margin-bottom: 66px;
+    margin-bottom: 70px;
   }
 
   //descktop additional list
@@ -107,7 +108,7 @@
   //tablet
 
   @media (min-width: $vp-768) {
-    padding: 26px 38px 30px;
+    padding: 28px 38px 27px;
     margin-bottom: 0;
 
     display: flex;
@@ -241,11 +242,12 @@
 
   @media (min-width: $vp-768) {
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
   //descktop additional goods wrapper
 
   @media (min-width: $vp-1024) {
+    padding-top: 8px;
     margin: 0;
   }
 }
@@ -266,7 +268,8 @@
     font-size: $fsize-default-16;
     line-height: 20px;
 
-    margin-right: 49px;
+    margin-right: 56px;
+    margin-top: 2px;
   }
 
   //desctop
@@ -289,6 +292,12 @@
   @media (min-width: $vp-768) {
     font-size: $fsize-default-16;
     line-height: 20px;
+  }
+
+  //descktop button
+
+  @media (min-width: $vp-1024) {
+    margin-right: -2px;
   }
 }
 
