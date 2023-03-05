@@ -19,7 +19,8 @@
 
   @media (min-width: $vp-768) {
     display: grid;
-    grid-template-columns: 200px auto 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
     padding-top: 58px;
   }
 
