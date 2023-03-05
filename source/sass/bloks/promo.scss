@@ -262,6 +262,7 @@
   // descktop
 
   @media (min-width: $vp-1024) {
+    min-width: 250px;
     max-width: calc(50% - 366px);
 
     margin-left: 80px;

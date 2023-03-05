@@ -52,6 +52,12 @@
   opacity: 0.6;
 }
 
+.footer__logo-link {
+  @media (min-width: $vp-768) {
+    width: 145px;
+  }
+}
+
 //footer social list
 
 .footer__social-list {

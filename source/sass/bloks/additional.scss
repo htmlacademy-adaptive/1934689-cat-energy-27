@@ -49,7 +49,6 @@
 
   background-color: $color-default-white;
 
-  margin-left: 20px;
   margin-bottom: 36px;
 
   //tablet
@@ -60,13 +59,11 @@
     text-align: start;
 
     margin-bottom: 79px;
-    margin-left: 67px;
   }
 
   //descktop
 
   @media (min-width: $vp-1024) {
-    margin-left: 110px;
     margin-bottom: 77px;
   }
 }
