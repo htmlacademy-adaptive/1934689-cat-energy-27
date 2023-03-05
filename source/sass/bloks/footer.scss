@@ -18,11 +18,9 @@
   //tablet footer
 
   @media (min-width: $vp-768) {
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding-top: 57px;
-    padding-bottom: 57px;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    padding-top: 58px;
   }
 
   //descktop footer
@@ -42,21 +40,12 @@
   }
 }
 
-//footer logo
-
 .footer__logo {
-  margin: 0 auto;
-  margin-bottom: 33px;
-
-  //tablet footer logo
+  margin-bottom: 34px;
 
   @media (min-width: $vp-768) {
-    margin: 0;
+    margin-bottom: 0;
   }
-}
-
-.footer .logo__link {
-  margin: 0 auto;
 }
 
 .footer__logo:active {
@@ -78,9 +67,6 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 0;
-    justify-content: space-between;
-    min-width: 151px;
-    padding-left: 20px;
   }
 }
 
@@ -89,7 +75,7 @@
 .footer__social-list::before {
   position: absolute;
   content: "";
-  top: -30px;
+  top: -24px;
 
   width: 281px;
 
@@ -143,11 +129,18 @@
 //footer copyright
 
 .footer__link {
+  text-decoration: none;
+  color: $color-charcoal;
   display: flex;
 
   align-items: center;
 
   max-width: 320px;
+
+  @media (min-width: $vp-768) {
+    margin-left: auto;
+    margin-top: -4px;
+  }
 }
 
 .footer__link-text {
@@ -158,6 +151,7 @@
 
   @media (min-width: $vp-768) {
     margin-right: 28px;
+    max-width: 136px;
   }
 }
 

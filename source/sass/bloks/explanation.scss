@@ -1,37 +1,7 @@
 //explanation section
 
 .explanation {
-  margin-bottom: 49px;
-
-  //tablet
-
-  @media (min-width: $vp-768) {
-    position: relative;
-
-    min-height: 700px;
-    margin-bottom: 54px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      bottom: -34px;
-
-      border: 1px solid $color-whisper-light;
-
-      width: 100%;
-    }
-  }
-  //descktop explanation section
-
-  @media (min-width: $vp-1024) {
-    min-height: unset;
-    margin-bottom: 69px;
-
-    &::before {
-      content: none;
-    }
-  }
+  margin-bottom: 46px;
 }
 
 //explanation title
@@ -47,155 +17,137 @@
   text-align: center;
 
   margin-bottom: 42px;
-  margin-right: 51px;
+  margin-right: 50px;
 
-  // tablet explanation title
+  // tablet
 
   @media (min-width: $vp-768) {
-    margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
-
     text-align: start;
+    margin-right: 0;
+    margin-bottom: 75px;
   }
 }
 
 //explanation list
 
 .explanation__list {
+  position: relative;
   list-style: none;
 
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
 
-  margin: 0 auto;
-  max-width: 323px;
-
-  //tablet explanation list
+  // tablet
 
   @media (min-width: $vp-768) {
     display: grid;
-    grid-template-columns: repeat(2, 230px);
-    column-gap: 22%;
-    row-gap: 34%;
+    grid-template-columns: 284px 324px;
+    justify-content: center;
+    row-gap: 92px;
+    column-gap: 99px;
 
-    max-width: 1023px;
+    counter-reset: css-counter 0;
+
+    padding-bottom: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -30px;
+      width: calc(100% + 60px);
+      height: 1px;
+      background-color: $color-whisper-light;
+    }
   }
 
-  //desctop explanation list
+  // deacktop
 
   @media (min-width: $vp-1024) {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 0;
-    row-gap: 0;
-
-    max-width: 1220px;
+    padding-bottom: 0;
+    column-gap: calc(6% + 6px);
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
   }
 }
 
 //explanation list item
 
 .explanation__list-item {
+  position: relative;
   display: flex;
+  min-height: 60px;
+  padding-left: 80px;
 
-  min-width: 280px;
   margin-bottom: 20px;
-
-  align-items: center;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  // tablet explanation list item
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $color-apple;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 
-  @media (min-width: $vp-768) {
-    position: relative;
-    display: grid;
-    grid-template-areas:
-      "explanation-img"
-      "explanation-text";
+    // tablet
 
-    min-width: 230px;
-    margin-bottom: 0;
+    @media (min-width: $vp-768) {
+      top: -2px;
+      width: 79px;
+      height: 80px;
+    }
   }
 
-  //descktop explanation list item
+  &--leaf::before {
+    background-image: url("/../img/explanation/leaf.svg");
+  }
+
+  &--glass::before {
+    background-image: url("/../img/explanation/glass.svg");
+  }
+
+  &--spun::before {
+    background-image: url("/../img/explanation/spun.svg");
+  }
+
+  &--wotch::before {
+    background-image: url("/../img/explanation/wotch.svg");
+  }
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+
+    padding: 109px 60px 44px 0;
+    counter-increment: css-counter 1;
+
+    &::after {
+      content: counter(css-counter);
+      position: absolute;
+      top: -3px;
+      left: 114px;
+      z-index: -1;
+      font-size: 280px;
+      line-height: 203px;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: $color-white-smoke;
+    }
+  }
+
+  // descktop
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 0;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-  }
-}
-
-//explanation list item number
-
-.explanation__list-item-one::before {
-  @media (min-width: $vp-768) {
-    position: absolute;
-    content: url("../img/explanation/explanation-1.png");
-    right: 33px;
-    top: 0;
-
-    z-index: -1;
-  }
-}
-
-.explanation__list-item-two::before {
-  @media (min-width: $vp-768) {
-    position: absolute;
-    content: url("../img/explanation/explanation-2.png");
-    right: 0;
-    top: 0;
-  }
-}
-
-.explanation__list-item-three::before {
-  @media (min-width: $vp-768) {
-    position: absolute;
-    content: url("../img/explanation/explanation-3.png");
-    right: -7px;
-    top: 0;
-  }
-}
-
-.explanation__list-item-four::before {
-  @media (min-width: $vp-768) {
-    position: absolute;
-    content: url("../img/explanation/explanation-4.png");
-    right: -16px;
-    top: 0;
-  }
-}
-
-//explanation image
-
-.explanation__img {
-  display: block;
-
-  margin-right: 22px;
-  min-width: 60px;
-
-  //tablet explanation image
-
-  @media (min-width: $vp-768) {
-    margin-right: 0;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 31px;
-
-    grid-area: explanation-img;
-  }
-
-  //descktop explanation image
-
-  @media (min-width: $vp-1024) {
-    margin-bottom: 31px;
+    padding: 109px 28px 44px 0;
   }
 }
 
@@ -208,21 +160,11 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-charcoal;
-  padding-bottom: 6px;
 
-  //tablet explanation list text
+  // tablet
 
   @media (min-width: $vp-768) {
     font-size: $fsize-default-16;
     line-height: $flh-default-24;
-    max-width: 230px;
-    grid-area: explanation-text;
-    z-index: 1;
-  }
-
-  //descktop explanation list text
-
-  @media (min-width: $vp-1024) {
-    margin-top: 0;
   }
 }
