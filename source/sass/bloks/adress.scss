@@ -16,8 +16,20 @@
     max-width: 1220px;
     min-height: 400px;
     margin: 0 auto;
-    padding: 91px 0 107px;
+    padding: 71px 0 107px;
     pointer-events: none;
+  }
+}
+
+.adress__wrapper--catalog {
+  @media (min-width: $vp-1024) {
+    padding: 94px 0 107px;
+  }
+}
+
+.adress__wrapper--form {
+  @media (min-width: $vp-1024) {
+    padding: 94px 0 107px;
   }
 }
 
@@ -36,7 +48,7 @@
   // tablet adress text
 
   @media (min-width: $vp-768) {
-    padding: 58px 5px 60px 39px;
+    padding: 58px 5px 63px 39px;
     max-width: 1220px;
     margin: 0 auto;
   }
@@ -44,7 +56,7 @@
   // descktop adress text
 
   @media (min-width: $vp-1024) {
-    padding: 61px 80px 41px;
+    padding: 58px 80px 63px;
 
     z-index: 3;
 
@@ -56,9 +68,19 @@
   }
 }
 
+.adress__text--form {
+  @media (min-width: $vp-768) {
+    padding: 56px 5px 63px 39px;
+  }
+}
+
 .adress__text-wrapper {
   @media (min-width: $vp-768) {
     margin-right: 35px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-right: -6px;
   }
 }
 
@@ -111,8 +133,8 @@
 
   @media (min-width: $vp-1024) {
     text-align: start;
-    max-width: 120px;
-    margin-bottom: 0;
+    margin-bottom: 18px;
+    padding-top: -2px;
   }
 }
 
@@ -130,7 +152,6 @@
 
   @media (min-width: $vp-1024) {
     text-align: start;
-    max-width: 120px;
   }
 }
 

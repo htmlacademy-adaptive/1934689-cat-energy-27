@@ -5,6 +5,7 @@
 // footer wrapper
 
 .footer__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -27,8 +28,40 @@
   //descktop footer
 
   @media (min-width: $vp-1024) {
-    padding-top: 72px;
+    padding-top: 48px;
     padding-bottom: 68px;
+  }
+
+  // footer lines
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 83px;
+    width: calc(100% - 40px);
+    border: 1px solid #d9d9d9;
+    left: 20px;
+
+    //tablet footer
+
+    @media (min-width: $vp-768) {
+      content: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 93px;
+    width: calc(100% - 40px);
+    border: 1px solid #d9d9d9;
+    left: 20px;
+
+    //tablet footer
+
+    @media (min-width: $vp-768) {
+      content: none;
+    }
   }
 }
 
@@ -38,6 +71,13 @@
   @media (min-width: $vp-1024) {
     padding-left: 41px;
     padding-right: 40px;
+    padding-top: 71px;
+  }
+}
+
+.footer__wrapper--form {
+  @media (min-width: $vp-1024) {
+    padding-top: 71px;
   }
 }
 
@@ -66,57 +106,21 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 35px;
   list-style: none;
+
+  max-width: 129px;
+  width: 100%;
 
   // tqblet social list
 
   @media (min-width: $vp-768) {
-    margin-bottom: 0;
+    justify-content: space-between;
+    margin: 0 auto;
+    list-style: none;
+    width: 130px;
   }
-}
-
-// footer lines
-
-.footer__social-list::before {
-  position: absolute;
-  content: "";
-  top: -24px;
-
-  width: 281px;
-
-  border: 1px solid $color-gainsboro;
-
-  // tqblet lines
-
-  @media (min-width: $vp-768) {
-    content: none;
-  }
-}
-
-.footer__social-list::after {
-  position: absolute;
-  content: "";
-
-  bottom: -16px;
-  width: 281px;
-
-  border: 1px solid $color-gainsboro;
-
-  // tqblet lines
-
-  @media (min-width: $vp-768) {
-    content: none;
-  }
-}
-
-.footer__social-item:nth-child(1) {
-  margin-right: 26px;
-}
-
-.footer__social-item:nth-child(2) {
-  margin-right: 30px;
 }
 
 // footer ico condition

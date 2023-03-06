@@ -30,7 +30,7 @@
 
   @media (min-width: $vp-1024) {
     margin-bottom: 86px;
-    padding-top: 17px;
+    padding-top: 14px;
   }
 }
 
@@ -49,7 +49,7 @@
 
   background-color: $color-default-white;
 
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 
   //tablet
 
@@ -58,6 +58,7 @@
     line-height: 100%;
     text-align: start;
 
+    margin-left: 37px;
     margin-bottom: 79px;
   }
 
@@ -65,6 +66,8 @@
 
   @media (min-width: $vp-1024) {
     margin-bottom: 77px;
+
+    margin-left: 0;
   }
 }
 
@@ -100,7 +103,7 @@
   position: relative;
 
   padding-top: 13px;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 
   //tablet
 
@@ -201,6 +204,9 @@
 // additional item title
 
 .additional__item-title {
+  word-wrap: break-word;
+  max-width: 200px;
+
   font-family: $ff-oswald;
   font-style: normal;
   font-weight: 400;
@@ -209,7 +215,7 @@
   text-transform: uppercase;
   color: $color-nero;
 
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   //tablet
 
@@ -252,6 +258,9 @@
 // additional goods
 
 .additional__item-coast {
+  word-wrap: break-word;
+  max-width: 200px;
+
   font-family: $ff-lato;
   font-style: normal;
   font-weight: 400;
@@ -277,6 +286,9 @@
 }
 
 .additional__item-coast-unit {
+  word-wrap: break-word;
+  max-width: 100px;
+
   font-family: $ff-lato;
   font-style: normal;
   font-weight: 400;
@@ -302,6 +314,7 @@
 
 .additional__item-button {
   width: 100%;
+  padding: 11px 44px;
 
   //tablet button
 
