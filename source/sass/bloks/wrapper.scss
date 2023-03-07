@@ -1,0 +1,60 @@
+.wrapper {
+  position: relative;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $vp-1024) {
+    min-height: 693px;
+    margin-bottom: 83px;
+  }
+}
+
+.wrapper::before {
+  @media (min-width: $vp-1024) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+
+    width: 50vw;
+    height: 100%;
+
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/promo/descktop/index-background-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+
+    // promo descktop image bacground resolution 2ddpx
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/promo/descktop/index-background-desktop@2x.png");
+    }
+  }
+}
+
+// catalog header
+
+.wrapper--noimage {
+  @media (min-width: $vp-1024) {
+    &::before {
+      content: none;
+    }
+
+    min-height: unset;
+    margin-bottom: 0;
+  }
+}
