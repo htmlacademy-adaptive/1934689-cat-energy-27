@@ -1,0 +1,270 @@
+// program section
+
+.program {
+  margin-bottom: 20px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 45px;
+  }
+
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 71px;
+  }
+}
+
+// program section blocks
+
+.program__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 18px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    max-width: 870px;
+    gap: 30px;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    display: grid;
+    max-width: none;
+    column-gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+}
+
+.program__list-item {
+  position: relative;
+  display: block;
+  padding: 30px 33px 17px 20px;
+  background-color: $color-white-smoke;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: $color-apple;
+    border-radius: 50%;
+
+    // tablet
+
+    @media (min-width: $vp-768) {
+      top: 92px;
+      right: 61px;
+      left: unset;
+      width: 200px;
+      height: 200px;
+    }
+
+    // descktop
+
+    @media (min-width: $vp-1024) {
+      top: 47px;
+      right: unset;
+      left: 9%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &--slim::before {
+    content: url("../img/program/mobile/cat_back.svg");
+
+    // tablet
+
+    @media (min-width: $vp-768) {
+      content: url("../img/program/tablet/cat-sit-tablet.svg");
+      padding-bottom: 20px;
+    }
+
+    // descktop
+
+    @media (min-width: $vp-1024) {
+      content: url("../img/program/descktop/cat-sit-descktop.svg");
+      padding-bottom: 8px;
+    }
+  }
+
+  &--pro::before {
+    content: url("../img/program/mobile/cat_back\ _two.svg");
+
+    // tablet
+
+    @media (min-width: $vp-768) {
+      content: url("../img/program/tablet/cat-welck-tablet.svg");
+      padding-top: 5px;
+    }
+
+    //  descktop
+
+    @media (min-width: $vp-1024) {
+      content: url("../img/program/descktop/cat-welck-descktop.svg");
+    }
+  }
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    padding: 78px 320px 56px 53px;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    display: flex;
+    flex-direction: column;
+    padding: 77px 7% 59px 9%;
+  }
+}
+// program blocks title
+
+.program__list-title {
+  font-family: $ff-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $color-default-black;
+
+  word-wrap: break-word;
+
+  margin-left: 70px;
+  margin-bottom: 31px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    font-size: 36px;
+    line-height: 36px;
+
+    margin: 0;
+    margin-bottom: 24px;
+
+    text-align: start;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 73px;
+    padding-left: calc(100px + 13%);
+  }
+}
+
+// program blocks description
+
+.program__list-description {
+  position: relative;
+
+  font-family: $ff-lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-charcoal;
+
+  word-wrap: break-word;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid $color-gainsboro;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
+    line-height: $flh-default-24;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 52px;
+
+    border: none;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    min-width: unset;
+    margin-right: 0;
+    margin-bottom: 27px;
+  }
+}
+
+// program block button
+
+.program__list-link {
+  position: relative;
+  text-decoration: none;
+
+  font-family: $ff-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fsize-default-16;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-default-black;
+  word-wrap: break-word;
+  padding-right: 56px;
+
+  &::before {
+    content: url("../img/program/black_arrow.svg");
+    position: absolute;
+    top: 47%;
+    right: 22px;
+    transform: translateY(-50%);
+    width: 18px;
+
+    // tablet
+
+    @media (min-width: $vp-768) {
+      transform: translateY(-56%);
+    }
+  }
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 66px;
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    margin: auto auto 0 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+// program block condition
+
+.program__list-link:hover::before {
+  scale: 1.18;
+}
+
+.program__list-link:active::before {
+  opacity: 0.5;
+}
+
+.program__list-link:active {
+  opacity: 0.5;
+}

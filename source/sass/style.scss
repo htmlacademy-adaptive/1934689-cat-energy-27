@@ -1,1 +1,66 @@
-// Начните писать стили здесь
+//**global**
+// variables
+
+@import "./variables.scss";
+
+// fonts
+
+@import "./fonts.scss";
+
+// global
+
+@import "./reboot.scss";
+
+// Utils
+@import "./utils.scss";
+
+// container
+@import "./container.scss";
+
+//**style of elements
+// button
+
+@import "./bloks/button.scss";
+
+//**style blocks
+// header
+@import "./bloks/header.scss";
+
+// menu
+@import "./bloks/menu.scss";
+
+// promo
+@import "./bloks/promo.scss";
+
+// program
+@import "./bloks/program.scss";
+
+// explanation
+@import "./bloks/explanation.scss";
+
+// example
+@import "./bloks/example.scss";
+
+// adress section
+
+@import "./bloks/adress.scss";
+
+// form section page
+
+@import "./bloks/form.scss";
+
+// title-decorate section page
+
+@import "./bloks/title-decorate";
+
+// catalog section catalog page
+
+@import "./bloks/catalog.scss";
+
+// additional cotalog section
+
+@import "./bloks/additional.scss";
+
+// footer section
+
+@import "./bloks/footer.scss";

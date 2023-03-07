@@ -1,0 +1,179 @@
+.menu {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  //tablet menu
+
+  @media (min-width: $vp-768) {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: none;
+
+    min-width: 440px;
+  }
+
+  //descktop menu
+
+  @media (min-width: $vp-1024) {
+    min-width: 470px;
+    width: 100%;
+  }
+}
+
+//menu list
+
+.menu__list {
+  position: relative;
+
+  //tablet menu list
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+    margin: 0;
+
+    border: none;
+  }
+
+  //descktop menu list
+
+  @media (min-width: $vp-1024) {
+    background-color: transparent;
+    margin-left: -9px;
+  }
+}
+
+//menu list current
+
+.menu__list--curent::before {
+  @media (min-width: $vp-768) {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -10px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $color-apple;
+
+    // descktop
+
+    @media (min-width: $vp-1024) {
+      background-color: $color-default-white;
+    }
+  }
+}
+
+//descktop menu catalog current list
+
+.menu__list--curent-negativ::before {
+  @media (min-width: $vp-1024) {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -10px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $color-apple;
+  }
+}
+
+//condition menu list
+
+.menu__list:hover {
+  opacity: 0.6;
+
+  //tablet menu list condition
+
+  @media (min-width: $vp-768) {
+    background-color: transparent;
+    opacity: 0.8;
+  }
+}
+
+.menu__list:active .menu__list-item {
+  opacity: 0.3;
+
+  //tablet menu list condition
+
+  @media (min-width: $vp-768) {
+    background-color: transparent;
+    color: $color-default-black;
+    opacity: 0.3;
+  }
+}
+
+.menu__list-item {
+  display: block;
+
+  text-decoration: none;
+
+  font-family: $ff-oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-default-black;
+
+  padding: 25px 0;
+
+  border-top: 1px solid #e6e6e6;
+
+  //tablet menu list item
+
+  @media (min-width: $vp-768) {
+    display: inline;
+
+    font-family: $ff-oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: $flh-default-24;
+
+    border: none;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  //descktop menu list item
+
+  @media (min-width: $vp-1024) {
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $color-default-white;
+  }
+}
+
+// catalog desktop menu list item
+
+.menu--black .menu__list-item {
+  @media (min-width: $vp-1024) {
+    color: $color-nero-black;
+  }
+}
+
+.menu--black .menu__list--curent::before {
+  @media (min-width: $vp-1024) {
+    background-color: $color-apple;
+  }
+}
+
+.menu--no-js {
+  display: block;
+}

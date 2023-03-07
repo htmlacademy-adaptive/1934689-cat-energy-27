@@ -1,0 +1,214 @@
+.adress {
+  position: relative;
+  z-index: 1;
+}
+
+.adress--darck {
+  background-color: $color-white-smoke;
+}
+
+.adress .container {
+  pointer-events: none;
+}
+
+.adress__wrapper {
+  @media (min-width: $vp-1024) {
+    max-width: 1220px;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 71px 0 107px;
+    pointer-events: none;
+  }
+}
+
+.adress__wrapper--catalog {
+  @media (min-width: $vp-1024) {
+    padding: 94px 0 107px;
+  }
+}
+
+.adress__wrapper--form {
+  @media (min-width: $vp-1024) {
+    padding: 94px 0 107px;
+  }
+}
+
+.adress__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 26px 0;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+
+  pointer-events: all;
+
+  // tablet adress text
+
+  @media (min-width: $vp-768) {
+    padding: 58px 5px 63px 39px;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  // descktop adress text
+
+  @media (min-width: $vp-1024) {
+    padding: 58px 80px 63px;
+
+    z-index: 3;
+
+    background-color: $color-default-white;
+
+    max-width: 564px;
+    margin-left: 2px;
+    align-items: unset;
+  }
+}
+
+.adress__text--form {
+  @media (min-width: $vp-768) {
+    padding: 56px 5px 63px 39px;
+  }
+}
+
+.adress__text-wrapper {
+  @media (min-width: $vp-768) {
+    margin-right: 35px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-right: -6px;
+  }
+}
+
+// catalog adress  text
+
+.adress__text--darck {
+  background-color: $color-white-smoke;
+}
+
+.adress__title {
+  font-family: $ff-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fsize-default-16;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+
+  max-width: 140px;
+
+  // tablet adress title
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 180px;
+  }
+}
+
+.adress__description {
+  font-family: $ff-lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-charcoal;
+
+  max-width: 139px;
+
+  // tablet adress description
+
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
+    text-align: end;
+
+    max-width: 160px;
+
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $vp-1024) {
+    text-align: start;
+    margin-bottom: 18px;
+    padding-top: -2px;
+  }
+}
+
+// tablet adress description city
+
+.adress__description-city {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    text-align: end;
+  }
+
+  @media (min-width: $vp-1024) {
+    text-align: start;
+  }
+}
+
+// adress map
+
+.adress__map {
+  position: relative;
+  width: 100%;
+  height: 362px;
+  overflow: hidden;
+
+  @media (min-width: $vp-768) {
+    height: 402px;
+  }
+
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+  }
+}
+
+// adress map ofline
+
+.adress__map-offline {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  z-index: -2;
+}
+
+.adress__map-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 1;
+
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    min-height: 400px;
+  }
+}

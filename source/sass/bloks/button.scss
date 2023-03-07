@@ -1,0 +1,25 @@
+.button {
+  text-decoration: none;
+  font-family: $ff-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: $color-default-white;
+  width: 280px;
+  background-color: $color-apple;
+  padding: 7px 44px;
+}
+
+.button:hover {
+  background-color: $color-limeade;
+}
+
+.button:active {
+  color: rgb(255, 255, 255, 0.3);
+}

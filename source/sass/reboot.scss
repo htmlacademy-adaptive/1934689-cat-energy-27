@@ -1,0 +1,46 @@
+// main page param
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.page__body {
+  font-family: $ff-lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fsize-default-16;
+  line-height: $flh-default-24;
+  color: $color-default-black;
+  margin: 0 auto;
+  background-color: $color-default-white;
+  overflow-x: hidden;
+}
+
+.page__body--menu {
+  overflow: hidden;
+}
+
+.main-catalog {
+  display: block;
+  overflow: hidden;
+}

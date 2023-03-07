@@ -1,0 +1,472 @@
+.additional__wrapper {
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 74% 20%;
+    gap: 6%;
+
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-left: -8px;
+  }
+}
+
+.additional {
+  position: relative;
+
+  margin-bottom: 35px;
+
+  //tablet
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 76px;
+  }
+
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 86px;
+    padding-top: 14px;
+  }
+}
+
+// additional title
+
+.additional__title {
+  position: relative;
+
+  font-family: $ff-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: start;
+  color: $color-default-black;
+
+  background-color: $color-default-white;
+
+  margin-bottom: 35px;
+
+  //tablet
+
+  @media (min-width: $vp-768) {
+    font-size: 36px;
+    line-height: 100%;
+    text-align: start;
+
+    margin-left: 37px;
+    margin-bottom: 79px;
+  }
+
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 77px;
+
+    margin-left: 0;
+  }
+}
+
+//tablet additional list
+
+.additional__list {
+  list-style: none;
+
+  margin-bottom: 54px;
+
+  // tablet
+
+  @media (min-width: $vp-768) {
+    border: 1px solid $color-very-light-grey;
+    margin-bottom: 70px;
+  }
+
+  //descktop additional list
+
+  @media (min-width: $vp-1024) {
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0;
+  }
+}
+
+// additional item
+
+.additional__item {
+  position: relative;
+
+  padding-top: 13px;
+  margin-bottom: 18px;
+
+  //tablet
+
+  @media (min-width: $vp-768) {
+    padding: 28px 38px 27px;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    align-items: center;
+    gap: 5%;
+
+    padding: 15px 0 17px 10px;
+  }
+
+  //mobile additional list lines
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 0;
+
+    margin: 0 auto;
+
+    border: 1px solid $color-gainsboro;
+
+    //tablet
+
+    @media (min-width: $vp-768) {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+.additional__item:last-child {
+  margin-bottom: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -19px;
+
+    width: 100%;
+    height: 1px;
+
+    margin: 0 auto;
+
+    @media (min-width: $vp-768) {
+      content: none;
+    }
+
+    border: 1px solid $color-gainsboro;
+
+    @media (min-width: $vp-1024) {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 0;
+
+      margin: 0 auto;
+
+      border: 1px solid $color-gainsboro;
+    }
+  }
+}
+
+.additional__item:nth-child(1) {
+  @media (min-width: $vp-1024) {
+    border-top: 2px solid $color-very-light-grey;
+  }
+}
+
+//tablet
+
+.additional__item:nth-child(1)::before {
+  @media (min-width: $vp-768) {
+    content: none;
+  }
+}
+
+// additional item title
+
+.additional__item-title {
+  word-wrap: break-word;
+  max-width: 200px;
+
+  font-family: $ff-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fsize-default-16;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-nero;
+
+  margin-bottom: 14px;
+
+  //tablet
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  //descktop
+
+  @media (min-width: $vp-1024) {
+    margin: 0;
+  }
+}
+
+// additional goods wrapper
+
+.additional__goods-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  //tablet
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    margin-bottom: 21px;
+  }
+  //descktop additional goods wrapper
+
+  @media (min-width: $vp-1024) {
+    padding-top: 8px;
+    margin: 0;
+  }
+}
+
+// additional goods
+
+.additional__item-coast {
+  word-wrap: break-word;
+  max-width: 200px;
+
+  font-family: $ff-lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-charcoal;
+
+  //tablet
+
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
+    line-height: 20px;
+
+    margin-right: 56px;
+    margin-top: 2px;
+  }
+
+  //desctop
+
+  @media (min-width: $vp-1024) {
+    margin: 0;
+  }
+}
+
+.additional__item-coast-unit {
+  word-wrap: break-word;
+  max-width: 100px;
+
+  font-family: $ff-lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-charcoal;
+
+  //tablet button
+
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
+    line-height: 20px;
+  }
+
+  //descktop button
+
+  @media (min-width: $vp-1024) {
+    margin-right: -2px;
+  }
+}
+
+// additional item button
+
+.additional__item-button {
+  width: 100%;
+  padding: 11px 44px;
+
+  //tablet button
+
+  @media (min-width: $vp-768) {
+    font-size: $fsize-default-16;
+
+    min-width: 100%;
+  }
+
+  //descktop button
+
+  @media (min-width: $vp-1024) {
+    width: 244px;
+    min-width: unset;
+  }
+}
+
+// additional gift
+
+.additional__gift {
+  position: relative;
+  color: $color-default-white;
+
+  background-image: linear-gradient(
+      to top,
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../img/catalog/gift/mobile/bagpuck-@1x.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  padding: 187px 61px 43px 58px;
+  text-align: center;
+
+  // gift image bacground resolution 2ddpx
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/catalog/gift/mobile/bagpuck-@2x.png");
+  }
+
+  //tablet
+
+  @media (min-width: $vp-768) {
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/catalog/gift/tablet/bugpuck-tablet-@1x.png");
+    background-size: 100% 200px;
+
+    text-align: start;
+    padding: 70px 124px 70px 77px;
+
+    // gift image bacground resolution 2ddpx
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/catalog/gift/tablet/bugpuck-tablet-@2x.png");
+    }
+  }
+
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    position: relative;
+
+    margin: 0;
+
+    background-image: linear-gradient(
+        to top,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/catalog/gift/mobile/bagpuck-@1x.png");
+    background-size: 100% 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    color: $color-default-black;
+
+    padding: 185px 43px 42px 42px;
+    margin-left: 8px;
+
+    width: 100%;
+
+    // gift image bacground resolution 2ddpx
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../img/catalog/gift/mobile/bagpuck-@2x.png");
+    }
+  }
+
+  &::before {
+    content: url("../img/additional/icon_gift.svg");
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    left: 50%;
+    top: 58px;
+    transform: translateX(-50%);
+
+    @media (min-width: $vp-768) {
+      left: 119px;
+      top: 29%;
+      width: 80px;
+      height: 83px;
+    }
+
+    @media (min-width: $vp-1024) {
+      width: 78px;
+      height: 80px;
+      left: 50%;
+      top: 57px;
+    }
+  }
+}
+
+.additional__gift-text {
+  display: flex;
+  font-family: $ff-lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fsize-default-16;
+  line-height: 20px;
+  color: $color-default-white;
+
+  @media (min-width: $vp-768) {
+    text-align: start;
+    max-width: 161px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $vp-1024) {
+    text-align: center;
+    max-width: unset;
+    margin: 0;
+  }
+}

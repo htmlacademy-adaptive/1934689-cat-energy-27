@@ -1,0 +1,62 @@
+.title-decorate {
+  position: relative;
+
+  display: inline-flex;
+
+  max-width: 90%;
+
+  z-index: 1;
+
+  @media (min-width: $vp-768) {
+    max-width: unset;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-left: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: calc(100% + 40px);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-default-white;
+    z-index: -1;
+
+    @media (min-width: $vp-768) {
+      width: calc(100% + 74px);
+      height: 100%;
+      left: -37px;
+    }
+
+    @media (min-width: $vp-1024) {
+      width: calc(100% + 80px);
+      height: 100%;
+      left: -40px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100vw;
+    left: -20px;
+    top: 15px;
+    background-color: $color-apple;
+    z-index: -2;
+
+    @media (min-width: $vp-768) {
+      left: -67px;
+      top: 20px;
+    }
+
+    @media (min-width: $vp-1024) {
+      width: 200vw;
+      left: -100vw;
+    }
+  }
+}
