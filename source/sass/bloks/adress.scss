@@ -16,7 +16,7 @@
     max-width: 1220px;
     min-height: 400px;
     margin: 0 auto;
-    padding: 71px 0 107px;
+    padding: 95px 0 95px;
     pointer-events: none;
   }
 }
@@ -68,9 +68,19 @@
   }
 }
 
+.adress__text--catalog {
+  @media (min-width: $vp-1024) {
+    padding: 58px 80px 43px;
+  }
+}
+
 .adress__text--form {
   @media (min-width: $vp-768) {
     padding: 56px 5px 63px 39px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 61px 81px 41px 76px;
   }
 }
 
@@ -134,7 +144,24 @@
   @media (min-width: $vp-1024) {
     text-align: start;
     margin-bottom: 18px;
-    padding-top: -2px;
+  }
+}
+
+.adress__description--two-row {
+  @media (min-width: $vp-1024) {
+    max-width: 116px;
+    margin-right: 44px;
+    margin-top: -2px;
+    margin-bottom: 0;
+  }
+}
+
+.adress__description--catalog {
+  @media (min-width: $vp-1024) {
+    max-width: 116px;
+    margin-right: 44px;
+    margin-top: -2px;
+    margin-bottom: 0;
   }
 }
 
@@ -152,6 +179,18 @@
 
   @media (min-width: $vp-1024) {
     text-align: start;
+  }
+}
+
+.adress__description-city--two-row {
+  @media (min-width: $vp-1024) {
+    max-width: 116px;
+  }
+}
+
+.adress__description-city--catalog {
+  @media (min-width: $vp-1024) {
+    max-width: 116px;
   }
 }
 

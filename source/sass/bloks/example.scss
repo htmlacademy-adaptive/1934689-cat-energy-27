@@ -35,14 +35,15 @@
 
 // example text-wrapper
 
-@media (min-width: $vp-768) {
-  .example__text-wrapper {
+.example__text-wrapper {
+  @media (min-width: $vp-768) {
     max-width: 100%;
 
     margin-bottom: 87px;
 
     @media (min-width: $vp-1024) {
       max-width: 436px;
+      margin-bottom: 63px;
     }
   }
 }
@@ -357,7 +358,7 @@
 
   @media (min-width: $vp-1024) {
     margin: 0 0 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 79px;
   }
 }
 
@@ -491,13 +492,7 @@
     //descktop
 
     @media (min-width: $vp-1024) {
-      height: 484px;
+      height: 464px;
     }
   }
-}
-
-.scrolling {
-  opacity: 1;
-
-  pointer-events: none;
 }

@@ -20,9 +20,9 @@ document.body.addEventListener('mousemove',function(e){
 function scrollIt(x){
     let transform = Math.max(0,(Math.min(x,document.querySelector('.example__slide').offsetWidth)));
     let widthBefore = document.querySelector('.example__slide').offsetWidth - transform;
-    document.querySelector('.example__image-block--before').style.width = transform+"px";
-    document.querySelector('.example__image-block--after').style.width = widthBefore+"px";
-    document.querySelector('.example__slider').style.left = transform-20+"px";
+    document.querySelector('.example__image-block--before').style.width = transform+'px';
+    document.querySelector('.example__image-block--after').style.width = widthBefore+'px';
+    document.querySelector('.example__slider').style.left = transform-20+'px';
 }
 
 scrollIt(document.querySelector('.example__slide').offsetWidth / 2);
