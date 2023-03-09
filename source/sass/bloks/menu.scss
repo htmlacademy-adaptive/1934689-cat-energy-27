@@ -13,20 +13,15 @@
 
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
-
+    gap: 35px;
     border: none;
-
-    min-width: 440px;
   }
 
-  //descktop menu
-
   @media (min-width: $vp-1024) {
-    min-width: 470px;
-    width: 100%;
+    gap: 44px;
   }
 }
 
@@ -38,9 +33,11 @@
   //tablet menu list
 
   @media (min-width: $vp-768) {
+    display: flex;
     padding: 0;
     margin: 0;
-
+    max-width: 155px;
+    flex-shrink: 0;
     border: none;
   }
 
@@ -49,28 +46,60 @@
   @media (min-width: $vp-1024) {
     background-color: transparent;
     margin-left: -9px;
+    max-width: 175px;
   }
 }
 
 //menu list current
 
-.menu__list--curent::before {
+.menu__list--curent a::before {
   @media (min-width: $vp-768) {
     position: absolute;
     content: "";
+    bottom: -28%;
     left: 0;
-    bottom: -10px;
 
+    border-bottom: 1px solid $color-apple;
     width: 100%;
-    height: 2px;
+  }
+}
 
-    background-color: $color-apple;
+.menu__list--curent-wite a::before {
+  // descktop
 
-    // descktop
+  @media (min-width: $vp-1024) {
+    position: absolute;
+    content: "";
+    top: 36px;
+    left: 0;
+    border-bottom: 1px solid  $color-default-white;
+    width: 100%;
+  }
+}
 
-    @media (min-width: $vp-1024) {
-      background-color: $color-default-white;
-    }
+.menu__list--curent-catalog a::before {
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    position: absolute;
+    content: "";
+    top: 36px;
+    left: 0;
+    border-bottom: 1px solid  $color-default-white;
+    width: 100%;
+  }
+}
+
+.menu__list--curent-form a::before {
+  // descktop
+
+  @media (min-width: $vp-1024) {
+    position: absolute;
+    content: "";
+    top: 36px;
+    left: 0;
+    border-bottom: 1px solid  $color-default-white;
+    width: 100%;
   }
 }
 
@@ -137,12 +166,12 @@
   @media (min-width: $vp-768) {
     display: inline;
 
+    align-self: flex-start;
     font-family: $ff-oswald;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: $flh-default-24;
-
     border: none;
 
     margin: 0;
